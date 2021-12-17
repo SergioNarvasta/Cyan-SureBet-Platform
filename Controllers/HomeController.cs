@@ -15,11 +15,7 @@ namespace Portafolio.Controllers
 
         public IActionResult Index()
         {
-            var Persona = new Persona()
-            {
-                Nombre = "Sergio Alan Jesus",
-                Apellido = "Narvasta Pichilingue"
-            };
+            
             return View();
         }
 
