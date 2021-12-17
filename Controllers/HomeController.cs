@@ -15,13 +15,31 @@ namespace Portafolio.Controllers
 
         public IActionResult Index()
         {
+            var Persona = new Persona()
+            {
+                Nombre = "Sergio Alan Jesus",
+                Apellido = "Narvasta Pichilingue"
+            };
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
+        public IActionResult Services()
+        {
+            return View();
+        }
+        public IActionResult Projects()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
