@@ -5,7 +5,7 @@ namespace SureBet.Models
     public class ApuestaPrincipal
     {
         [Key]
-        public string Id { get; set; }
+        public int CodApuestaPr { get; set; }
         [Required]
         [StringLength(100)]
         [Display(Name = "Nombre de Apuesta")]
