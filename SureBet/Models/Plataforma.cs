@@ -8,6 +8,6 @@ namespace SureBet.Models
         public int CodPlataforma { get; set; }
 
         [Display(Name ="Nombre Plataforma")]
-        public string ?NombPlataforma { get; set; }
+        public string ?NombrePlataforma { get; set; }
     }
 }
