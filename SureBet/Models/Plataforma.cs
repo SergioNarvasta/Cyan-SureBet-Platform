@@ -9,5 +9,9 @@ namespace SureBet.Models
 
         [Display(Name ="Nombre Plataforma")]
         public string ?NombrePlataforma { get; set; }
+
+        public Double Limite { get; set; }
+
+        public string ?url    { get; set; }
     }
 }
