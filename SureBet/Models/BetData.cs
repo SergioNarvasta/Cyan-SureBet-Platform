@@ -6,9 +6,12 @@ namespace SureBet.Models
     {
         [Key]
        public int Id { get; set; }
+       public string ?Deporte { get; set; }
        public string ?Evento { get; set; }
        
-       public string ?Descripcion { get; set; }
+       public string ?Mercado { get; set; }
+
+       public string ?Competicion { get; set; }
 
        public Double Cuota { get; set; }
 
@@ -18,6 +21,7 @@ namespace SureBet.Models
        public DateTime Fecha { get; set; }
 
        public Double Limite { get; set; }
+
         
     }
 }
