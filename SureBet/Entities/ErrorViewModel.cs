@@ -1,4 +1,4 @@
-namespace SureBet.Models
+namespace SureBet.Entities
 {
     public class ErrorViewModel
     {

@@ -12,6 +12,7 @@ namespace SureBet.Entities
         [Display(Name = "Limite Plataforma")]
         public Double Limite { get; set; }
 
+        [Display(Name = "URL Acceso")]
         public string ?Url    { get; set; }
     }
 }
