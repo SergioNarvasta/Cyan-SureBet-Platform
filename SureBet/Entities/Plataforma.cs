@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SureBet.Models
+namespace SureBet.Entities
 {
     public class Plataforma
     {
