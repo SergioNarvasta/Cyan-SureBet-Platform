@@ -9,9 +9,9 @@ namespace SureBet.Entities
 
         [Display(Name ="Nombre Plataforma")]
         public string ?NombrePlataforma { get; set; }
-
+        [Display(Name = "Limite Plataforma")]
         public Double Limite { get; set; }
 
-        public string ?url    { get; set; }
+        public string ?Url    { get; set; }
     }
 }
