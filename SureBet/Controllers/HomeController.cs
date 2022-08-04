@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SureBet.Models;
+using SureBet.Entities;
 using System.Diagnostics;
 
 namespace SureBet.Controllers
