@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace SureBet.Entities
+namespace IS_SureBet.Models
 {
     public class Calculator
     {
@@ -12,12 +12,12 @@ namespace SureBet.Entities
         public string ?Descripcion { get; set; }
 
         [StringLength(20)]
-        public Double Cuota { get; set; }
-        public Double Probabilidad { get; set; }
-        public Double Apuesta { get; set; }
+        public double Cuota { get; set; }
+        public double Probabilidad { get; set; }
+        public double Apuesta { get; set; }
         [Display(Name = "Moneda de Transaccion")]
         public string ?Moneda { get; set; }
-        public Double Beneficio { get; set; }
+        public double Beneficio { get; set; }
 
     }
 }
