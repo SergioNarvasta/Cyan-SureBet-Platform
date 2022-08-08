@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BWYjFjMG2yH3Armc+k1vdZvgkPR9XAZGC6KsVkGn7sZD8oabqqk6FRXxK8fRSSDOFK53SvS5S0t+RDVNu2rADg==",
+  "dgSpecHash": "tgTG6puMecs9PDhd04T3nKS+zkHaoGsKLIQHlhRet20OstCD86wY2OpaRb/AQ2G08zI4w1h489ZjdFcQKhJd5w==",
   "success": true,
-  "projectFilePath": "F:\\3. PROYECTOS\\SureBets\\Desarrollo del Proyecto\\IS_SureBet\\IS_SureBet\\IS_SureBet.csproj",
+  "projectFilePath": "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MI PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MI PC\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.7\\microsoft.aspnetcore.cryptography.internal.6.0.7.nupkg.sha512",
