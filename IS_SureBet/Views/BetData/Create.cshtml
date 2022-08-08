@@ -1,0 +1,73 @@
+﻿@model IS_SureBet.Models.BetData
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>BetData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Deporte" class="control-label"></label>
+                <input asp-for="Deporte" class="form-control" />
+                <span asp-validation-for="Deporte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Evento" class="control-label"></label>
+                <input asp-for="Evento" class="form-control" />
+                <span asp-validation-for="Evento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mercado" class="control-label"></label>
+                <input asp-for="Mercado" class="form-control" />
+                <span asp-validation-for="Mercado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Competicion" class="control-label"></label>
+                <input asp-for="Competicion" class="form-control" />
+                <span asp-validation-for="Competicion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cuota" class="control-label"></label>
+                <input asp-for="Cuota" class="form-control" />
+                <span asp-validation-for="Cuota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Beneficio" class="control-label"></label>
+                <input asp-for="Beneficio" class="form-control" />
+                <span asp-validation-for="Beneficio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CasaApuesta" class="control-label"></label>
+                <input asp-for="CasaApuesta" class="form-control" />
+                <span asp-validation-for="CasaApuesta" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fecha" class="control-label"></label>
+                <input asp-for="Fecha" class="form-control" />
+                <span asp-validation-for="Fecha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Limite" class="control-label"></label>
+                <input asp-for="Limite" class="form-control" />
+                <span asp-validation-for="Limite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
