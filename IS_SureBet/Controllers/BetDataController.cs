@@ -26,7 +26,12 @@ namespace IS_SureBet.Controllers
                           View(await _context.BetData.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
         }
-
+        public async Task<IActionResult> BetList()
+        {
+            return _context.BetData != null ?
+                        View(await _context.BetData.ToListAsync()) :
+                        Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
+        }
         // GET: BetData/Details/5
         public async Task<IActionResult> Details(int? id)
         {
