@@ -10,7 +10,7 @@ namespace IS_SureBet.Models
         [Display(Name ="Nombre Plataforma")]
         public string ?NombrePlataforma { get; set; }
         [Display(Name = "Limite Plataforma")]
-        public Double Limite { get; set; }
+        public double Limite { get; set; }
 
         [Display(Name = "URL Acceso")]
         public string ?Url    { get; set; }
