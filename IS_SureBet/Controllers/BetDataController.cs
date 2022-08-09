@@ -34,6 +34,7 @@ namespace IS_SureBet.Controllers
         }
         // GET: BetData/Details/5
         public async Task<IActionResult> Details(int? id)
+
         {
             if (id == null || _context.BetData == null)
             {

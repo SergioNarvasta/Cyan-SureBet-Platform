@@ -4,73 +4,38 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Proximas Apuestas</h1>
+<div class="sports">
+    <div><img src="~/img/home.png"/> Home </div>
+    <div><img src="~/img/football2.png"/>Futbol</div>
+    <div><img src="~/img/football_a.png"/>Futbol Americano</div>
+    <div><img src="~/img/basketball.png"/>Baloncesto</div>
+    <div><img src="~/img/baseball.png"/>Beisbol</div>
+       <div><img src="~/img/tennis.png"/>Tenis</div>
+</div>
 <br />
+<div class="Main">
+   <div class="filter"> </div>
 
-<table class="table table-warning table-hover">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Deporte)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Evento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Mercado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Competicion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cuota)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Beneficio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CasaApuesta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Limite)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-   @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Deporte)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Evento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mercado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Competicion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cuota)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Beneficio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CasaApuesta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Limite)
-            </td> 
-        </tr>
-  }
-    </tbody>
-</table>
+     @foreach (var item in Model) {
+      <div class="BetList">
+
+        <div class="Cab"> 
+          <div><img src="~/img/soccer.png" alt="Football" height="30" width="30"> </div>
+          <div>@Html.DisplayFor(modelItem => item.Competicion)</div>
+          <div>@Html.DisplayFor(modelItem => item.Fecha)</div>
+        </div>
+
+        <div class="Det"> 
+          <div>@Html.DisplayFor(modelItem => item.Evento) </div>
+          <div>Cuota @Html.DisplayFor(modelItem => item.Cuota)</div>
+          <div>@Html.DisplayFor(modelItem => item.CasaApuesta)</div>
+       </div>
+
+       <div class="Res">Resultado Final @Html.DisplayFor(modelItem => item.Mercado)</div>
+       <div class="Beneficio"> <center><p> @Html.DisplayFor(modelItem => item.Beneficio).00% GARANTIZADO BENEFICIO</p></center></div>
+     </div>
+     }
+  <div class="bot">
+      <img src="~/img/bot.gif" height="250" width="100">
+  </div>
+</div>

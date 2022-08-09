@@ -7,12 +7,88 @@ html {
     font-size: 16px;
   }
 }
-
-html {
-  position: relative;
-  min-height: 100%;
+/********** File:Bet Data  View:BetList ********/
+.Title{
+    color : blue;
 }
-
-body {
-  margin-bottom: 60px;
+.sports{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
 }
+    .sports div {    
+        border-radius: 10px 10px 10px 10px;
+        background-color: #D7DAE5;
+        color:black;
+        font:bold;
+        font-family:Arial;
+        cursor:pointer;
+    }
+    .sports div:hover{
+    
+    }
+.Main {
+    display: flex;
+    flex-direction: column;
+}
+.BetList {
+    display: flex;  
+    flex-direction:column;
+    align-content: center;
+    /*border: 1px solid blue;*/
+    border-radius: 10px 10px 10px 10px;
+    width:500px;
+    height:130px;
+    margin-top:15px;
+    margin-left:250px;
+}
+.Cab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2056F8;
+    border-radius: 10px 10px 0px 0px;
+}
+     .Cab div {
+         color:white;
+     }
+.Det {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+.Res {
+    background-color: lightgray ;
+    display:flex;
+    justify-content:flex-start;
+}
+.Beneficio {    
+    background-color: #1BBD21;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px 5px 5px 5px;
+}
+    .Beneficio p{
+        font-size:16px;
+        color:white;
+        font:bold;
+        font-family:Arial;
+        margin-top:10px;
+     }
+    /************* Home Index *************/
+.Welcome {
+    background-color: #0065b3;
+    height: 350px;
+    font-family: 'segoe UI';
+    color: white;
+}
+    .Welcome h1 {
+        font: bold;
+        margin-left: 50px;   
+     }
+    .Welcome a{
+        margin-top:30px;
+        margin-left:100px;
+    }
+    
