@@ -32,10 +32,11 @@
        </div>
 
        <div class="Res">Resultado Final @Html.DisplayFor(modelItem => item.Mercado)</div>
-       <div class="Beneficio"> <center><p> @Html.DisplayFor(modelItem => item.Beneficio).00% GARANTIZADO BENEFICIO</p></center></div>
+       <div class="Beneficio"> <center><p> @Html.DisplayFor(modelItem => item.Beneficio).00% GARANTIZADO BENEFICIO</p> 
+          <a class="btn btn-primary" asp-area="" asp-controller="BetData" asp-action="Details">Detalles</a>     
+          </center>
+       </div>
      </div>
      }
-  <div class="bot">
-      <img src="~/img/bot.gif" height="250" width="100">
-  </div>
+  
 </div>

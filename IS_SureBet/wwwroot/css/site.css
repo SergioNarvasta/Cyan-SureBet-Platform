@@ -7,7 +7,13 @@ html {
     font-size: 16px;
   }
 }
-/********** File:Bet Data  View:BetList ********/
+
+html {
+    position: relative;
+    min-height: 100%;
+    
+}
+/********** File:Bet Data  View:BetList  ********/
 .Title{
     color : blue;
 }
@@ -16,21 +22,26 @@ html {
     justify-content:space-around;
     flex-direction:row;
 }
-    .sports div {    
+    .sports div {
         border-radius: 10px 10px 10px 10px;
-        background-color: #D7DAE5;
-        color:black;
-        font:bold;
-        font-family:Arial;
-        cursor:pointer;
+        border:2px solid skyblue;
+        color: black;
+        font: bold;
+        font-family: Arial;
+        cursor: pointer;
     }
-    .sports div:hover{
-    
-    }
+        .sports div:hover {
+            transform: scale(1.3);
+            transition: 1000ms;
+        }
 .Main {
     display: flex;
     flex-direction: column;
 }
+   /* .Main:hover {
+        transform: scale(1.1);
+        transition: 500ms;
+    }*/
 .BetList {
     display: flex;  
     flex-direction:column;
@@ -46,11 +57,11 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #2056F8;
+    background-color: dodgerblue;
     border-radius: 10px 10px 0px 0px;
 }
      .Cab div {
-         color:white;
+         color:black;
      }
 .Det {
     display: flex;
@@ -63,15 +74,15 @@ html {
     display:flex;
     justify-content:flex-start;
 }
-.Beneficio {    
-    background-color: #1BBD21;
+.Beneficio {
+    background-color: #00C6E3;
     height: 40px;
     width: 300px;
     border-radius: 5px 5px 5px 5px;
 }
     .Beneficio p{
         font-size:16px;
-        color:white;
+        color:black;
         font:bold;
         font-family:Arial;
         margin-top:10px;
@@ -79,9 +90,11 @@ html {
     /************* Home Index *************/
 .Welcome {
     background-color: #0065b3;
-    height: 350px;
+    height: 400px;
     font-family: 'segoe UI';
     color: white;
+    display:flex;
+    flex-direction:row;
 }
     .Welcome h1 {
         font: bold;
@@ -91,4 +104,25 @@ html {
         margin-top:30px;
         margin-left:100px;
     }
+    .Welcome p{
+        margin-left : 50px;
+        margin-top  : 10px;
+    }
+.bot {
+    margin-top: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
+    .bot:hover {
+        transform: scale(1.2);
+        transition: 500ms;
+    }
+
+.actions{
+    margin-left:60%;
+    width:40%;
+    display:flex;
+    justify-content:space-evenly;
     
+}
