@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {}
+    "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {}
   },
   "projects": {
-    "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {
+    "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
+        "projectUniqueName": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
         "projectName": "IS_SureBet",
-        "projectPath": "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
-        "packagesPath": "C:\\Users\\MI PC\\.nuget\\packages\\",
-        "outputPath": "F:\\3. PROYECTOS\\IS SureBet\\Desarrollo del Proyecto\\SureBet\\IS_SureBet\\obj\\",
+        "projectPath": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
+        "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
+        "outputPath": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\snarvasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,8 +71,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -84,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
