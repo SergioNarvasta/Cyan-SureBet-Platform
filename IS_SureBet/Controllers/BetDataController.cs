@@ -50,6 +50,23 @@ namespace IS_SureBet.Controllers
 
             return View(betData);
         }
+        public async Task<IActionResult> Detalles(int? id)
+
+        {
+            if (id == null || _context.BetData == null)
+            {
+                return NotFound();
+            }
+
+            var betData = await _context.BetData
+                .FirstOrDefaultAsync(m => m.IdBet == id);
+            if (betData == null)
+            {
+                return NotFound();
+            }
+
+            return View(betData);
+        }
 
         // GET: BetData/Create
         public IActionResult Create()

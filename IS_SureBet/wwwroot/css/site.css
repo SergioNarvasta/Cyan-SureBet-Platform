@@ -75,10 +75,13 @@ html {
     justify-content:flex-start;
 }
 .Beneficio {
-    background-color: #00C6E3;
+    background-color: #9CB6FE;
     height: 40px;
-    width: 300px;
+    width: 500px;
     border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
     .Beneficio p{
         font-size:16px;
@@ -87,15 +90,17 @@ html {
         font-family:Arial;
         margin-top:10px;
      }
-    /************* Home Index *************/
-.Welcome {
-    background-color: #0065b3;
-    height: 400px;
-    font-family: 'segoe UI';
-    color: white;
-    display:flex;
-    flex-direction:row;
-}
+
+  /************* Home Index *************/
+
+        .Welcome {
+            background-color: #0065b3;
+            height: 400px;
+            font-family: 'segoe UI';
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
     .Welcome h1 {
         font: bold;
         margin-left: 50px;   
