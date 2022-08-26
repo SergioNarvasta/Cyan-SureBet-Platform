@@ -4,7 +4,7 @@ $sql = "Select * from bet";
 $data=mysqli_query($cn,$sql);
 ?>
 <head>
-	<title>Apuestas Seguras </title>
+	<title>SureBet Platform </title>
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
 </head>
 <body>
