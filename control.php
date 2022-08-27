@@ -15,10 +15,9 @@
 <div class="main-op">
     <div></div>
 </div>    
-<form class="frmRegistro"  action="p_control.php" method="post">
-        <fieldset >
-        <legend>Datos Apuesta</legend>
-        <table align="center" class="tabl">
+<form class="registro-bet"  action="p_control.php" method="post">
+       <!--  <fieldset> <legend>Datos Apuesta</legend>  </fieldset> -->
+        <table align="center" class="table">
             <tr>
                 <td>Deporte</td>
                 <td>Evento</td>   
@@ -68,9 +67,8 @@
                 <td><input type="text" name="Limite" autocomplete="on" required="true" ></td>
                 <td><input type="date" name="FechaReg"></td>
             </tr>
-        </table>
-       </fieldset>
-    <br>
+        </table>  
+        <br>
             <input class="btnregistrar" type="submit" value="Registrar">              
  
     </form>
