@@ -1,10 +1,20 @@
-
-<head>
-	<meta charset="UTF-8">
-	<title>Panel Control - Administrador</title> 
-	<link rel="stylesheet" href="css/registro.css">
+<head>	
+    <meta charset="UTF-8">
+	<title>Panel Control - SureBet Platform</title> 
+	<link href="css/control.css" rel="stylesheet" type="text/css">
 </head>  
-<body>
+<body>  
+<div id="main">
+    <div id="header">
+      <div class="boxhead">
+        <div class="logo"><a href="index.php"><img class="Logo" src="img/logo.png" width="80" height="80"></a></div>
+        <div class="title"><h1>Panel Control - Administrador</h1> <h2>¡ Slogan !</h2></div>
+      </div>
+    </div>
+  </div>
+<div class="main-op">
+    <div></div>
+</div>    
 <form class="frmRegistro"  action="p_control.php" method="post">
         <fieldset >
         <legend>Datos Apuesta</legend>
