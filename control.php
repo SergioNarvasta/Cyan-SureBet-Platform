@@ -1,7 +1,13 @@
+<?php 
+include("conexion.php") ;
+$sql = "Select * from bet";
+$data=mysqli_query($cn,$sql);
+?>
 <head>	
     <meta charset="UTF-8">
 	<title>Panel Control - SureBet Platform</title> 
 	<link href="css/control.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>  
 <body>  
 <div id="main">
@@ -11,11 +17,11 @@
         <div class="title"><h1>Panel Control - Administrador</h1> <h2>¡ Slogan !</h2></div>
       </div>
     </div>
-  </div>
-<div class="main-op">
+</div>
+  <br> 
+<div id="registro">
     <div></div>
-</div>    
-<form class="registro-bet"  action="p_control.php" method="post">
+    <form class="registro-bet"  action="p_control.php" method="post">
        <!--  <fieldset> <legend>Datos Apuesta</legend>  </fieldset> -->
         <table align="center" class="table">
             <tr>
@@ -72,6 +78,37 @@
             <input class="btnregistrar" type="submit" value="Registrar">              
  
     </form>
-</body>
+</div>
+<br><br>
+<div id="BoxList">
+   <?php   while($r = mysqli_fetch_array($data)) {   ?>   
+    <div class="BetList">
+        <div class="Cab"> 
+          <div><img src="img/soccer.png" alt="Football" height="30" width="30"> </div>    
+          <div><?php echo $r["Competicion"] ?></div>
+          <div><?php echo $r["Evento"] ?></div>
+          <div><?php echo $r["FechaEv"] ?> </div>
+        </div>
 
+        <div class="Det">           
+          <div><?php echo $r["CasaApuesta"] ?></div>
+          <div class="Res">Resultado Final <?php echo $r["Mercado"] ?></div>
+          <div><?php echo $r["Cuota"] ?> </div>
+       </div>
+       
+       <div class="Beneficio"> 
+          <p><?php echo $r["Beneficio"] ?>% GARANTIZADO BENEFICIO</p>
+          <p>Editar</p>
+          <p>Eliminar</p>
+        </div>
+    </div>
+    <?php }  ?>
+    <div class="actions">
+        
+    </div>
+</div>    
+</body>
+<?php 
+   include("footer.php");
+?>
 

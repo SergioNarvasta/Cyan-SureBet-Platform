@@ -25,6 +25,65 @@
 	margin-left: 20px;
 	color: white;
 }
-.registro-bet{
+#registro{
+    width: 30%;
+    height: 35%;
+    margin-left: 35%;
     border-color: blue solid 1px;
 }
+**********************
+#BoxList{
+    display: flex;  
+    flex-direction: column; 
+    border: 1px solid blue;
+}
+.BetList {
+    display: flex;  
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid blue;
+    border-radius: 10px 10px 10px 10px;
+    width:60%;
+    height:130px;
+    margin-top:15px;
+    margin-left:20%;
+}
+.Cab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightskyblue;
+    border-radius: 10px 10px 0px 0px;
+}
+     .Cab div {
+         color:black;
+         color:black;
+     }
+.Det {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+.Res {
+    background-color: lightgray ;
+    display:flex;
+    justify-content:flex-start;
+}
+.Beneficio {
+    background-color: lightgray;
+    height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    .Beneficio p{
+        font-size:16px;
+        color:black;
+        font:bold;
+        font-family:Arial;
+        margin-top:10px;
+     }
