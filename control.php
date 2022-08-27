@@ -1,6 +1,6 @@
 <?php 
 include("conexion.php") ;
-$sql = "Select * from bet";
+$sql = "Select * from bet order by Idbet desc ";
 $data=mysqli_query($cn,$sql);
 ?>
 <head>	
@@ -98,14 +98,12 @@ $data=mysqli_query($cn,$sql);
        
        <div class="Beneficio"> 
           <p><?php echo $r["Beneficio"] ?>% GARANTIZADO BENEFICIO</p>
+          <p>Habilitar</p>
           <p>Editar</p>
           <p>Eliminar</p>
         </div>
     </div>
     <?php }  ?>
-    <div class="actions">
-        
-    </div>
 </div>    
 </body>
 <?php 

@@ -63,7 +63,7 @@
 #Niveles .Niv-Basico{
 	width: 180px;
 	height: 60px;
-	background: linear-gradient(to top, #0000FF 0%, #00CED1 100%);
+	background: linear-gradient(to top, #13a8ff 0%, #0311d4 100%);
 	border-radius: 30px;
 	float: left;
 	justify-content: flex-start;
@@ -82,7 +82,7 @@
 #Niveles .Niv-Avanzado{
     width: 180px;
 	height: 60px;
-	background: linear-gradient(to top, #f0a720 0%, #bf12d6 100%);
+	background: linear-gradient(to top, #f0a720 0%, #c203db 100%);
 	border-radius: 30px;
 	float: left;
 	position: relative;
