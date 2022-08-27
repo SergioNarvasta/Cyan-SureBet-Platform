@@ -1,6 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Panel Control - Administrador</title> 
@@ -67,5 +65,5 @@
  
     </form>
 </body>
-</html>
+
 
