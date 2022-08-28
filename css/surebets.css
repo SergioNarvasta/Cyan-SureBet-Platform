@@ -53,10 +53,17 @@
     width: 20%;
     border: 1px solid blue;
 }  
+.container-1{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
 #BoxList{
     display: flex;  
     flex-direction: column; 
     border: 1px solid blue;
+    width:100%;
 }
 .BetList {
     display: flex;  
@@ -65,7 +72,7 @@
     border: 1px solid blue;
     border-radius: 10px 10px 10px 10px;
     width:60%;
-    height:100px;
+    height:80px;
     margin-top:15px;
     margin-left:20%;
 }

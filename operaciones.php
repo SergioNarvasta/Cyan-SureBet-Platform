@@ -17,7 +17,7 @@
 </div>
 <div class="Box-center">
     <div class="bot-img">
-        <img src="img/bot.gif" height="250" width="220" />
+        <img src="img/bot2.gif" height="320" width="300" />
     </div>
     <div id="Niveles">
        <div class="Niv-Basico"> 
