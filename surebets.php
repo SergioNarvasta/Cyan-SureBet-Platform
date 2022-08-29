@@ -8,6 +8,7 @@ $data=mysqli_query($cn,$sql);
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/surebets.js"></script>
 </head>
 <body>
@@ -59,7 +60,6 @@ $data=mysqli_query($cn,$sql);
        
        <div class="Beneficio"> 
           <p><?php echo $r["Beneficio"] ?>% GARANTIZADO BENEFICIO</p>
-          <p>Habilitar</p>
         </div>
     </div>
     <?php }  ?>

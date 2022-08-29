@@ -7,6 +7,7 @@ function getFilter() {
         'getFilter.php', // URL for the PHP file
         drawOutput,  // handle successful request
         drawError    // handle error
+        
     );
     return false;
 }  
