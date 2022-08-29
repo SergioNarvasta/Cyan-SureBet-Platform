@@ -15,27 +15,29 @@
 <div class="main-op">
     <div></div>
 </div>
+<br>
 <div class="Box-center">
     <div class="bot-img">
         <img src="img/bot2.gif" height="320" width="300" />
     </div>
     <div id="Niveles">
        <div class="Niv-Basico"> 
-        <a href="niv-basico.html"><p>Extraer</p> <p>Informacion</p>
+        <a href=""><p>Extraer</p> <p>Informacion</p>
         <img src="" ></a> 
       </div>
      <div class="Niv-Intermedio"> 
-        <a href="niv-intermedio.html"><p>Validar y</p><p>Procesar</p>
+        <a href=""><p>Validar y</p><p>Procesar</p>
         <img src="" >
         </a>
       </div>
      <div class="Niv-Avanzado"> 
-       <a href="niv-avanzado.html"> <p>Actualizar</p> <p>Informacion</p>
+       <a href=""> <p>Actualizar</p> <p>Informacion</p>
        <img src=""></a>
      </div>
      </div>
 </div>
 </body>
+<br>
 <?php 
    include("footer.php");
 ?>
