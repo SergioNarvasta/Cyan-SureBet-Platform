@@ -8,10 +8,7 @@ $data=mysqli_query($cn,$sql);
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-  <!-- CSS Bootstrap  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
-  -->
+  <script src="js/surebets.js"></script>
 </head>
 <body>
 <div id="main">
@@ -33,16 +30,18 @@ $data=mysqli_query($cn,$sql);
 <br >
 <div id="BoxList">
   <div class="Filter">
-     <div>
      <p>Filtro de Busqueda</p>
-     <div class="box">
-    <div class="container-1">
-      <span class="icon"><i class="fa fa-search"></i></span>
-      <input type="search" id="search" placeholder="Search..." />
+    <div class="box">
+      <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Search..." /><button click="">Filtrar</button> <br><br>
+        <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
+        <input width="10px" type="text"id="textInput"value="">
+      </div>
+    </div>
   </div>
 </div>
-     </div>
-  </div>
+
    <?php   while($r = mysqli_fetch_array($data)) {   ?>   
     <div class="BetList">
         <div class="Cab"> 
@@ -64,7 +63,7 @@ $data=mysqli_query($cn,$sql);
         </div>
     </div>
     <?php }  ?>
-</div>    
+</div> <br>   
 </body>
 <?php 
    include("footer.php");
