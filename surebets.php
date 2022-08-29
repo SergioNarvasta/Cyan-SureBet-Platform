@@ -34,7 +34,7 @@ $data=mysqli_query($cn,$sql);
     <div class="box">
       <div class="container-1">
         <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Search..." /><button click="">Filtrar</button> <br><br>
+        <input type="search" id="search" placeholder="Buscar..."/> <button onclick="getFilter();">Filtrar</button> <br><br>
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
         <input width="10px" type="text"id="textInput"value="">
       </div>
