@@ -62,7 +62,7 @@
 #BoxList{
     display: flex;  
     flex-direction: column; 
-    border: 1px solid red;
+    border: 1px solid rgb(0, 83, 190);
     width:100%;
 }
 .BetList {
@@ -113,3 +113,6 @@
         font-family:Arial;
         margin-top:10px;
      }
+.txtcant{
+    width: 10px;
+}

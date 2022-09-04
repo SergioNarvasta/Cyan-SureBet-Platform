@@ -18,7 +18,7 @@
 .ft-1 p{color: #869fb2; font-size: 15px; }
 .ft-1 img:hover{transform: scale(1.1); transition:300ms;}
 #footer-page .ft-2{
-	width: 20%;
+	width: 17%;
 	height: 180px;
 	margin-top: 25px;
 	display: -webkit-flex;
@@ -29,7 +29,7 @@
 .ft-2 a {color: #869fb2; font-size: 18px; text-decoration: none;}
 .ft-2 a:hover{color: white; transform: scale(1.05);}
 #footer-page .ft-3{
-	width: 20%;
+	width: 17%;
 	height: 200px;
 	margin-top: 25px;
 	display: -webkit-flex;
@@ -39,8 +39,9 @@
 }
 .ft-3 a {color: #869fb2; font-size: 18px; text-decoration: none;}
 .ft-3 a:hover{color: white; transform: scale(1.05);}
-#footer-page .ft-4{
-	width: 20%;
+
+#footer-page .ft-4 {
+	width: 17%;
 	height: 100px;
 	margin-top: 25px;
 	display: -webkit-flex;
@@ -51,6 +52,19 @@
 .ft-4 p{color: white; font-size: 14px; text-decoration: none;}
 .ft-4 a {color: #869fb2; font-size: 18px; text-decoration: none;}
 .ft-4 a:hover{color: white; transform: scale(1.05);}
+
+#footer-page .ft-5{
+	width: 17%;
+	height: 100px;
+	margin-top: 25px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+}
+.ft-5 p{color: white; font-size: 14px; text-decoration: none;}
+.ft-5 a {color: #869fb2; font-size: 18px; text-decoration: none;}
+.ft-5 a:hover{color: white; transform: scale(1.05);}
 #enlace{
 	width: 100%;
 	height:50px;

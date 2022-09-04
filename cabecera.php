@@ -1,4 +1,5 @@
 <head>
+<link rel="stylesheet" type="text/css" href="css/tuhojadeestilo.css"/> <script type="text/javascript" src="js/cssrefresh.js"></script>
     <link rel="stylesheet" href="css/messages.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">

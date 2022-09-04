@@ -1,7 +1,8 @@
 
 <head>
 	<title>SureBet Platform</title>
-	<link href="css/index.css" rel="stylesheet" type="text/css">
+  <script src="js/live.js"></script>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body> 

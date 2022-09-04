@@ -5,6 +5,7 @@ $data=mysqli_query($cn,$sql);
 ?>
 <head>
 	<title>SureBet Platform </title>
+  <link rel="stylesheet" type="text/css" href="css/tuhojadeestilo.css"/> <script type="text/javascript" src="js/cssrefresh.js"></script>
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -37,7 +38,7 @@ $data=mysqli_query($cn,$sql);
         <span class="icon"><i class="fa fa-search"></i></span>
         <input type="search" id="search" placeholder="Buscar..."/> <button onclick="getFilter();">Filtrar</button> <br><br>
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
-        <input width="10px" type="text"id="textInput"value="">
+        <input class="txtcant" type="text"id="textInput"value="">
       </div>
     </div>
   </div>
