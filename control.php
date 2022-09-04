@@ -43,7 +43,21 @@ $data=mysqli_query($cn,$sql);
                 <td>Competicion</td>
             <tr>
                 <td><input type="text" name="Mercado" autocomplete="on" required="true" ></td>
-                <td><input type="text" name="Competicion" autocomplete="on" required="true" ></td>
+                <td><select name="Competicion">
+                    <option value="UEFA Champions League">UEFA Champions League</option>
+                    <option value="UEFA Europa League">UEFA Europa League</option>
+                    <option value="Copa Libertadores">Copa Libertadores</option>
+                    <option value="Copa Sudamericana">Copa Sudamericana</option>
+                    <option value="La Liga">La Liga</option>
+                    <option value="Premier League">Premier League</option>
+                    <option value="League One">League One</option>
+                    <option value="Bundesliga">Bundesliga</option>
+                    <option value="Serie A">Serie A</option>
+                    <option value="Brasileirao Serie A">Brasileirao Serie A</option>
+                    <option value="Liga Colombia">Liga Colombia</option>
+                    <option value="Liga BetCris">Liga BetCris</option>
+                    <option value="Liga 1 Peru">Liga 1 Peru</option>
+                    </select> </td>  
                
             <tr>
                 <td>Cuota</td>
