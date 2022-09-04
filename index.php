@@ -15,11 +15,11 @@
         <div class="Inicio"><a href="control.php">Control</a></div>
         <div class="Nosotros"><a href="operaciones.php">Operaciones</a></div>
         <div class="Noticias"><a href="surebets.php">SureBets</a></div>
-        <div class="Contacto"><a href="contacto.html">Configuracion</a></div>
+        <div class="Contacto"><a href="">Configuracion</a></div>
       </div>
       <div class="login"> 
        <div class="icon"><img src="img/icon-user-header.png" width="30" height="30"></div>
-       <div class="button_login"><a href="login.html">Inicia Sesion</a></div>  
+       <div class="button_login"><a href="">Inicia Sesion</a></div>  
       </div>   
     </div>        
      <div id="welcome">
@@ -38,25 +38,25 @@
      </div>
      <div id="Niveles">
        <div class="Niv-Basico"> 
-        <a href="niv-basico.html"><p>Competiciones</p> <p>Europeas</p>
+        <a href=""><p>Competiciones</p> <p>Europeas</p>
         <img src="img/alumno1.gif" ></a> 
       </div>
      <div class="Niv-Intermedio"> 
-        <a href="niv-intermedio.html"><p>Ligas</p><p>Top</p>
+        <a href=""><p>Ligas</p><p>Top</p>
         <img src="img/alumno2.gif" >
         </a>
       </div>
      <div class="Niv-Avanzado"> 
-       <a href="niv-avanzado.html"> <p>Competiciones</p> <p>FIFA</p>
+       <a href=""> <p>Competiciones</p> <p>FIFA</p>
        <img src="img/alumno4.gif"></a>
      </div>
      </div>
     <div id="auspicio">
        <div class="centro">
-        <div class="unjfsc"><a href="http://www.unjfsc.edu.pe/" target="_blank"><img src="img/unjfsc.jpg" width="140" height="140"></a></div>
-       <div class="spinout"><a href="https://www.facebook.com/SpinOutUNJFSC/" target="_blank"><img src="img/SpinOut.jpg" width="140" height="140"></a></div>
+        <div class="unjfsc"><a href="" target="_blank"><img src="img/unjfsc.jpg" width="140" height="140"></a></div>
+       <div class="spinout"><a href="" target="_blank"><img src="img/SpinOut.jpg" width="140" height="140"></a></div>
        <div class="innova"> <a href=""><img src="img/Innova.png" width="140" height="140"></a></div>
-       <div class="SM1551"><a href="http://www.1551.pe/" target="_blank"><img src="img/1551.png"width="140" height="140"></a></div>
+       <div class="SM1551"><a href="" target="_blank"><img src="img/1551.png"width="140" height="140"></a></div>
      </div>
      <div class="def">
        <div class="df1"><p>BET 365</p></div>

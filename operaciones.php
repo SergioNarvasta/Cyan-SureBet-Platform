@@ -2,7 +2,7 @@
 	<title>Operaciones - SureBet Platform </title>
 	<link href="css/operaciones.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/tuhojadeestilo.css"/> <script type="text/javascript" src="js/cssrefresh.js"></script>
+  <script src="js/live.js"></script>
 </head>
 <body>
   <div id="main">

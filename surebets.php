@@ -5,7 +5,7 @@ $data=mysqli_query($cn,$sql);
 ?>
 <head>
 	<title>SureBet Platform </title>
-  <link rel="stylesheet" type="text/css" href="css/tuhojadeestilo.css"/> <script type="text/javascript" src="js/cssrefresh.js"></script>
+  <script src="js/live.js"></script>
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
