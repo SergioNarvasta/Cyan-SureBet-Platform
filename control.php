@@ -119,7 +119,7 @@ $data=mysqli_query($cn,$sql);
     </div>
     <?php }  ?>
 </div>    
-</body>
+</body> <br>
 <?php 
    include("footer.php");
 ?>
