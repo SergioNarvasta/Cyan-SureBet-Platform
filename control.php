@@ -106,17 +106,14 @@ $data=mysqli_query($cn,$sql);
                 <td><input type="date" name="FechaEv"></td>
             </tr>
             <tr>
-                <td>Limite</td>
-                
+                <td>Limite</td>    
             </tr>
             <tr>
-                <td><input type="text" name="Limite" autocomplete="on" required="true" ></td>
-                
+                <td><input type="text" name="Limite" autocomplete="on" required="true" ></td> 
             </tr>
         </table>  
         <br>
             <input class="btnregistrar" type="submit" value="Registrar">              
- 
     </form>
 </div>
 <br><br>
