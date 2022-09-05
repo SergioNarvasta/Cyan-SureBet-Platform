@@ -44,7 +44,7 @@ $data=mysqli_query($cn,$sql);
             <tr>
             <td><select name="Mercado">
                     <option value="Gana Local ">Gana Local </option>
-                    <option value="Empate ">Empate 90min</option>
+                    <option value="Empate ">Empate </option>
                     <option value="Gana Visita ">Gana Visita </option>
                     <option value="Doble Op. LoE">Doble Op. LoE</option>
                     <option value="Doble Op. LoV">Doble Op. LoV</option>
@@ -57,7 +57,12 @@ $data=mysqli_query($cn,$sql);
                     <option value="Goles -1.5">Goles -1.5</option>
                     <option value="Goles -2.5">Goles -2.5</option>
                     <option value="Goles -3.5">Goles -3.5</option>
-                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> </td>  
+                    <option value="Apuesta sin Empate Local">Apuesta sin Empate Local</option>
+                    <option value="Apuesta sin Empate Visita">Apuesta sin Empate Visita</option>
+                    <option value="Gana Local 1° Tiempo">Gana Local 1° Tiempo</option>
+                    <option value="Empate 1° Tiempo">Empate 1° Tiempo</option>
+                    <option value="Gana Visita 1° Tiempo">Gana Visita 1° Tiempo</option>
+                 </select> </td>  
                 <td><select name="Competicion">
                     <option value="UEFA Champions League">UEFA Champions League</option>
                     <option value="UEFA Europa League">UEFA Europa League</option>
