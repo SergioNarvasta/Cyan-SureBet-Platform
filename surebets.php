@@ -1,5 +1,6 @@
 <?php 
 include("conexion.php") ;
+
 $sql = "Select * from bet order by Idbet desc";
 $data=mysqli_query($cn,$sql);
 ?>
@@ -31,14 +32,14 @@ $data=mysqli_query($cn,$sql);
 </div>
 <br >
 <div id="BoxList">
-  <form action="" method="post">
+  <form action="p_surebets.php" method="post">
   <div class="Filter">
      <p>Filtro de Busqueda</p>
     <div class="box">
       <div class="container-1">
         <span class="icon"><i class="fa fa-search"></i></span>
         <input type="search" id="search" placeholder="Buscar..."/> 
-        <input class="btnregistrar" type="submit" value="Filtar Informacion"> <br><br>
+        <input class="btnregistrar" type="submit" value="    Filtrar   "> <br><br>
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
         <input class="txtcant" type="text"id="textInput"value="">
       </div> <br>
@@ -55,6 +56,10 @@ $data=mysqli_query($cn,$sql);
              <option value="Inka Bet">InkaBet</option>
              </select>
         </td> 
+      </tr> 
+      <tr>
+        <td>Competicion</td>
+      </tr>
         <td><select name="Competicion">
                     <option value="UEFA Champions League">UEFA Champions League</option>
                     <option value="UEFA Europa League">UEFA Europa League</option>
@@ -70,7 +75,10 @@ $data=mysqli_query($cn,$sql);
                     <option value="Brasileirao Serie A">Brasileirao Serie A</option>
                     <option value="Liga Colombia">Liga Colombia</option>
                     <option value="Liga BetCris">Liga BetCris</option>
-                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> </td>  
+                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> 
+        </td> 
+      <tr>
+
       </tr>
       </table>
     </div>
