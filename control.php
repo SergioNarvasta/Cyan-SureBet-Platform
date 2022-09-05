@@ -36,7 +36,7 @@ $data=mysqli_query($cn,$sql);
                     <option value="Baloncesto">Baloncesto</option>
                     <option value="Beisbol">Beisbol</option>
                     </select> </td>  
-                 <td><input type="text" name="Evento" required="true"></td>
+                 <td><input type="text" name="Evento" ></td>
             </tr>
             <tr>
                 <td>Mercado</td>
@@ -86,8 +86,8 @@ $data=mysqli_query($cn,$sql);
                 <td>Beneficio</td>
             </tr>
             <tr>
-                <td><input type="text" name="Cuota" autocomplete="on" required="true" ></td>
-                <td><input type="text" name="Beneficio" autocomplete="on" required="true" ></td>
+                <td><input type="text" name="Cuota" autocomplete="on" ></td>
+                <td><input type="text" name="Beneficio" autocomplete="on" ></td>
             </tr>
             <tr>
                 <td>Casa Apuesta</td>
@@ -106,14 +106,20 @@ $data=mysqli_query($cn,$sql);
                 <td><input type="date" name="FechaEv"></td>
             </tr>
             <tr>
-                <td>Limite</td>    
+                <td>Limite</td>   
+                <td>Accion : </td>  
             </tr>
             <tr>
-                <td><input type="text" name="Limite" autocomplete="on" required="true" ></td> 
+                <td><input type="text" name="Limite" autocomplete="on"></td> 
+                <td><select name="Proceso">
+                    <option value="0">Registrar</option>
+                    <option value="1">Eliminar Anteriores</option>
+                     </select>
+                </td>
             </tr>
         </table>  
         <br>
-            <input class="btnregistrar" type="submit" value="Registrar">              
+            <input class="btnregistrar" type="submit" value="Procesar">              
     </form>
 </div>
 <br><br>

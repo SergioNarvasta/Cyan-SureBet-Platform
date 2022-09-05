@@ -1,6 +1,7 @@
 <?php 
 include("conexion.php") ;
-$sql = "Select * from bet order by Idbet asc";
+
+$sql = "Select * from bet order by Idbet desc";
 $data=mysqli_query($cn,$sql);
 ?>
 <head>
@@ -31,19 +32,58 @@ $data=mysqli_query($cn,$sql);
 </div>
 <br >
 <div id="BoxList">
+  <form action="p_surebets.php" method="post">
   <div class="Filter">
      <p>Filtro de Busqueda</p>
     <div class="box">
       <div class="container-1">
         <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Buscar..."/> <button onclick="getFilter();">Filtrar</button> <br><br>
+        <input type="search" id="search" placeholder="Buscar..."/> 
+        <input class="btnregistrar" type="submit" value="    Filtrar   "> <br><br>
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
         <input class="txtcant" type="text"id="textInput"value="">
-      </div>
+      </div> <br>
+      <table>
+      <tr>
+        <td>Casa de Apuesta</td>
+      </tr>  
+      <td><select name="Casa">
+             <option value="BET365">BET365</option>
+             <option value="Pinnacle">Pinnacle</option>
+             <option value="Te Apuesto">Te Apuesto</option>
+             <option value="Betsson">Betsson</option>
+             <option value="Te Apuesto">Te Apuesto</option>
+             <option value="Inka Bet">InkaBet</option>
+             </select>
+        </td> 
+      </tr> 
+      <tr>
+        <td>Competicion</td>
+      </tr>
+      <tr>
+        <td><select name="Competicion">
+                    <option value="UEFA Champions League">UEFA Champions League</option>
+                    <option value="UEFA Europa League">UEFA Europa League</option>
+                    <option value="Copa Libertadores">Copa Libertadores</option>
+                    <option value="Copa Sudamericana">Copa Sudamericana</option>
+                    <option value="La Liga">La Liga</option>
+                    <option value="Premier League">Premier League</option>
+                    <option value="League One">League One</option>
+                    <option value="Bundesliga">Bundesliga</option>
+                    <option value="Serie A">Serie A</option>
+                    <option value="Liga Austria">Liga Austria</option>
+                    <option value="Primeira Liga">Primeira Liga</option>
+                    <option value="Brasileirao Serie A">Brasileirao Serie A</option>
+                    <option value="Liga Colombia">Liga Colombia</option>
+                    <option value="Liga BetCris">Liga BetCris</option>
+                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> 
+        </td> 
+      </tr>
+      </table>
     </div>
   </div>
+  </form>
 </div>
-
    <?php   while($r = mysqli_fetch_array($data)) {   ?>   
     <div class="BetList">
         <div class="Cab"> 
