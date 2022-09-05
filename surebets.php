@@ -43,13 +43,14 @@ $data=mysqli_query($cn,$sql);
         <input class="btnregistrar" type="submit" value="    Filtrar   "> <br><br>
         <p>Rango de Beneficio </p> 
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
-        <input class="txtcant" type="text" name="Beneficio" id="textInput"value="">
+        <input class="txtcant" type="text" name="Beneficio" id="textInput"value="  0">
       </div> <br>
       <table>
       <tr>
         <td>Casa de Apuesta</td>
       </tr>  
         <td><select name="Casa">
+            <option value="Todas">Todas</option>
             <option value="BET365">BET365</option>
             <option value="Pinnacle">Pinnacle</option>
             <option value="Te Apuesto">Te Apuesto</option>
