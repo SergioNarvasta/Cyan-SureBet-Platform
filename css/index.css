@@ -136,7 +136,7 @@
 }
 #Niveles .Niv-Basico img{
 	padding-top: 30px;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 #Niveles .Niv-Basico:hover{transform:scale(1.05); transition:500ms; }
 #Niveles .Niv-Intermedio{
@@ -180,6 +180,30 @@
 	flex-direction: column;
 	align-items: center;
 }
+***************************************************************
+.carrusel {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+  }
+  .carrusel-items {
+	display: flex;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 30px 0px;
+  }
+  .carrusel-item {
+	min-width: 300px;
+	max-width: 300px;
+	height: 200px;
+	cursor: pointer;
+  }
+  .carrusel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+**************************************************************
 .centro{
 	margin-top: 20px;
 	width: 1000px;

@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
    JavaScript Bundle with Popper  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
- 
+  <script src="js/main.js"></script>
 </head>
 <body> 
   <div id="header">
@@ -47,17 +47,20 @@
           <div class="carrusel">
             <div class="carrusel-items">
               <div class="carrusel-item">
-                <img width="400px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
+                <img width="340px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img src="gato2.jpg" alt="" />
+                <img width="340px" height="250px" src="img/UCL_Logo.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
               </div>
             </div>
           </div>
-          <script src="main.js"></script>
+          
         </div>
       <!-- 
-       UCL https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg  
+    
       -->
        <div class="Niv-Intermedio"> 
         <a href=""><p>Ligas</p><p>Top</p>
