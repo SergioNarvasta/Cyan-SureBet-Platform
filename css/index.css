@@ -191,11 +191,13 @@
 	overflow-x: hidden;
 	overflow-y: hidden;
 	padding: 30px 0px;
+	
   }
   .carrusel-item {
 	min-width: 300px;
 	max-width: 300px;
 	height: 200px;
+	margin-left: 10px;
 	cursor: pointer;
   }
   .carrusel-item img {

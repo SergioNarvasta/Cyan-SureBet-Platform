@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
    JavaScript Bundle with Popper  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  
 </head>
 <body> 
   <div id="header">
@@ -46,27 +46,43 @@
           <a href=""><p>Competiciones</p> <p>Europeas</p>
           <div class="carrusel">
             <div class="carrusel-items">
-              <div class="carrusel-item">
-                <img width="340px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
-              </div>
-              <div class="carrusel-item">
+            <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/UCL_Logo.jpg" />
               </div>
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
               </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/UEL.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/UELFG.jpg" />
+              </div>
             </div>
           </div>
-          
         </div>
-      <!-- 
-    
-      -->
-       <div class="Niv-Intermedio"> 
-        <a href=""><p>Ligas</p><p>Top</p>
-        <img src="img/alumno2.gif" >
-        </a>
-       </div>
+        
+        <div class="Niv-Intermedio"> 
+          <p>Ligas</p><p>Top</p>
+          <div class="carrusel">
+            <div class="carrusel-items">
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/Premier.png" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/UEL.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/UELFG.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/carrousel.js"></script>
+
       <div class="Niv-Avanzado"> 
        <a href=""> <p>Competiciones</p> <p>FIFA</p>
        <img src="img/alumno4.gif"></a>
