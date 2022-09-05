@@ -52,11 +52,13 @@ $data=mysqli_query($cn,$sql);
                     <option value="Goles +0.5">Goles +0.5</option>
                     <option value="Goles +1.5">Goles +1.5</option>
                     <option value="Goles +2.5">Goles +2.5</option>
-                    <option value="Goles +3.5">Goles +3.5</option>
+                    <option value="Goles +3.5">Goles +3.5</option>}
+                    <option value="Goles +4.5">Goles +4.5</option>
                     <option value="Goles -0.5">Goles -0.5</option>
                     <option value="Goles -1.5">Goles -1.5</option>
                     <option value="Goles -2.5">Goles -2.5</option>
                     <option value="Goles -3.5">Goles -3.5</option>
+                    <option value="Goles -4.5">Goles -4.5</option>
                     <option value="Apuesta sin Empate Local">Apuesta sin Empate Local</option>
                     <option value="Apuesta sin Empate Visita">Apuesta sin Empate Visita</option>
                     <option value="Gana Local 1° Tiempo">Gana Local 1° Tiempo</option>
@@ -97,13 +99,15 @@ $data=mysqli_query($cn,$sql);
                     <option value="Pinnacle">Pinnacle</option>
                     <option value="Te Apuesto">Te Apuesto</option>
                     <option value="Inka Bet">InkaBet</option>
+                    <option value="Te Apuesto">Te Apuesto</option>
+                    <option value="Inka Bet">InkaBet</option>
                      </select>
                 </td>
                 <td><input type="date" name="FechaEv"></td>
             </tr>
             <tr>
                 <td>Limite</td>
-                <td>Fecha de Registro</td>
+                <td>Fecha de Registro: Hoy</td>
             </tr>
             <tr>
                 <td><input type="text" name="Limite" autocomplete="on" required="true" ></td>
