@@ -34,14 +34,16 @@ $data=mysqli_query($cn,$sql);
 <div id="BoxList">
   <form action="p_surebets.php" method="post">
   <div class="Filter">
-     <p>Filtro de Busqueda</p>
+     <p> <strong>Filtro de Busqueda</strong></p><br>
+     <p>Evento </p> 
     <div class="box">
       <div class="container-1">
         <span class="icon"><i class="fa fa-search"></i></span>
-        <input type="search" id="search" placeholder="Buscar..."/> 
+        <input type="text" name="Evento" id="search" placeholder="Filtrar Evento..."/> 
         <input class="btnregistrar" type="submit" value="    Filtrar   "> <br><br>
+        <p>Rango de Beneficio </p> 
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
-        <input class="txtcant" type="text"id="textInput"value="">
+        <input class="txtcant" type="text" name="Beneficio" id="textInput"value="">
       </div> <br>
       <table>
       <tr>

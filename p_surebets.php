@@ -1,6 +1,8 @@
 <?php 
 include("conexion.php") ;
 
+$eve=$_POST["Evento"];
+$cuota=$_POST["Beneficio"];
 $casa=$_POST["Casa"];
 $comp=$_POST["Competicion"];
 
