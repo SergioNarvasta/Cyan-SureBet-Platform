@@ -1,6 +1,6 @@
 <?php 
 include("conexion.php") ;
-$sql = "Select * from bet order by Idbet asc";
+$sql = "Select * from bet order by Idbet desc";
 $data=mysqli_query($cn,$sql);
 ?>
 <head>
@@ -43,7 +43,7 @@ $data=mysqli_query($cn,$sql);
     </div>
   </div>
 </div>
-
+<form action=""></form>
    <?php   while($r = mysqli_fetch_array($data)) {   ?>   
     <div class="BetList">
         <div class="Cab"> 
