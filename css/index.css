@@ -165,19 +165,8 @@
 }
 #Niveles .Niv-Avanzado:hover{ transform:scale(1.05); transition: 500ms; }
 #Niveles a{ color: white; text-decoration: none; position: relative; font-size: 20px;}
-#auspicio{
-    width: 100%;
-	height: 280px;
-	background: #0065b3;
-	font-family: 'segoe UI';
-	color: white;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;   
-	flex-direction: column;
-	align-items: center;
-}
-***************************************************************
+
+
 /*.carrusel {
 	height: 100vh;
 	display: flex;
@@ -201,29 +190,3 @@
 	height: 100%;
 	object-fit: cover;
   } */
-**************************************************************
-.centro{
-	margin-top: 20px;
-	width: 1000px;
-	height: 150px;
-	display: -webkit-flex;
-    display: -ms-flexbox;
-	display: flex;
-	justify-content: space-around;
-}
-#auspicio .unjfsc .spinout .innova .SM1551{
-	width: 160px;
-	height:160px;
-}
-#auspicio .def{
-	width: 1000px;
-	height: 50px;
-	display: -webkit-flex;
-    display: -ms-flexbox;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	font-family: 'segoe UI';
-
-}
-.def p{ text-align: center; }
