@@ -53,6 +53,8 @@ $data=mysqli_query($cn,$sql);
                     <option value="League One">League One</option>
                     <option value="Bundesliga">Bundesliga</option>
                     <option value="Serie A">Serie A</option>
+                    <option value="Liga Austria">Liga Austria</option>
+                    <option value="Primeira Liga">Primeira Liga</option>
                     <option value="Brasileirao Serie A">Brasileirao Serie A</option>
                     <option value="Liga Colombia">Liga Colombia</option>
                     <option value="Liga BetCris">Liga BetCris</option>
@@ -75,6 +77,8 @@ $data=mysqli_query($cn,$sql);
                 <td><select name="Casa">
                     <option value="BET365">BET365</option>
                     <option value="Pinnacle">Pinnacle</option>
+                    <option value="Te Apuesto">Te Apuesto</option>
+                    <option value="Inka Bet">InkaBet</option>
                      </select>
                 </td>
                 <td><input type="date" name="FechaEv"></td>
