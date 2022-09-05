@@ -98,7 +98,7 @@ $data=mysqli_query($cn,$sql);
                     <option value="BET365">BET365</option>
                     <option value="Pinnacle">Pinnacle</option>
                     <option value="Te Apuesto">Te Apuesto</option>
-                    <option value="Inka Bet">InkaBet</option>
+                    <option value="Betsson">Betsson</option>
                     <option value="Te Apuesto">Te Apuesto</option>
                     <option value="Inka Bet">InkaBet</option>
                      </select>
