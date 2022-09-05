@@ -19,7 +19,7 @@ const stop = () => {
 };
 
 carrusel.addEventListener("mouseover", () => {
-  stop();
+  start();
 });
 
 carrusel.addEventListener("mouseout", () => {

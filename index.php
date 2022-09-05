@@ -67,7 +67,7 @@
           <div class="carrusel">
             <div class="carrusel-items">
             <div class="carrusel-item">
-                <img width="380px" height="250px" src="img/Ligue1.png" />
+                <img width="380px" height="250px" src="img/ligue1logo.jpg" />
               </div>
               <div class="carrusel-item">
                 <img width="380px" height="250px" src="img/Premier.png" />
@@ -95,7 +95,16 @@
                 <img width="340px" height="250px" src="img/copa-america.jpg" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/UELFG.jpg" />
+                <img width="340px" height="250px" src="img/elimsud.png" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/elimeurop.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/elimafrc.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/nations.jpg" />
               </div>
             </div>
           </div>
