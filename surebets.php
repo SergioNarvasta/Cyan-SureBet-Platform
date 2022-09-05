@@ -60,6 +60,7 @@ $data=mysqli_query($cn,$sql);
       <tr>
         <td>Competicion</td>
       </tr>
+      <tr>
         <td><select name="Competicion">
                     <option value="UEFA Champions League">UEFA Champions League</option>
                     <option value="UEFA Europa League">UEFA Europa League</option>
@@ -77,8 +78,6 @@ $data=mysqli_query($cn,$sql);
                     <option value="Liga BetCris">Liga BetCris</option>
                     <option value="Liga 1 Peru">Liga 1 Peru</option> </select> 
         </td> 
-      <tr>
-
       </tr>
       </table>
     </div>

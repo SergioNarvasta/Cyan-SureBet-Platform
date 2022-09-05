@@ -12,7 +12,6 @@ $fev=$_POST["FechaEv"];
 $lim=$_POST["Limite"];
 //$proc=$_POST["Proceso"];
 
-
   //Fecha de Registo Actual en Zona horaria 'America/Lima'
   $Object = new DateTime();
   $Object -> setTimeZone(new DateTimeZone('America/Lima'));
