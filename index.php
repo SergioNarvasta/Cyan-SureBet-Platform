@@ -4,6 +4,7 @@
   <script src="js/live.js"></script>
   <link href="css/index.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- CSS only
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
    JavaScript Bundle with Popper  -->
@@ -43,37 +44,56 @@
      </div>
      <div id="Niveles">
         <div class="Niv-Basico"> 
-          <a href=""><p>Competiciones</p> <p>Europeas</p>
+          <a href=""><p>Competiciones</p> <p>Europeas</p></a>
           <div class="carrusel">
             <div class="carrusel-items">
             <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/UCL_Logo.jpg" />
+                <img width="400px" height="250px" src="img/UCL_Logo.jpg" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
+                <img width="400px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/UEL.jpg" />
+                <img width="400px" height="250px" src="img/UEL.jpg" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/UELFG.jpg" />
+                <img width="400px" height="250px" src="img/UELFG.jpg" />
               </div>
             </div>
           </div>
         </div>
-        
+        <script src="js/carrousel.js"></script>
         <div class="Niv-Intermedio"> 
-          <p>Ligas</p><p>Top</p>
+          <a href=""><p>Ligas</p><p>Top</p> </a>
           <div class="carrusel">
             <div class="carrusel-items">
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/Premier.png" />
+                <img width="380px" height="250px" src="img/Premier.png" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="" />
+                <img width="380px" height="250px" src="img/Seriea.jpg" />
               </div>
               <div class="carrusel-item">
-                <img width="340px" height="250px" src="img/UEL.jpg" />
+                <img width="380px" height="250px" src="img/Ligue1.png" />
+              </div>
+              <div class="carrusel-item">
+                <img width="380px" height="250px" src="img/laliga.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Niv-Avanzado"> 
+          <a href=""><p>Competiciones</p> <p>FIFA</p></a>
+          <div class="carrusel">
+            <div class="carrusel-items">
+            <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/WC.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/wcf.jpg" />
+              </div>
+              <div class="carrusel-item">
+                <img width="340px" height="250px" src="img/copa-america.jpg" />
               </div>
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/UELFG.jpg" />
@@ -82,11 +102,6 @@
           </div>
         </div>
         <script src="js/carrousel.js"></script>
-
-      <div class="Niv-Avanzado"> 
-       <a href=""> <p>Competiciones</p> <p>FIFA</p>
-       <img src="img/alumno4.gif"></a>
-      </div>
      </div>
     <div id="auspicio">
        <div class="centro">

@@ -47,14 +47,14 @@ $data=mysqli_query($cn,$sql);
       <tr>
         <td>Casa de Apuesta</td>
       </tr>  
-      <td><select name="Casa">
-             <option value="BET365">BET365</option>
-             <option value="Pinnacle">Pinnacle</option>
-             <option value="Te Apuesto">Te Apuesto</option>
-             <option value="Betsson">Betsson</option>
-             <option value="Te Apuesto">Te Apuesto</option>
-             <option value="Inka Bet">InkaBet</option>
-             </select>
+        <td><select name="Casa">
+            <option value="BET365">BET365</option>
+            <option value="Pinnacle">Pinnacle</option>
+            <option value="Te Apuesto">Te Apuesto</option>
+            <option value="Betsson">Betsson</option>
+            <option value="Te Apuesto">Te Apuesto</option>
+            <option value="Inka Bet">InkaBet</option>
+            </select>
         </td> 
       </tr> 
       <tr>
@@ -62,21 +62,21 @@ $data=mysqli_query($cn,$sql);
       </tr>
       <tr>
         <td><select name="Competicion">
-                    <option value="UEFA Champions League">UEFA Champions League</option>
-                    <option value="UEFA Europa League">UEFA Europa League</option>
-                    <option value="Copa Libertadores">Copa Libertadores</option>
-                    <option value="Copa Sudamericana">Copa Sudamericana</option>
-                    <option value="La Liga">La Liga</option>
-                    <option value="Premier League">Premier League</option>
-                    <option value="League One">League One</option>
-                    <option value="Bundesliga">Bundesliga</option>
-                    <option value="Serie A">Serie A</option>
-                    <option value="Liga Austria">Liga Austria</option>
-                    <option value="Primeira Liga">Primeira Liga</option>
-                    <option value="Brasileirao Serie A">Brasileirao Serie A</option>
-                    <option value="Liga Colombia">Liga Colombia</option>
-                    <option value="Liga BetCris">Liga BetCris</option>
-                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> 
+            <option value="UEFA Champions League">UEFA Champions League</option>
+            <option value="UEFA Europa League">UEFA Europa League</option>
+            <option value="Copa Libertadores">Copa Libertadores</option>
+            <option value="Copa Sudamericana">Copa Sudamericana</option>
+            <option value="La Liga">La Liga</option>
+            <option value="Premier League">Premier League</option>
+            <option value="League One">League One</option>
+            <option value="Bundesliga">Bundesliga</option>
+            <option value="Serie A">Serie A</option>
+            <option value="Liga Austria">Liga Austria</option>
+            <option value="Primeira Liga">Primeira Liga</option>
+            <option value="Brasileirao Serie A">Brasileirao Serie A</option>
+            <option value="Liga Colombia">Liga Colombia</option>
+            <option value="Liga BetCris">Liga BetCris</option>
+            <option value="Liga 1 Peru">Liga 1 Peru</option> </select> 
         </td> 
       </tr>
       </table>
@@ -95,7 +95,7 @@ $data=mysqli_query($cn,$sql);
 
         <div class="Det">           
           <div><?php echo $r["CasaApuesta"] ?></div>
-          <div class="Res">Resultado Final <?php echo $r["Mercado"] ?></div>
+          <div class="Res"> <?php echo $r["Mercado"] ?></div>
           <div><?php echo $r["Cuota"] ?> </div>
        </div>
        
