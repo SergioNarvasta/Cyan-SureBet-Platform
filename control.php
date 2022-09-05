@@ -42,7 +42,22 @@ $data=mysqli_query($cn,$sql);
                 <td>Mercado</td>
                 <td>Competicion</td>
             <tr>
-                <td><input type="text" name="Mercado" autocomplete="on" required="true" ></td>
+            <td><select name="Mercado">
+                    <option value="Gana Local 90min">Gana Local 90min</option>
+                    <option value="Empate 90min">Empate 90min</option>
+                    <option value="Copa Libertadores">Copa Libertadores</option>
+                    <option value="Copa Sudamericana">Copa Sudamericana</option>
+                    <option value="La Liga">La Liga</option>
+                    <option value="Premier League">Premier League</option>
+                    <option value="League One">League One</option>
+                    <option value="Bundesliga">Bundesliga</option>
+                    <option value="Serie A">Serie A</option>
+                    <option value="Liga Austria">Liga Austria</option>
+                    <option value="Primeira Liga">Primeira Liga</option>
+                    <option value="Brasileirao Serie A">Brasileirao Serie A</option>
+                    <option value="Liga Colombia">Liga Colombia</option>
+                    <option value="Liga BetCris">Liga BetCris</option>
+                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> </td>  
                 <td><select name="Competicion">
                     <option value="UEFA Champions League">UEFA Champions League</option>
                     <option value="UEFA Europa League">UEFA Europa League</option>
@@ -58,9 +73,7 @@ $data=mysqli_query($cn,$sql);
                     <option value="Brasileirao Serie A">Brasileirao Serie A</option>
                     <option value="Liga Colombia">Liga Colombia</option>
                     <option value="Liga BetCris">Liga BetCris</option>
-                    <option value="Liga 1 Peru">Liga 1 Peru</option>
-                    </select> </td>  
-               
+                    <option value="Liga 1 Peru">Liga 1 Peru</option> </select> </td>  
             <tr>
                 <td>Cuota</td>
                 <td>Beneficio</td>
