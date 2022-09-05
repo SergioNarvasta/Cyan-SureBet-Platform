@@ -126,7 +126,7 @@
    width: 100%;
 }
 #Niveles .Niv-Basico{
-	width: 270px;
+	width: 400px;
 	height: 400px;
 	background: linear-gradient(to top, #0000FF 0%, #00CED1 100%);
 	border-radius: 30px;
@@ -140,7 +140,7 @@
 }
 #Niveles .Niv-Basico:hover{transform:scale(1.05); transition:500ms; }
 #Niveles .Niv-Intermedio{
-	width: 260px;
+	width: 400px;
 	height: 400px;
 	background: linear-gradient(to top,	#FFFF00 0%,	#00FF00 100%);
 	border-radius: 30px;
@@ -154,7 +154,7 @@
 }
 #Niveles .Niv-Intermedio:hover{ transform:scale(1.05); transition: 500ms; }
 #Niveles .Niv-Avanzado{
-	width: 270px;
+	width: 400px;
 	height: 400px;
 	background: linear-gradient(to top, #f0a720 0%, #dd6cec 100%);
 	border-radius: 30px;
