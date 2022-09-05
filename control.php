@@ -107,11 +107,11 @@ $data=mysqli_query($cn,$sql);
             </tr>
             <tr>
                 <td>Limite</td>
-                <td>Fecha de Registro: Hoy</td>
+                
             </tr>
             <tr>
                 <td><input type="text" name="Limite" autocomplete="on" required="true" ></td>
-                <td><input type="date" name="FechaReg"></td>
+                
             </tr>
         </table>  
         <br>
