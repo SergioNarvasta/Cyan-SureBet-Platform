@@ -24,17 +24,6 @@ function regresarControl($message) {
     header("location: control.php?error=true&m=$message");
 }
 ?>
-
-<p>Se Registro con exito - <?php echo $n ?></p>
-<p>Deporte <?php echo $dep ?></p>
-<p>Evento <?php echo $ev ?></p>
-<p>Mercado <?php echo $comp ?></p>
-<p>Cuota <?php echo $cuo ?></p>
-<p>Beneficio <?php echo $ben ?></p>
-<p>Casa <?php echo $casa ?></p>
-<p>FechaEv <?php echo $fev ?></p>
-<p>Limite <?php echo $lim ?></p>
-<p>FechaReg <?php echo $frg ?></p>
 <?php 
   if($n>1){
     regresarControl('Error en registro, verificar!');
