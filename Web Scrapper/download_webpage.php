@@ -10,10 +10,13 @@ $ch=curl_init();
  
 // Se establece la URL y algunas opciones
 curl_setopt($ch, CURLOPT_URL, "http://www.lawebdelprogramador.com");
+
 //determina si descargamos las cabeceras del servidor [0-No mostramos|1-mostramos]
 curl_setopt($ch, CURLOPT_HEADER, 0);
-//determina si mostramos el resultado en el nevagador [0-mostramos|1-NO mostramos]
+
+//determina si mostramos el resultado en el navegador [0-mostramos|1-NO mostramos]
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
 //determina donde guardar el fichero
 curl_setopt($ch, CURLOPT_FILE, $fp);
  
