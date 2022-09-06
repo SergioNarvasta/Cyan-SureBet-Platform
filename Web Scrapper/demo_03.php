@@ -19,7 +19,6 @@
     }
     
     /* execute a query:
-       
        This query searches in all tags for the id == header and returns
        the tag
     */
