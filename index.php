@@ -117,10 +117,10 @@
      </div>
     <div id="auspicio">
        <div class="centro">
-        <div class="unjfsc"><a href="" target="_blank"><img src="img/unjfsc.jpg" width="140" height="140"></a></div>
-       <div class="spinout"><a href="" target="_blank"><img src="img/SpinOut.jpg" width="140" height="140"></a></div>
-       <div class="innova"> <a href=""><img src="img/Innova.png" width="140" height="140"></a></div>
-       <div class="SM1551"><a href="" target="_blank"><img src="img/1551.png"width="140" height="140"></a></div>
+        <div class="unjfsc"><a href="" target="_blank"><img src="" width="140" height="140"></a></div>
+       <div class="spinout"><a href="" target="_blank"><img src="" width="140" height="140"></a></div>
+       <div class="innova"> <a href=""><img src="" width="140" height="140"></a></div>
+       <div class="SM1551"><a href="" target="_blank"><img src=""width="140" height="140"></a></div>
      </div>
      <div class="def">
        <div class="df1"><p>BET 365</p></div>
