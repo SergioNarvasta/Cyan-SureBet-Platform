@@ -30,7 +30,7 @@
 	cursor: pointer;
 }
 .logo:hover{
-	transform: scale(1.2);
+	transform: scale(1.15);
 }
 #menu{
 	padding: 10px;

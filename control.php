@@ -13,7 +13,7 @@ $data=mysqli_query($cn,$sql);
 <div id="main">
     <div id="header">
       <div class="boxhead">
-        <div class="logo"><a href="index.php"><img class="Logo" src="img/logo.png" width="80" height="80"></a></div>
+        <div class="logo"><a href="index.php"><img class="Logo" src="img/logo.jpg" width="80" height="80"></a></div>
         <div class="title"><h1>Panel Control - Administrador</h1> <h2>¡ Slogan !</h2></div>
       </div>
     </div>
