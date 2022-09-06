@@ -1,4 +1,5 @@
 <?php
+
 echo "Codigo de php que descarga la pagina inicial de lawebdelprogramador.com y la
 guarda en un archivo.";
  
@@ -28,4 +29,5 @@ curl_close($ch);
  
 //se cierra el manejador de ficheros
 fclose($fp);
+
 ?>
