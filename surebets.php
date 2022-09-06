@@ -5,7 +5,6 @@ $status= $_GET["status"];
 
 if($status = true){
   $sql = $sql;
-
 }
 $data=mysqli_query($cn,$sql);
 

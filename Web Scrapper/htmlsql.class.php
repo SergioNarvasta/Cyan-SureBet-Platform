@@ -388,7 +388,6 @@ class htmlsql {
         }
     }
     
-    
     /*
     ** query
     **
@@ -505,7 +504,6 @@ class htmlsql {
     
         $this->results = $new_array;
     }
-    
     
     /*
     ** fetch_array

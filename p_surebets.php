@@ -22,6 +22,7 @@ if(!Empty($comp)and ($comp != "Todas")){
     $sqlcomp=" AND Competicion = '$comp' ";
     $sql =$sql.$sqlcomp;
 }
+
 //$data=mysqli_query($cn,$sql);
 
 //if (!Empty($data)){
