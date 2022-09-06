@@ -19,7 +19,7 @@
       <div id="menu">
         <div class="Inicio"><a href="control.php">Control</a></div>
         <div class="Nosotros"><a href="operaciones.php">Operaciones</a></div>
-        <div class="Noticias"><a href="surebets.php">SureBets</a></div>
+        <div class="Noticias"><a href="p_redirect.php">SureBets</a></div>
         <div class="Contacto"><a href="">Configuracion</a></div>
       </div>
       <div class="login"> 
@@ -47,8 +47,9 @@
           <div class="carrusel">
             <div class="carrusel-items">
             <div class="carrusel-item">
-                <img width="400px" height="250px" src="img/UCL_Logo.jpg" />
-              </div>
+                <img width="250px" height="200px" src="img/UCL_Logo.jpg" />
+            </div>
+              <!--
               <div class="carrusel-item">
                 <img width="400px" height="250px" src="https://phantom-marca.unidadeditorial.es/28e54d413b956822fb6e1fbe0c4546d6/resize/660/f/webp/assets/multimedia/imagenes/2022/08/25/16614474894529.jpg" alt="" />
               </div>
@@ -57,9 +58,11 @@
               </div>
               <div class="carrusel-item">
                 <img width="400px" height="250px" src="img/UELFG.jpg" />
-              </div>
-            </div>
+              </div> -->
+
+            </div>  
           </div>
+          
         </div>
 
         <div class="Niv-Intermedio"> 
@@ -68,8 +71,9 @@
             <div class="carrusel-items">
             <div class="carrusel-item">
                 <img width="380px" height="250px" src="img/ligue1logo.jpg" />
-              </div>
-              <div class="carrusel-item">
+            </div>
+              <!--
+               <div class="carrusel-item">
                 <img width="380px" height="250px" src="img/Premier.png" />
               </div>
               <div class="carrusel-item">
@@ -77,7 +81,8 @@
               </div>
               <div class="carrusel-item">
                 <img width="380px" height="250px" src="img/laliga.png" />
-              </div>
+              </div> -->
+
             </div>
           </div>
         </div>
@@ -85,9 +90,10 @@
           <a href=""><p>Competiciones</p> <p>FIFA</p></a>
           <div class="carrusel">
             <div class="carrusel-items">
-            <div class="carrusel-item">
+              <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/WC.jpg" />
               </div>
+               <!--
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/wcf.jpg" />
               </div>
@@ -105,7 +111,8 @@
               </div>
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/nations.jpg" />
-              </div>
+              </div> 
+                -->
             </div>
           </div>
         </div>

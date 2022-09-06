@@ -10,7 +10,7 @@ if(!Empty($eve)){
     $sqlev = " AND Evento LIKE '%$eve%' " ;
     $sql   = $sql.$sqlev;
 }
-if(!Empty($benf)){
+if(!Empty($benf) and ($benf>=1)){
    $sqlbenf = " AND Beneficio < $benf ";
    $sql     = $sql.$sqlbenf;
 }
@@ -18,16 +18,13 @@ if(!Empty($casa) and ($casa != "Todas")){
     $sqlcasa = " AND CasaApuesta = '$casa' ";
     $sql     = $sql.$sqlcasa;
 }
-if(!Empty($comp)){
+if(!Empty($comp)and ($comp != "Todas")){
     $sqlcomp=" AND Competicion = '$comp' ";
     $sql =$sql.$sqlcomp;
 }
-$data=mysqli_query($cn,$sql);
+//$data=mysqli_query($cn,$sql);
 
-if ($data > 1){
-    header("Location: ../form_validation.php?$_Proceso=$_Proceso");
-}
+//if (!Empty($data)){
+    header("Location: surebets.php?status=true&sql=$sql");
+//}
 ?>
-
-<br><br><br>
-<p> <?php echo $sql?></p>

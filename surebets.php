@@ -1,8 +1,14 @@
 <?php 
 include("conexion.php") ;
+$sql = $_GET["sql"];
+$status= $_GET["status"];
 
-$sql = "Select * from bet order by Idbet desc";
+//if($status = true){
+  //$sql = $sql.$sqladd;
+
+//}
 $data=mysqli_query($cn,$sql);
+
 ?>
 <head>
 	<title>SureBet Platform </title>
@@ -11,14 +17,13 @@ $data=mysqli_query($cn,$sql);
   <link href="css/footer.css" rel="stylesheet" type="text/css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="js/surebets.js"></script>
 </head>
 <body>
 <div id="main">
   <div id="header">
       <div class="boxhead">
         <div class="logo"><a href="index.php"><img class="Logo" src="img/logo.png" width="80" height="80"></a></div>
-        <div class="title"><h1>Lista de Apuestas Seguras</h1> <h2>¡ Slogan !</h2></div>
+        <div class="title"><h1>Lista de Apuestas Seguras</h1> <h2>¡ --- !</h2></div>
       </div>
   </div>
   <div class="sports">
@@ -43,7 +48,7 @@ $data=mysqli_query($cn,$sql);
         <input class="btnregistrar" type="submit" value="    Filtrar   "> <br><br>
         <p>Rango de Beneficio </p> 
         <input type="range"name="rangeInput"min="1"max="20"onchange="updateTextInput(this.value);">
-        <input class="txtcant" type="text" name="Beneficio" id="textInput"value="  0">
+        <input class="txtcant" type="text" name="Beneficio" id="textInput"value="  0">%
       </div> <br>
       <table>
       <tr>
@@ -65,6 +70,7 @@ $data=mysqli_query($cn,$sql);
       </tr>
       <tr>
         <td><select name="Competicion">
+            <option value="Todas">Todas</option>
             <option value="UEFA Champions League">UEFA Champions League</option>
             <option value="UEFA Europa League">UEFA Europa League</option>
             <option value="Copa Libertadores">Copa Libertadores</option>

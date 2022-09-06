@@ -135,7 +135,7 @@ $data=mysqli_query($cn,$sql);
 
         <div class="Det">           
           <div><?php echo $r["CasaApuesta"] ?></div>
-          <div class="Res">Resultado Final <?php echo $r["Mercado"] ?></div>
+          <div class="Res"> <?php echo $r["Mercado"] ?></div>
           <div><?php echo $r["Cuota"] ?> </div>
        </div>
        
