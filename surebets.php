@@ -89,9 +89,11 @@ $data=mysqli_query($cn,$sql);
       </tr>
       </table>
     </div>
+    
   </div>
   </form>
 </div>
+<div>
    <?php   while($r = mysqli_fetch_array($data)) {   ?>   
     <div class="BetList">
         <div class="Cab"> 

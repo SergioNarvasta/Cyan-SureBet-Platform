@@ -3,7 +3,7 @@
 echo "Codigo de php que descarga la pagina inicial de lawebdelprogramador.com y la
 guarda en un archivo.";
 $URL = "https://www.pinnacle.com/es";
-$nomarc = "infofut_pinnacle";
+$nomarc = "../Downloads_Files/infofut_pinnacle.html";
 //abrimos un fichero donde guardar la descarga de la web
 $fp=fopen($nomarc, "w");
  
@@ -30,5 +30,7 @@ curl_close($actcurl);
  
 //se cierra el manejador de ficheros
 fclose($fp);
+$message="Exito";
+header("Location: ../operaciones.php?status=false&m=$message");
 
 ?>
