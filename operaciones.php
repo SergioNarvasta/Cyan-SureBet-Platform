@@ -27,7 +27,7 @@
         <img src="" ></a> 
       </div>
      <div class="Niv-Intermedio"> 
-        <a href=""><p>Validar y</p><p>Procesar</p>
+        <a href="/Web_Scrapper/download_webpage.php"><p>Validar y</p><p>Procesar</p>
         <img src="" >
         </a>
       </div>
