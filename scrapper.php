@@ -22,8 +22,8 @@ if(isset($_GET['btn'])):
         $String = str_replace(array("|","|","[","^","´","`","¨","~","]","'","#","{","}",".",""),"",$String);
         return $String;
     }
-    $url 	=	$_GET['url'];
-	$html 	= 	file_get_contents_curl($url);                    
+    $url 	=	$_GET['url']; 
+	$html 	= 	file_get_contents_curl($url);         
     $doc 	= 	new DOMDocument();
     @$doc->loadHTML($html);
     $nodes 	= 	$doc->getElementsByTagName('title');
