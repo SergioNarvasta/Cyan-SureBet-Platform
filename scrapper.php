@@ -83,26 +83,26 @@
     echo $ce3 ;echo "<br>";
     echo $cv3;echo "<br>";
     echo $i;echo "<br>";
- // $sql_cab = mysqli_query($cn,$selcab);
+
+    //echo "<br>";echo "<br>";echo "<br>";
+    //    foreach($myhtml->find("span") as $content){
+    //    echo $content->innertext;
+    //    echo "<br>";"<br>";   }
+  // $sql_cab = mysqli_query($cn,$selcab);
   //while($r = mysqli_fetch_array($sql_cab)){
   ?>
 </div></center>
- <div class="BetList">
-        <div class="Cab">  
-          <div>Id Cab - <?php   //echo $r["idcab"] ?></div>
-          <div>Deporte - <?php  //echo $r["deporte"] ?></div>
-          <div>L - <?php        //echo $r["local"] ?> </div>        
-          <div>V - <?php        //echo $r["visita"] ?></div>
-          <div>Fecha Ev - <?php //echo $r["feceve"] ?></div>
-          <div>Fecha Reg -<?php //echo $r["fecreg"] ?> </div>
-       </div>
-    </div>
-
     <?php //}  
-        echo "<br>";echo "<br>";echo "<br>";
-        foreach($myhtml->find("span") as $content){
-        echo $content->innertext;
-        echo "<br>";"<br>";
+        $file2 ="Downloads_Files/Chaskibet.html";
+        $filereducido2 = file_get_contents($file2,FALSE,NULL,1145000,350800);
+        $myhtml2 = file_get_html($file2);
+        //$content2 = $myhtml2->find("div") ;  $i = 27;
+        $deporte_ch = "Futbol";
+        //*******************  Datos de 1 **********************************
+        foreach($myhtml2->find("span") as $content2){
+                echo $content2->innertext;
+                echo "<br>";"<br>";   
         }
+        echo $filereducido2;
     ?>
 </body>
