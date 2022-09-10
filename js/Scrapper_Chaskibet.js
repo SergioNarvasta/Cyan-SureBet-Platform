@@ -1,6 +1,4 @@
 
-
-
 //Install purpeteer with -> npm i puppeteer
 //style_row__3q4g_ style_row__3hCMX
 var puppeteer = require('puppeteer'),

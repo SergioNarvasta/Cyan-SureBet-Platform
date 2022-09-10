@@ -1,8 +1,4 @@
 
-//Install purpeteer with -> npm i puppeteer
-// Run node Scrapper_Pinnacle.js
-
-//style_row__3q4g_ style_row__3hCMX
 var puppeteer = require('puppeteer'),
     fs = require('fs'),
     HomeBet = 'https://www.pinnacle.com/es/soccer/matchups/highlights';
@@ -18,7 +14,7 @@ puppeteer.launch()
                         return page.content();
                     }).then(function (contents) {
 
-                        return fs.writeFile('../Downloads_Files/Pinnacle.html', contents, function (err, results) {
+                        return fs.writeFile('../Downloads_Files/Pinnacle2.html', contents, function (err, results) {
                             if (err) {
                                 console.error(err);
                             }
