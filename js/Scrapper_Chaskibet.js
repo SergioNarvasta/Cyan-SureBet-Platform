@@ -1,7 +1,7 @@
 
-//Install purpeteer with -> npm i puppeteer
-// Run node Scrapper_Pinnacle.js
 
+
+//Install purpeteer with -> npm i puppeteer
 //style_row__3q4g_ style_row__3hCMX
 var puppeteer = require('puppeteer'),
     fs = require('fs'),
@@ -13,7 +13,7 @@ puppeteer.launch()
             .then(function (page) {
                 return page.goto(HomeBet)
                     .then(function () {
-                        return page.waitForSelector('.style_row__3hCMX');
+                        return page.waitFor('.style_row__3hCMX');
                     }).then(function () {
                         return page.content();
                     }).then(function (contents) {
