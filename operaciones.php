@@ -17,7 +17,6 @@
     <div></div>
 </div>
 <br>
-<form action="Web_Scrapper/download_webpage.php" method="post">
 <div class="Box-center">
     <div class="bot-img">
         <img src="img/bot2.gif" height="320" width="300" />
@@ -28,18 +27,16 @@
         <img src="" ></a> 
       </div>
      <div class="Niv-Intermedio"> 
-        <a href=""><p>Validar y</p><p>Procesar</p>
+        <a href="scrapper_ch.php"><p>Validar y</p><p>Procesar</p>
         <img src="" >
         </a>
       </div>
      <div class="Niv-Avanzado"> 
-     <input class="btnregistrar" type="submit" value="Descargar Archivo">
-       <a href=""> <p>Actualizar</p> <p>Informacion</p>
+       <a href="scrapper_ob.php"> <p>Actualizar</p> <p>Informacion</p>
        <img src=""></a>
      </div>
      </div>
 </div>
-</form>
 </body>
 <br>
 <?php 
