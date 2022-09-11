@@ -18,6 +18,7 @@ $lim=$_POST["Limite"];
   $frg= $Object -> format('Y-m-d h:i:s a');
   //date('Y-m-d h:i:s a',time());
 
+  
   $sql = "INSERT INTO bet(IdBet, Deporte, Evento, Mercado, Competicion, Cuota, Beneficio, CasaApuesta, FechaEv,Limite,FechaReg) VALUES (NULL,'$dep','$ev','$mer','$comp',$cuo,$ben,'$casa','$fev',$lim,'$frg')";
   //$sql2  ="INSERT INTO `bet` (`IdBet`, `Deporte`, `Evento`, `Mercado`, `Competicion`, `Cuota`, `Beneficio`, `CasaApuesta`, `FechaEv`, `Limite`, `FechaReg`) VALUES (NULL, 'Futbol', 'Alianza vs Universitario', '1x', 'Liga 1 Peru', '1.32', '11', 'BET 365', '2022-08-31', '1900', '2022-08-23')";
   $n = mysqli_query($cn,$sql);

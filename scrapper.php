@@ -46,13 +46,16 @@
       $cl3 = $content[$i+4]->innertext;   $ce3 = $content[$i+5]->innertext;    $cv3 = $content[$i+6]->innertext;
     }else{
       $ce3 = $content[$i+4]->innertext;   $cv3 = $content[$i+5]->innertext;    $i = $i+5;
-    }
-    //************************ SCRAPING WEB CHASKIBET 
-        
+    }    
    //*******************************************************
- //$sql = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(NULL,$deporte,$local,$visita,$feceve,CURRENT_TIME)";
- //$insert = mysqli_query($cn,$sql);
- //$selcab = "SELECT*FROM bet_cab A WHERE A.local=$local AND A.visita =$visita  AND A.feceve =$feceve ";
+ $sql = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(NULL,'$deporte','$lo1','$vi1','$fe1',CURRENT_TIME)";
+ //$sql = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(NULL,'Prueba','Marseille','Eintracht Frankfurt','9/13/2022 14:00',CURRENT_TIME)"; 
+ $insert = mysqli_query($cn,$sql);
+ if(($insert<1)){
+  echo "<br>";echo "Ocurrio un error al Insertar en tabel [bet_cab]"; echo "<br>";
+ }
+ $sqlcab = "SELECT*FROM bet_cab A WHERE A.local=$local AND A.visita =$visita  AND A.feceve =$feceve ";
+ $selcab = mysqli_query($cn,$sqlcab);
 ?>
 <head>
     <meta charset="UTF-8">
