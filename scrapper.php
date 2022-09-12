@@ -1,41 +1,52 @@
 <?php
-   //Install purpeteer with -> npm i puppeteer
-   // Run node Scrapper_Pinnacle.js
-   //style_row__3q4g_ style_row__3hCMX
+   //Install purpeteer with -> npm i puppeteer     // Run node Scrapper_Pinnacle.js  //SELECT * FROM bet_cab A left join bet_det B ON A.idbet = B.idbet;
    include ("simple_html_dom.php");    include ("conexion.php") ;
-   //SELECT * FROM bet_cab A left join bet_det B ON A.idbet = B.idbet;
-   // INSERT INTO bet_cab(`idbet`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(001,'Futbol','Marseille','Eintracht Frankfurt','9/13/2022 14:00',CURRENT_TIME)
   $file ="Downloads_Files/Pinnacle2.html";
   $filereducido = file_get_contents($file,FALSE,NULL,57761,30800);
-  $myhtml = file_get_html($file);
-  $content = $myhtml->find("span") ;  $i = 27;
-  $deporte = "Futbol";
+  $myhtml = file_get_html($file);     $content = $myhtml->find("span") ;  $i = 27;
+  $deporte = "Futbol";    $casa ="Pinnacle";
   //*******************  Datos de 1 **********************************
-  $lo1   = $content[$i]->innertext;
-  if(Empty($lo1) or $lo1 >0){
+  try {
+    $idcab1=substr(sha1(time()), 0, 16);
+    $lo1   = $content[$i]->innertext;
+    if(Empty($lo1) or $lo1 >0){
     $lo1   = $content[$i+1]->innertext;  $vi1  = $content[$i+2]->innertext;  $fe1  = $content[$i+3]->innertext; 
-  }
-  $vi1  = $content[$i+1]->innertext;
-  $fe1  = $content[$i+2]->innertext;
-  $cl1 = $content[$i+3]->innertext;
-  if($cl1=="Ver porcentaje de apuestas"){
-    $cl1 = $content[$i+4]->innertext;   $ce1 = $content[$i+5]->innertext;    $cv1 = $content[$i+6]->innertext;
-  }else{
-    $ce1 = $content[$i+4]->innertext;   $cv1 = $content[$i+5]->innertext;    $i = $i+6;
-  }
+    }
+    $vi1  = $content[$i+1]->innertext;  $fe1  = $content[$i+2]->innertext;  
+    $cl1 = $content[$i+3]->innertext;
+    if($cl1=="Ver porcentaje de apuestas"){
+      $cl1 = $content[$i+4]->innertext;   $ce1 = $content[$i+5]->innertext;    $cv1 = $content[$i+6]->innertext;
+    }else{
+      $ce1 = $content[$i+4]->innertext;   $cv1 = $content[$i+5]->innertext;    $i = $i+6;
+    }
+    $insert_cab1 = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab1','$deporte','$lo1','$vi1','$fe1',CURRENT_TIME)";
+    $res_insert_cab1 = mysqli_query($cn,$insert_cab1);
+    if($res_insert_cab1<1){
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]"; echo "<br>";echo $res_insert_cab1;
+    }else{echo "<br>";echo "---Insert con exito [bet_cab]"; echo $lo1-$vi1; echo "<br>";echo $res_insert_det1;} 
+    
+    $insert_det1 = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`)VALUES('$idcab1',NULL,'$casa',$cl1,$ce1,$cv1)";
+    $res_insert_det1 = mysqli_query($cn,$insert_det1);
+    if($res_insert_det1<1){
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_det]"; echo "<br>";echo $res_insert_det1;
+    }else{echo "<br>";echo "---Insert con exito [bet_det] ";echo $res_insert_det1;} 
+  }catch(Exception $ex){  }
    //*******************  Datos de 2 **********************************
-   $lo2   = $content[$i]->innertext;
-   //if(Empty($lo2) or $lo2 >0){
-   //$lo2   = $content[$i+1]->innertext;  $vi2  = $content[$i+2]->innertext;  $fe2  = $content[$i+3]->innertext; }
-   $vi2  = $content[$i+1]->innertext;
-   $fe2  = $content[$i+2]->innertext;
-   $cl2 = $content[$i+3]->innertext;
-   if($cl2=="Ver porcentaje de apuestas"){
-     $cl2 = $content[$i+4]->innertext;   $ce2 = $content[$i+5]->innertext;    $cv2 = $content[$i+6]->innertext;
-   }else{
-     $ce2 = $content[$i+4]->innertext;   $cv2 = $content[$i+5]->innertext;    $i = $i+6;
-   }
+  try{
+    $lo2   = $content[$i]->innertext;
+    //if(Empty($lo2) or $lo2 >0){
+    //$lo2   = $content[$i+1]->innertext;  $vi2  = $content[$i+2]->innertext;  $fe2  = $content[$i+3]->innertext; }
+    $vi2  = $content[$i+1]->innertext;
+    $fe2  = $content[$i+2]->innertext;
+    $cl2 = $content[$i+3]->innertext;
+    if($cl2=="Ver porcentaje de apuestas"){
+      $cl2 = $content[$i+4]->innertext;   $ce2 = $content[$i+5]->innertext;    $cv2 = $content[$i+6]->innertext;
+    }else{
+      $ce2 = $content[$i+4]->innertext;   $cv2 = $content[$i+5]->innertext;    $i = $i+6;
+    }
+  }catch(Exception $ex){  } //
     //*******************  Datos de 3 **********************************
+  try{
     $lo3   = $content[$i]->innertext;
     //if(Empty($lo1) or $lo1 >0){
     //  $lo3   = $content[$i+1]->innertext;  $vi3  = $content[$i+2]->innertext;  $fe3  = $content[$i+3]->innertext; }
@@ -44,18 +55,12 @@
     $cl3  = $content[$i+3]->innertext;
     if($cl3=="Ver porcentaje de apuestas"){
       $cl3 = $content[$i+4]->innertext;   $ce3 = $content[$i+5]->innertext;    $cv3 = $content[$i+6]->innertext;
-    }else{
+    }else{  
       $ce3 = $content[$i+4]->innertext;   $cv3 = $content[$i+5]->innertext;    $i = $i+5;
-    }    
+    }  
+  }catch(Exception $ex){  }  
    //*******************************************************
- $sql = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(NULL,'$deporte','$lo1','$vi1','$fe1',CURRENT_TIME)";
- //$sql = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES(NULL,'Prueba','Marseille','Eintracht Frankfurt','9/13/2022 14:00',CURRENT_TIME)"; 
- $insert = mysqli_query($cn,$sql);
- if(($insert<1)){
-  echo "<br>";echo "Ocurrio un error al Insertar en tabel [bet_cab]"; echo "<br>";
- }
- $sqlcab = "SELECT*FROM bet_cab A WHERE A.local=$local AND A.visita =$visita  AND A.feceve =$feceve ";
- $selcab = mysqli_query($cn,$sqlcab);
+
 ?>
 <head>
     <meta charset="UTF-8">
@@ -68,6 +73,7 @@
     echo $lo1;  echo "<br>"; echo $vi1; echo "<br>";
     echo $fe1; echo "<br>";
     echo $cl1;echo "<br>";  echo $ce1 ;echo "<br>"; echo $cv1;echo "<br>";echo "<br>";
+   
 
     echo $lo2;  echo "<br>"; echo $vi2; echo "<br>";
     echo $fe2; echo "<br>";

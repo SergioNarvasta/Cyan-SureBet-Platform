@@ -13,7 +13,6 @@ puppeteer.launch()
                     }).then(function () {
                         return page.content();
                     }).then(function (contents) {
-
                         return fs.writeFile('../Downloads_Files/Pinnacle2.html', contents, function (err, results) {
                             if (err) {
                                 console.error(err);
