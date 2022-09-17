@@ -1,7 +1,7 @@
 <?php
    //Install purpeteer with -> npm i puppeteer     // Run node Scrapper_Pinnacle.js  //SELECT * FROM bet_cab A left join bet_det B ON A.idbet = B.idbet;
    include ("simple_html_dom.php");    include ("conexion.php") ;
-  $file ="Downloads_Files/Pinnacle2.html";
+  $file ="Downloads_Web/Pinnacle.html";
   $filereducido = file_get_contents($file,FALSE,NULL,57761,30800);
   $myhtml = file_get_html($file); $content = $myhtml->find("span") ;  $i = 27;
   $deporte = "Futbol";    $casa ="Pinnacle";
@@ -36,8 +36,8 @@
    //*******************  Datos de 2 **********************************
   try {
     $idcab2=substr(sha1(time()), 0, 16);
-    $lo2   = $content[$i]->innertext;
-    if(($lo2=="España - La Liga")or ($lo2=="Italia - Serie A")($lo2=="UEFA - Champions League")or($lo2="UEFA - Europa League")){
+    $lo2   = $content[$i]->innertext;$bus2=strpos($lo2,"UEFA",1);
+    if(($lo2=="España - La Liga")or ($lo2=="Italia - Serie A")or($bus2>1)){
     $lo2 = $content[$i+2]->innertext;  
     $vi2 = $content[$i+3]->innertext;  $fe2 = $content[$i+4]->innertext; 
     $cl2 = $content[$i+5]->innertext;  $ce2 = $content[$i+6]->innertext;  $cv2 = $content[$i+7]->innertext;$i = $i+6;

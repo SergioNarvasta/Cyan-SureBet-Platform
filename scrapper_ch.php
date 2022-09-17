@@ -1,7 +1,7 @@
 <?php
        include ("simple_html_dom.php");
 
-        $file2 ="Downloads_Files/Chaskibet.html";
+        $file2 ="Downloads_Web/Chaskibet.html";
         $filereducido = file_get_contents($file2,FALSE,NULL,1145000,350800);
         $myhtml = file_get_html($file2);
         $content = $myhtml->find("span") ;  $i = 27;

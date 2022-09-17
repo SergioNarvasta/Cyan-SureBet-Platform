@@ -13,7 +13,7 @@ puppeteer.launch()
                     }).then(function () {
                         return page.content();
                     }).then(function (contents) {
-                        return fs.writeFile('../Downloads_Files/Bet365.html', contents, function (err, results) {
+                        return fs.writeFile('../Downloads_Web/Bet365.html', contents, function (err, results) {
                             if (err) {
                                 console.error(err);
                             }
