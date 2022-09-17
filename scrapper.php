@@ -23,13 +23,13 @@
     $insert_cab1 = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab1','$deporte','$lo1','$vi1','$fe1',CURRENT_TIME)";
     $res_insert_cab1 = mysqli_query($cn,$insert_cab1);
     if($res_insert_cab1<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]"; echo "<br>";echo $res_insert_cab1;
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]";echo $res_insert_cab1;
     }else{echo "<br>";echo "---Insert con exito [bet_cab]"; echo $lo1.$vi1;echo $res_insert_cab1;} 
     
     $insert_det1 = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`)VALUES('$idcab1',NULL,'$casa',$cl1,$ce1,$cv1)";
     $res_insert_det1 = mysqli_query($cn,$insert_det1);
     if($res_insert_det1<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_det]"; echo "<br>";echo $res_insert_det1;
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_det]";echo $res_insert_det1;
     }else{echo "<br>";echo "---Insert con exito [bet_det] ";echo $res_insert_det1;} 
 
   }catch(Exception $ex){  }
@@ -48,7 +48,7 @@
     $insert_cab2 = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab2','$deporte','$lo2','$vi2','$fe2',CURRENT_TIME)";
     $res_insert_cab2 = mysqli_query($cn,$insert_cab2);
     if($res_insert_cab2<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]2"; echo "<br>";echo $res_insert_cab2;
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]2";echo $res_insert_cab2;
     }else{echo "<br>";echo "---Insert con exito [bet_cab]2"; echo $lo2.$vi2;echo $res_insert_cab2;} 
     
     $insert_det2 = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`)VALUES('$idcab2',NULL,'$casa',$cl2,$ce2,$cv2)";
@@ -72,7 +72,7 @@
     $insert_cab3 = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab3','$deporte','$lo3','$vi3','$fe3',CURRENT_TIME)";
     $res_insert_cab3 = mysqli_query($cn,$insert_cab3);
     if($res_insert_cab3<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]3"; echo "<br>";echo $res_insert_cab3;
+      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]3";echo $res_insert_cab3;
     }else{echo "<br>";echo "---Insert con exito [bet_cab]3"; echo $lo3.$vi3;echo $res_insert_cab3;} 
     
     $insert_det3 = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`)VALUES('$idcab3',NULL,'$casa',$cl3,$ce3,$cv3)";
@@ -303,7 +303,6 @@
           }
         }catch(Exception $ex){  }  
 //*******************************************************
-
 ?>
 <head>
     <meta charset="UTF-8">

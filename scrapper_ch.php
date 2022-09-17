@@ -23,7 +23,7 @@
               echo $content->innertext;
               echo "<br>";"<br>";   
         }
-       echo $filereducido;
+       //echo $filereducido;
        //
     
     ?>
