@@ -1,4 +1,6 @@
 
+//Install npm with -> npm install
+//Install purpeteer with -> npm i puppeteer
 var puppeteer = require('puppeteer'),
     fs = require('fs'),
     HomeBet = 'https://www.pinnacle.com/es/soccer/matchups/highlights';
