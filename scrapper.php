@@ -3,7 +3,7 @@
    include ("simple_html_dom.php");    include ("conexion.php") ;
   $file ="Downloads_Files/Pinnacle2.html";
   $filereducido = file_get_contents($file,FALSE,NULL,57761,30800);
-  $myhtml = file_get_html($file);     $content = $myhtml->find("span") ;  $i = 27;
+  $myhtml = file_get_html($file); $content = $myhtml->find("span") ;  $i = 27;
   $deporte = "Futbol";    $casa ="Pinnacle";
   //*******************  Datos de 1 **********************************
   try {
