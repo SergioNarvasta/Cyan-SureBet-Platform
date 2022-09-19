@@ -18,8 +18,8 @@
     $cl = str_replace(" ","",$content_c[$n-169]->innertext);  
     $ce = str_replace(" ","",$content_c[$n-168]->innertext);  
     $cv = str_replace(" ","",$content_c[$n-167]->innertext);
-      //echo $ini; 
-      echo " ".$lo." ";        echo "** ".$vi." ";     echo " **".$fe;echo "<br>";
+      echo $ini; 
+      //echo " ".$lo." ";        echo "** ".$vi." ";     echo " **".$fe;echo "<br>";
       echo "Cl ".$cl." ";      echo "Ce ".$ce."";      echo "Cv ".$cv;
       /*$insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
       $res_insert_cab = mysqli_query($cn,$insert_cab);
@@ -31,16 +31,19 @@
       $res_insert_det1 = mysqli_query($cn,$insert_det);
       if($res_insert_det1<1){
         echo "<br>";echo "--Error [bet_det]";
-      }else{echo "<br>";echo "--Exito [bet_det] ";} */
-      
+      }else{echo "<br>";echo "--Exito [bet_det] ";} */  
   }
 ?>   
 <center><div>
 <?php //}  
-  $r=175;  $val=$content[$r]->innertext;  $bus=strpos($val,"Fútbol",1);
+  $r=175;  $val=$content[$r]->innertext;  $bus=strpos($val,"Fútbol",1);  $bus22=strpos($val,"22",1);
   if($bus>1){
-    insertBet($cn,$file,$r+144,$r+10);echo "<br>";echo "<br>";//Saltea66
-  }else{ insertBet($cn,$file,175,175);echo "<br>";echo "<br>";}
+    insertBet($cn,$file,$r+63,$r+10);echo "<br>";echo "<br>";//Saltea66
+  }else{ if($bus22>1){insertBet($cn,$file,$r+44,$r+10);echo "<br>";echo "<br>";}
+         else{insertBet($cn,$file,$r+66,$r+10);echo "<br>";echo "<br>";}
+          }
+
+
 
   insertBet($cn,$file,175,175);echo "<br>";echo "<br>";// Flujo Normal es 44
   insertBet($cn,$file,219,185);echo "<br>";echo "<br>";
@@ -56,11 +59,11 @@
   insertBet($cn,$file,697,285);echo "<br>";echo "<br>";
   insertBet($cn,$file,741,295);echo "<br>";echo "<br>";
   insertBet($cn,$file,785,305);echo "<br>";echo "<br>";
-  insertBet($cn,$file,848,315);echo "<br>";echo "<br>";//If 63 SerieA 
+  insertBet($cn,$file,851,315);echo "<br>";echo "<br>";//If 63 SerieA 
 
-  insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
+  /*insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
   insertBet($cn,$file,936,335);echo "<br>";echo "<br>";
-  insertBet($cn,$file,980,345);echo "<br>";echo "<br>";
+  insertBet($cn,$file,980,345);echo "<br>";echo "<br>";*/
 
   echo "<p>Informacion de $casa</p>";
 
