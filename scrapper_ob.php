@@ -35,7 +35,7 @@
 <center><div>
 <?php //}  
   insertBet($cn,$file,175);echo "<br>";
-  insertBet($cn,$file,186);echo "<br>";
+  insertBet($cn,$file,185);echo "<br>";
   echo "<p>Informacion de $casa</p>";
 
   //insertBet($cn,$file,8); insertBet($cn,$file,14); 
