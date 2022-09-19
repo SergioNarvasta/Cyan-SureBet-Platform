@@ -11,36 +11,57 @@
     $deporte = "Futbol";               $casa = "OnceBet";                 $idcab = substr(sha1(time()), 0, 16);
     $ini  = $content[$i]->innertext;   //$bus  = strpos($ini,"UEFA",1);
     
-    //Corta la cadena          //busca la posicion              //Corta la cadena inicial desde 14 hasta la pos(bcar)
-    $fe = substr($ini,1,14);    $bcar  = strpos($ini,"-",1);   $lo = substr($ini,15,$bcar-15);   $vi = substr($ini,$bcar+2,15);
+    //Corta la cadena                               //busca la posicion          
+    $fe = str_replace(" ","",substr($ini,1,14));    $bcar  = strpos($ini,"-",1);   
+    $lo = str_replace(" ","",substr($ini,15,$bcar-15));   $vi = str_replace(" ","",substr($ini,$bcar+2,20));
 
-    $cl = $content_c[$n-169]->innertext;  $ce = $content_c[$n-168]->innertext;  $cv = $content_c[$n-167]->innertext;
-       
-      echo "L-- ".$lo." ";       echo "V-- ".$vi." ";       echo "Fe-- ".$fe;echo "<br>";
-      echo "CL-- ".$cl." ";      echo "Ce-- ".$ce."";       echo "Cv-- ".$cv;
-     /* $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
+    $cl = str_replace(" ","",$content_c[$n-169]->innertext);  
+    $ce = str_replace(" ","",$content_c[$n-168]->innertext);  
+    $cv = str_replace(" ","",$content_c[$n-167]->innertext);
+      //echo $ini; 
+      echo " ".$lo." ";        echo "** ".$vi." ";     echo " **".$fe;echo "<br>";
+      echo "Cl ".$cl." ";      echo "Ce ".$ce."";      echo "Cv ".$cv;
+      /*$insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
       $res_insert_cab = mysqli_query($cn,$insert_cab);
       if($res_insert_cab<1){
-        echo "<br>";echo "--Ocurrio un error al Insertar [bet_cab]";
-      }else{echo "<br>";echo "---Insert con exito [bet_cab]"; echo $lo.$vi;} 
+        echo "<br>";echo "--Error [bet_cab]";
+      }else{echo "<br>";echo "--Exito [bet_cab]"; echo $lo.$vi;} 
       
       $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
       $res_insert_det1 = mysqli_query($cn,$insert_det);
       if($res_insert_det1<1){
-        echo "<br>";echo "--Ocurrio un error al Insertar [bet_det]";
-      }else{echo "<br>";echo "---Insert con exito [bet_det] ";} 
-      */
+        echo "<br>";echo "--Error [bet_det]";
+      }else{echo "<br>";echo "--Exito [bet_det] ";} */
+      
   }
 ?>   
 <center><div>
 <?php //}  
-  $r=44;
-  insertBet($cn,$file,175,175);echo "<br>";echo "<br>";
+  $r=175;  $val=$content[$r]->innertext;  $bus=strpos($val,"Fútbol",1);
+  if($bus>1){
+    insertBet($cn,$file,$r+144,$r+10);echo "<br>";echo "<br>";//Saltea66
+  }else{ insertBet($cn,$file,175,175);echo "<br>";echo "<br>";}
+
+  insertBet($cn,$file,175,175);echo "<br>";echo "<br>";// Flujo Normal es 44
   insertBet($cn,$file,219,185);echo "<br>";echo "<br>";
-  insertBet($cn,$file,282,195);echo "<br>";echo "<br>";
-  insertBet($cn,$file,351,205);echo "<br>";echo "<br>";
-  insertBet($cn,$file,417,215);echo "<br>";echo "<br>";
-  
+  insertBet($cn,$file,282,195);echo "<br>";echo "<br>";//If Competicion 66
+  insertBet($cn,$file,326,205);echo "<br>";echo "<br>";//Sigue 44...
+  insertBet($cn,$file,370,215);echo "<br>";echo "<br>";
+  insertBet($cn,$file,414,225);echo "<br>";echo "<br>";
+  insertBet($cn,$file,458,235);echo "<br>";echo "<br>";
+  insertBet($cn,$file,521,245);echo "<br>";echo "<br>";//If 63 Ligue1
+  insertBet($cn,$file,565,255);echo "<br>";echo "<br>";//Sigue 44...
+  insertBet($cn,$file,609,265);echo "<br>";echo "<br>";
+  insertBet($cn,$file,653,275);echo "<br>";echo "<br>";
+  insertBet($cn,$file,697,285);echo "<br>";echo "<br>";
+  insertBet($cn,$file,741,295);echo "<br>";echo "<br>";
+  insertBet($cn,$file,785,305);echo "<br>";echo "<br>";
+  insertBet($cn,$file,848,315);echo "<br>";echo "<br>";//If 63 SerieA 
+
+  insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
+  insertBet($cn,$file,936,335);echo "<br>";echo "<br>";
+  insertBet($cn,$file,980,345);echo "<br>";echo "<br>";
+
   echo "<p>Informacion de $casa</p>";
 
   //insertBet($cn,$file,8); insertBet($cn,$file,14); 
@@ -50,6 +71,6 @@
       echo "<br>";  
    }
   */ 
-   echo $filereducido;
+  echo $filereducido;
 ?>
 </div></center>
