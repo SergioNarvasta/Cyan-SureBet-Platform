@@ -3,3 +3,5 @@
 /node_modules
 /Downloads_Web 
 simple_html_dom.php
+package-lock.json
+package.json
