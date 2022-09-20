@@ -5,7 +5,7 @@
   $filereducido = file_get_contents($file,FALSE,NULL,57761,30800);
   $myhtml = file_get_html($file); $content = $myhtml->find("span") ;  $i = 27;
   $deporte = "Futbol";    $casa ="Pinnacle";
-  //*******************  Datos de 1 **********************************
+  //*******************  Datos de 1 ***********************************
   try {
     //Llave random
     $idcab1=substr(sha1(time()), 0, 16);
@@ -33,7 +33,7 @@
     }else{echo "<br>";echo "---Insert con exito [bet_det] ";echo $res_insert_det1;} 
 
   }catch(Exception $ex){  }
-   //*******************  Datos de 2 **********************************
+   //*******************  Datos de 2 ***********************************
   try {
     $idcab2=substr(sha1(time()), 0, 16);
     $lo2   = $content[$i]->innertext;$bus2=strpos($lo2,"UEFA",1);
@@ -81,8 +81,7 @@
       echo "<br>";echo "Ocurrio un error al Insertar en table [bet_det]3"; echo "<br>";echo $res_insert_det3;
     }else{echo "<br>";echo "---Insert con exito [bet_det]3 ";echo $res_insert_det3;} 
   }catch(Exception $ex){  }  
-   //*******************************************************
- 
+   //*******************************************************************
 ?>
 <head>
     <meta charset="UTF-8">
