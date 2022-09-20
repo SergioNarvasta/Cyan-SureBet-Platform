@@ -42,9 +42,7 @@
   }else{ if($bus22>1){insertBet($cn,$file,$r+44,$r+10);echo "<br>";echo "<br>";}
          else{insertBet($cn,$file,$r+66,$r+10);echo "<br>";echo "<br>";}
           }
-
-
-
+          /*
   insertBet($cn,$file,175,175);echo "<br>";echo "<br>";// Flujo Normal es 44
   insertBet($cn,$file,219,185);echo "<br>";echo "<br>";
   insertBet($cn,$file,282,195);echo "<br>";echo "<br>";//If Competicion 66
@@ -61,7 +59,7 @@
   insertBet($cn,$file,785,305);echo "<br>";echo "<br>";
   insertBet($cn,$file,851,315);echo "<br>";echo "<br>";//If 63 SerieA 
 
-  /*insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
+  insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
   insertBet($cn,$file,936,335);echo "<br>";echo "<br>";
   insertBet($cn,$file,980,345);echo "<br>";echo "<br>";*/
 
