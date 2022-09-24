@@ -44,12 +44,6 @@
     echo "<br>";echo "<p>Informacion de Pinnacle</p>";
     echo $lo1."  -"; echo $vi1."  -"; echo $fe1; echo "<br>";
     echo $cl1."  -"; echo $ce1."  -"; echo $cv1; echo "<br>";echo "<br>";
-   
-    echo $lo2."  -";echo strlen($lo2); echo $vi2."  -"; echo $fe2; echo "<br>";
-    echo $cl2."  -"; echo $ce2."  -"; echo $cv2; echo "<br>";echo "<br>";
-
-    echo $lo3."  -"; echo $vi3."  -"; echo $fe3; echo "<br>";
-    echo $cl3."  -"; echo $ce3."  -"; echo $cv3; echo "<br>";echo "<br>";
 
     echo $filereducido;
   

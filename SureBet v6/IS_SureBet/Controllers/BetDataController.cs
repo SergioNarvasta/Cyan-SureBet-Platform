@@ -18,8 +18,6 @@ namespace IS_SureBet.Controllers
         {
             _context = context;
         }
-
-        // GET: BetData
         public async Task<IActionResult> Index()
         {
               return _context.BetData != null ? 
@@ -32,9 +30,8 @@ namespace IS_SureBet.Controllers
                         View(await _context.BetData.ToListAsync()) :
                         Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
         }
-        // GET: BetData/Details/5
+      
         public async Task<IActionResult> Details(int? id)
-
         {
             if (id == null || _context.BetData == null)
             {
@@ -67,16 +64,10 @@ namespace IS_SureBet.Controllers
 
             return View(betData);
         }
-
-        // GET: BetData/Create
         public IActionResult Create()
         {
             return View();
         }
-
-        // POST: BetData/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdBet,Deporte,Evento,Mercado,Competicion,Cuota,Beneficio,CasaApuesta,Fecha,Limite")] BetData betData)
