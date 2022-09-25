@@ -51,18 +51,25 @@
   function fx_lee($file){
     $myhtml  = file_get_html($file);  $con=0;
     $content = $myhtml->find("div");  
+    try{ 
     for($n=154;$n<=160,$n++;){        $con++;
       $dat = $content[$n]->innertext; $type = settype($dat,"string");
       if($type==true){
-        $bus22=strpos($dat,"22",0); $busma=strpos($dat,"+",0); $busg=strpos($dat,"-",0);
-        if($bus22>1 and $busma==false and $busg>1){ 
-          echo "--Contador ".$con;echo $dat;echo "<br>";
+        $bus22=strpos($dat,"22",0); $busma=strpos($dat,"+",0); $busg=strpos($dat,"-",0); $busot=strpos($dat,"Tinco",0); 
+        if($bus22>1 and $busma==false and $busg>1 and $busot==false){ 
+          echo "--Contador ".$con."--";echo $dat;echo "<br>";
         } 
       }  
     }
+  }catch(Exception $e) {
+    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
+  }finally {
+    echo "Primer finally.\n";
+}
   }
 ?>   
 <center><div>
+  <button><a href="operaciones.php">Volver</a> </button> <br> <br>
 <?php 
 try{  
   /*
