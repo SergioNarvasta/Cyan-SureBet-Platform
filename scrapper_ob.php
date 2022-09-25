@@ -8,12 +8,11 @@
 
   function insertData($file){
     $myhtml  = file_get_html($file);   //$content = $myhtml->find('quotation_box_1_data_body'); quotation_box_1_data_body
-    foreach($myhtml->find("quotation_box_1_data_body") as $content){
+    foreach($myhtml->find("quotation") as $content){
       echo $content->innertext;
       echo "<br>";  
     }
   }
-
   function usingDOM($file){
     /*$doc = new DomDocument;          
     @$doc->loadHTMLFile($file);
@@ -29,7 +28,6 @@
     //Corta la cadena                               //busca la posicion          
     // try{ $fe = str_replace(" ","",substr($ini,1,14));  }catch(Exception $e) {}   try{ $bcar  = strpos($ini,"-",1); }catch(Exception $e) {}
     //$lo = str_replace(" ","",substr($ini,15,$bcar-15));   $vi = str_replace(" ","",substr($ini,$bcar+2,20));
-  
     $cl = $content_c[$n-169]->innertext;  
     $ce = $content_c[$n-168]->innertext;  
     $cv = $content_c[$n-167]->innertext;
@@ -47,6 +45,21 @@
       if($res_insert_det1<1){
         echo "<br>";echo "--Error [bet_det]";
       }else{echo "<br>";echo "--Exito [bet_det] ";} */  
+  }
+  
+  //Busca el caracter 22 if (encuentra) lee e inserta else() sigue buscando 44 o 66
+  function fx_lee($file){
+    $myhtml  = file_get_html($file);  $con=0;
+    $content = $myhtml->find("div");  
+    for($n=154;$n<=160,$n++;){        $con++;
+      $dat = $content[$n]->innertext; $type = settype($dat,"string");
+      if($type==true){
+        $bus22=strpos($dat,"22",0); $busma=strpos($dat,"+",0); $busg=strpos($dat,"-",0);
+        if($bus22>1 and $busma==false and $busg>1){ 
+          echo "--Contador ".$con;echo $dat;echo "<br>";
+        } 
+      }  
+    }
   }
 ?>   
 <center><div>
@@ -80,16 +93,17 @@ try{
   insertBet($cn,$file,980,345);echo "<br>";echo "<br>";
   */
 }catch(Exception $e) {}
-  insertData($file);
+  fx_lee($file);
+  //insertBet($cn,$file,fx_lee($file),185);
   echo "<p>Informacion de $casa</p>";
 
-  //insertBet($cn,$file,8); insertBet($cn,$file,14); 
-  //Recorrer archivo y mostrar su contenido
-  /* foreach($myhtml->find("div") as $content){
+  /*insertBet($cn,$file,8); insertBet($cn,$file,14); 
+  Recorrer archivo y mostrar su contenido
+   foreach($myhtml->find("div") as $content){
       echo $content->innertext;
       echo "<br>";  
    }
   */ 
   echo $filereducido;
 ?>
-</div></center>
+</div> </center>

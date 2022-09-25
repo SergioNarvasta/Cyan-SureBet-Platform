@@ -18,40 +18,30 @@ namespace IS_SureBet.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
-        {
+        public async Task<IActionResult> Index(){
               return _context.BetData != null ? 
                           View(await _context.BetData.ToListAsync()) :
                           Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
         }
-        public async Task<IActionResult> BetList()
-        {
+        public async Task<IActionResult> BetList(){
             return _context.BetData != null ?
                         View(await _context.BetData.ToListAsync()) :
                         Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
         }
       
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.BetData == null)
-            {
+        public async Task<IActionResult> Details(int? id){
+            if (id == null || _context.BetData == null){
                 return NotFound();
             }
-
             var betData = await _context.BetData
                 .FirstOrDefaultAsync(m => m.IdBet == id);
-            if (betData == null)
-            {
+            if (betData == null){
                 return NotFound();
             }
-
             return View(betData);
         }
-        public async Task<IActionResult> Detalles(int? id)
-
-        {
-            if (id == null || _context.BetData == null)
-            {
+        public async Task<IActionResult> Detalles(int? id){
+            if (id == null || _context.BetData == null){
                 return NotFound();
             }
 
@@ -80,15 +70,12 @@ namespace IS_SureBet.Controllers
             }
             return View(betData);
         }
-
-        // GET: BetData/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.BetData == null)
             {
                 return NotFound();
             }
-
             var betData = await _context.BetData.FindAsync(id);
             if (betData == null)
             {
@@ -155,20 +142,16 @@ namespace IS_SureBet.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.BetData == null)
-            {
+            if (_context.BetData == null){
                 return Problem("Entity set 'ApplicationDbContext.BetData'  is null.");
             }
             var betData = await _context.BetData.FindAsync(id);
-            if (betData != null)
-            {
+            if (betData != null){
                 _context.BetData.Remove(betData);
             }
-            
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool BetDataExists(int id)
         {
           return (_context.BetData?.Any(e => e.IdBet == id)).GetValueOrDefault();
