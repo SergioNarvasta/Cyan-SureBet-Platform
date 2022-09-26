@@ -3,17 +3,10 @@
   //DELETE FROM bet_cab A WHERE A.fecreg < CURRENT_TIME   //SELECT * FROM bet_cab A left join bet_det B ON A.idcab = B.idcab
     $file ="Downloads_Web/OnceBet.html";
     $filereducido = file_get_contents($file,FALSE,NULL,101000,150000);
-    $myhtml  = file_get_html($file);   $content = $myhtml->find("div");
+    $myhtml  = file_get_html($file);   $content = $myhtml->find("div");  $content_c = $myhtml->find("span");  
     $deporte = "Futbol";               $casa ="OnceBet";
 
-  function insertData($file){
-    $myhtml  = file_get_html($file);   //$content = $myhtml->find('quotation_box_1_data_body'); quotation_box_1_data_body
-    foreach($myhtml->find("quotation") as $content){
-      echo $content->innertext;
-      echo "<br>";  
-    }
-  }
-  function usingDOM($file){
+  function usingDOM(){
     /*$doc = new DomDocument;          
     @$doc->loadHTMLFile($file);
     $info = $doc->getElementById('quotation_box_1_data_body');
@@ -46,71 +39,67 @@
         echo "<br>";echo "--Error [bet_det]";
       }else{echo "<br>";echo "--Exito [bet_det] ";} */  
   }
-  
-  //Busca el caracter 22 if (encuentra) lee e inserta else() sigue buscando 44 o 66
-  function fx_lee($file){
-    $myhtml  = file_get_html($file);  $con=0;
-    $content = $myhtml->find("div");  
-    try{ 
-    for($n=154;$n<=160,$n++;){        $con++;
-      $dat = $content[$n]->innertext; $type = settype($dat,"string");
-      if($type==true){
-        $bus22=strpos($dat,"22",0); $busma=strpos($dat,"+",0); $busg=strpos($dat,"-",0); $busot=strpos($dat,"Tinco",0); 
-        if($bus22>1 and $busma==false and $busg>1 and $busot==false){ 
-          echo "--Contador ".$con."--";echo $dat;echo "<br>";
-        } 
-      }  
+  function fx_lee($ini,$fin,$cuo){
+    $file ="Downloads_Web/OnceBet.html";  $myhtml=file_get_html($file);  $con=0;  
+    $content=$myhtml->find("div"); $content_c = $myhtml->find("span");  
+    $deporte = "Futbol";                  $casa = "OnceBet";             $idcab = substr(sha1(time()), 0, 16);
+    $array = [];                          array_push($array,$cuo);       $valida=0;
+    for($n=$ini;$n<=160,$n++;){           $con++;
+      if($n<$fin){
+        $dat = $content[$n]->innertext;     $type=settype($dat,"string");  
+        if($type==true){ 
+          $bus22=strpos($dat,"22",0);       $busma=strpos($dat,"+",0);     $busg=strpos($dat,"-",0);     $busot=strpos($dat,"Tinco",0); 
+          $enti=htmlentities($dat, ENT_QUOTES); $busdiv= strpos($enti,"div",0);
+          if($bus22>1 and $busma==false and $busg>1 and $busot==false and strlen($dat)>30 and $busdiv==false){ 
+            //echo "--Contador ".$con."--";echo $dat;echo "<br>";
+            $fe = substr($dat,1,14);          $bcar = strpos($dat,"-",1);
+            $lo = substr($dat,15,$bcar-15);   $vi   = substr($dat,$bcar+2,20);
+            echo $lo;      echo "** ".$vi." ";      echo " **".$fe;   echo "<br>";  
+            
+          }   
+        }
+      } 
+      $nv=$array[0];  $valida++; $type=settype($dat,"string"); 
+          if($nv<164){
+            $cl=$content_c[$nv]->innertext;  $ce=$content_c[$nv+1]->innertext;  $cv=$content_c[$nv+2]->innertext;
+            $bus1=strpos($cl,"refresh",0);   $bus2=strpos($ce,"LIVE",0); $bus3=strpos($cv,"Registrarse",0);
+            if($bus1==false or $bus2==false or $bus3==false){
+              echo $valida."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;    echo "<br>";  
+              if($valida>1){
+                $array[0] = $nv+10;
+              }else{
+                $array[0] = $nv+9;
+              }
+            } 
+          }else echo" ";
     }
-  }catch(Exception $e) {
-    echo 'Excepción capturada: ',  $e->getMessage(), "\n";
-  }finally {
-    echo "Primer finally.\n";
-}
+  
   }
+  //try{}< catch(Exception $e){echo 'Excepción capturada: ',  $e->getMessage(), "\n";}finally {echo "Finally.\n";}
 ?>   
 <center><div>
   <button><a href="operaciones.php">Volver</a> </button> <br> <br>
 <?php 
-try{  
-  /*
-  //$r=175;  $val=$content[$r]->innertext;  $bus=strpos($val,"Fútbol",1);  $bus22=strpos($val,"22",1);
-  if($bus>1){
-    insertBet($cn,$file,$r+63,$r+10);echo "<br>";echo "<br>";//Saltea66
-  }else{ if($bus22>1){insertBet($cn,$file,$r+44,$r+10);echo "<br>";echo "<br>";}
-         else{insertBet($cn,$file,$r+66,$r+10);echo "<br>";echo "<br>";}
-        }         
+  /*        
   insertBet($cn,$file,181,175);echo "<br>";echo "<br>";// Flujo Normal es 44, i=175 antes ..ahora 177
   insertBet($cn,$file,224,184);echo "<br>";echo "<br>";
   insertBet($cn,$file,268,194);echo "<br>";echo "<br>";//If Competicion 66
-  $s=268;$s4=44;$s6=66;
-  insertBet($cn,$file,$s+$s6,204);echo "<br>";echo "<br>";//Sigue 44...
-  insertBet($cn,$file,($s+$s6)+$s4,215);echo "<br>";echo "<br>";
-  insertBet($cn,$file,414,225);echo "<br>";echo "<br>";
-  insertBet($cn,$file,458,235);echo "<br>";echo "<br>";
-  insertBet($cn,$file,521,245);echo "<br>";echo "<br>";//If 63 Ligue1
-  insertBet($cn,$file,565,255);echo "<br>";echo "<br>";//Sigue 44...
-  insertBet($cn,$file,609,265);echo "<br>";echo "<br>";
-  insertBet($cn,$file,653,275);echo "<br>";echo "<br>";
-  insertBet($cn,$file,697,285);echo "<br>";echo "<br>";
-  insertBet($cn,$file,741,295);echo "<br>";echo "<br>";
-  insertBet($cn,$file,785,305);echo "<br>";echo "<br>";
-  insertBet($cn,$file,851,315);echo "<br>";echo "<br>";//If 63 SerieA 
-  insertBet($cn,$file,892,325);echo "<br>";echo "<br>";
-  insertBet($cn,$file,936,335);echo "<br>";echo "<br>";
-  insertBet($cn,$file,980,345);echo "<br>";echo "<br>";
   */
-}catch(Exception $e) {}
-  fx_lee($file);
-  //insertBet($cn,$file,fx_lee($file),185);
+  fx_lee(154,1000,5);
   echo "<p>Informacion de $casa</p>";
 
-  /*insertBet($cn,$file,8); insertBet($cn,$file,14); 
-  Recorrer archivo y mostrar su contenido
-   foreach($myhtml->find("div") as $content){
-      echo $content->innertext;
+  //insertBet($cn,$file,8); insertBet($cn,$file,14); 
+  /*Recorrer archivo y mostrar su contenido
+   foreach($myhtml->find("span") as $content){
+      echo " ".$content->innertext;
       echo "<br>";  
-   }
-  */ 
+   }*/
+   
+    $cl = $content_c[24]->innertext;  //1. 567 2. 14 15 16 3. 24 25 26
+    $ce = $content_c[25]->innertext;  
+    $cv = $content_c[26]->innertext;
+    //echo "Cl ".$cl." ";      echo "Ce ".$ce."";      echo "Cv ".$cv; echo "<br>";  
+  
   echo $filereducido;
 ?>
 </div> </center>
