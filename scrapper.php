@@ -1,38 +1,52 @@
 <?php
-   //Install purpeteer with -> npm i puppeteer     // Run node Scrapper_Pinnacle.js  //SELECT * FROM bet_cab A left join bet_det B ON A.idbet = B.idbet;
-   include ("simple_html_dom.php");    include ("conexion.php") ;
-  $file ="Downloads_Web/Pinnacle.html";
+   //Install purpeteer with -> npm i puppeteer     // Run node Scrapper_Pinnacle.js  //SELECT * FROM bet_cab A left join bet_det B ON A.idcab = B.idcab;
+   include ("simple_html_dom.php");      include ("conexion.php") ;
+  $file ="Downloads_Web/Pinnacle.html";  $casa ="Pinnacle";
   $filereducido = file_get_contents($file,FALSE,NULL,57761,30800);
-  $myhtml = file_get_html($file); $content = $myhtml->find("span") ;  $i = 27;
-  $deporte = "Futbol";    $casa ="Pinnacle";
-  //*******************  Datos de 1 ***********************************
-  try {
-    //Llave random
-    $idcab1=substr(sha1(time()), 0, 16);
-    $lo1   = $content[$i]->innertext;
-    if(Empty($lo1) or $lo1 >0){
-    $lo1   = $content[$i+1]->innertext;  $vi1  = $content[$i+2]->innertext;  $fe1  = $content[$i+3]->innertext; 
+  $myhtml = file_get_html($file); $content = $myhtml->find("span");
+   
+  function fx_todo($file,$fin){
+    $myhtml = file_get_html($file); $data = $myhtml->find("span");
+    $con = 0;
+    echo "<p>Mostrando toda la Informacion de span  </p>";
+    foreach($myhtml->find("span") as $content){
+      $con++;
+      if($con<$fin){
+        $lo = $data[$con]->innertext;  $type=settype($lo,"string"); 
+        echo $con."-->".$lo;echo "<br>";
+      }
     }
-    $vi1  = $content[$i+1]->innertext;  $fe1  = $content[$i+2]->innertext;  
-    $cl1 = $content[$i+3]->innertext;
-    if($cl1=="Ver porcentaje de apuestas"){
-      $cl1 = $content[$i+4]->innertext;   $ce1 = $content[$i+5]->innertext;    $cv1 = $content[$i+6]->innertext;
-    }else{
-      $ce1 = $content[$i+4]->innertext;   $cv1 = $content[$i+5]->innertext;    $i = $i+6;
+  }
+  function fx_Bet($file,$fin){
+    $myhtml = file_get_html($file); $con = 0; $data = $myhtml->find("span"); 
+    $array = [];  $aux=0;
+    foreach($myhtml->find("span") as $content){
+      $con++;
+      $main = $content->innertext;  $type=settype($main,"string"); 
+      $buscuota = strpos($main,"Cuota",0); //Si encuentra el flag graba info en variables
+      if($buscuota>1){
+        array_push($array,$con+4); 
+       //echo $con."--Encontrado Guion".$lo;echo "<br>";
+        foreach($myhtml->find("span") as $content){ //for para iterara todos los registros
+          $aux++; $nv=$array[0];
+          if($aux<$fin){
+            $lo = $data[$nv]->innertext;   $vi = $data[$nv+1]->innertext;  $fe = $data[$nv+2]->innertext;
+            $cl = $data[$nv+3]->innertext; $ce = $data[$nv+4]->innertext;  $cv = $data[$nv+5]->innertext;
+            echo $lo."  -"; echo $vi."  -"; echo $fe; echo "<br>";
+            echo $cl."  -"; echo $ce."  -"; echo $cv; echo "<br>";echo "<br>";
+          
+            $busguion = strpos($lo,"-",0);
+            if($busguion>1){
+              $array[0] = $nv+8;
+            }else{
+              $array[0] = $nv+6;
+            }
+          }
+        }
+      }
+      
     }
-    $insert_cab1 = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`) VALUES('$idcab1','$deporte','$lo1','$vi1','$fe1',CURRENT_TIME)";
-    $res_insert_cab1 = mysqli_query($cn,$insert_cab1);
-    if($res_insert_cab1<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_cab]";echo $res_insert_cab1;
-    }else{echo "<br>";echo "---Insert con exito [bet_cab]"; echo $lo1.$vi1;echo $res_insert_cab1;} 
-    
-    $insert_det1 = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`)VALUES('$idcab1',NULL,'$casa',$cl1,$ce1,$cv1)";
-    $res_insert_det1 = mysqli_query($cn,$insert_det1);
-    if($res_insert_det1<1){
-      echo "<br>";echo "Ocurrio un error al Insertar en table [bet_det]";echo $res_insert_det1;
-    }else{echo "<br>";echo "---Insert con exito [bet_det] ";echo $res_insert_det1;} 
-
-  }catch(Exception $ex){  }
+  }
 ?>
 <head>
     <meta charset="UTF-8">
@@ -41,12 +55,12 @@
 <body>
 <center><div class="Info">
   <?php
+     fx_todo($file,153);
+    echo "<br>";echo "<p>---------------------</p>";
+    fx_Bet($file,153);
     echo "<br>";echo "<p>Informacion de Pinnacle</p>";
-    echo $lo1."  -"; echo $vi1."  -"; echo $fe1; echo "<br>";
-    echo $cl1."  -"; echo $ce1."  -"; echo $cv1; echo "<br>";echo "<br>";
-
-    echo $filereducido;
-  
+    
+    //echo $filereducido;
   ?>
 </div></center>
 
