@@ -30,21 +30,19 @@
         foreach($myhtml->find("span") as $content){ //for para iterara todos los registros
           $aux++; $nv=$array[0];
           if($aux<$fin){
-            $lo = $data[$nv]->innertext;   $vi = $data[$nv+1]->innertext;  $fe = $data[$nv+2]->innertext;
+            $test = $data[$nv]->innertext;  $busguion = strpos($test,"-",0); 
+            if($busguion>1){
+              $array[0] = $nv+2;   $nv=$array[0];
+            }
+            $lo = $data[$nv]->innertext; $vi = $data[$nv+1]->innertext;  $fe = $data[$nv+2]->innertext;
             $cl = $data[$nv+3]->innertext; $ce = $data[$nv+4]->innertext;  $cv = $data[$nv+5]->innertext;
             echo $lo."  -"; echo $vi."  -"; echo $fe; echo "<br>";
             echo $cl."  -"; echo $ce."  -"; echo $cv; echo "<br>";echo "<br>";
-          
-            $busguion = strpos($lo,"-",0);
-            if($busguion>1){
-              $array[0] = $nv+8;
-            }else{
-              $array[0] = $nv+6;
-            }
+            $array[0] = $nv+6;
+            
           }
         }
-      }
-      
+      } 
     }
   }
 ?>
