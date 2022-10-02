@@ -23,7 +23,7 @@
     </div>
     <div id="Niveles">
        <div class="Niv-Basico"> 
-        <a href="scrapper.php"><p>Extraer</p> <p>Informacion</p>
+        <a href="scrapper_pi.php"><p>Extraer</p> <p>Informacion</p>
         <img src="" ></a> 
       </div>
      <div class="Niv-Intermedio"> 
