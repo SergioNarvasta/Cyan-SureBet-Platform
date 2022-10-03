@@ -30,7 +30,7 @@
       $buscuota = strpos($main,"Cuota",0); //Si encuentra el flag graba info en variables
       if($buscuota>1){
         array_push($array,$con+4); 
-       //echo $con."--Encontrado Guion".$lo;echo "<br>";
+        //echo $con."--Encontrado Guion".$lo;echo "<br>";
         foreach($myhtml->find("span") as $content2){ //for para iterara todos los registros
           $aux++; $nv=$array[0];
           if($aux<$fin){
@@ -41,25 +41,27 @@
               }
               $lo = $data[$nv]->innertext; $vi = $data[$nv+1]->innertext;  $fe = $data[$nv+2]->innertext;
               $cl=$data[$nv+3]->innertext; $ce = $data[$nv+4]->innertext;  $cv = $data[$nv+5]->innertext;
-              $idcab = substr(substr($lo,0,8).substr($vi,0,8),0,16);
+              $idcab = "Pi".substr(substr($lo,0,7).substr($vi,0,7),0,14);
               $array[0] = $nv+6;
-            //Filtra si encuentra en su estructura: Apuestas, span ,div 
+              //Filtra si encuentra en su estructura: Apuestas, span ,div 
                 if($busApuestas==false and $busspan==false and $busimg==false and $bussocios==false){
-            /*    $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
+                  $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
+                                  VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
                   $res_insert_cab = mysqli_query($cn,$insert_cab);
                   if($res_insert_cab<1){
                     echo "<br>";echo "--Error [bet_cab]";
                   }else{
-                    echo "<br>";echo "--Exito [bet_cab]"; echo $lo.$vi;
+                    echo "<br>";echo "--Exito [bet_cab]";
                   }
             
-                  $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
+                  $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
+                                  VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
                   $res_insert_det = mysqli_query($cn,$insert_det);
                   if($res_insert_det<1){
                     echo "<br>";echo "--Error [bet_det]";
                   }else{
                     echo "<br>";echo "--Exito [bet_det] ";
-                  }*/
+                  }
               echo $lo."  -"; echo $vi."  -"; echo $fe; echo "<br>";
               echo $cl."  -"; echo $ce."  -"; echo $cv; echo "<br>";echo "<br>"; 
             }
@@ -72,6 +74,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Scraping Web</title>
+    <button><a href="operaciones.php">Volver</a> </button> <br> <br>
 </head>
 <body>
 <center><div class="Info">
@@ -81,6 +84,7 @@
     echo "<br>";echo "<p>Informacion de $casa</p>";
     //fx_todo($file,153);
     //echo $filereducido;
+    //header("Location: scrapper_ob.php");
   ?>
 </div></center>
 </body>

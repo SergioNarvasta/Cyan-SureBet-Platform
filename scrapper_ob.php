@@ -37,16 +37,16 @@
           //echo "--Contador ".$con."--";echo $dat;echo "<br>";
           $fe = substr($dat,0,14);          $bcar = strpos($dat,"-",1);
           $lo = substr($dat,15,$bcar-15);   $vi   = substr($dat,$bcar+2,20);
-          $idcab = substr(substr($lo,0,8).substr($vi,0,8),0,16);
+          $idcab = "Ob".substr(substr($lo,0,7).substr($vi,0,7),0,14);
           echo $lo;      echo "-".$vi." ";      echo "-".$fe;   echo "<br>";
-          /*$insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
+          $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
                          VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
           $res_insert_cab = mysqli_query($cn,$insert_cab);
           if($res_insert_cab<1){
             echo "<br>";echo "--Error [bet_cab]";
           }else{
-          echo "<br>";echo "--Exito [bet_cab]"; echo $lo.$vi;
-          }*/
+          echo "<br>";echo "--Exito [bet_cab]";
+          }
             
           $nv=$array[0];  $valida++; settype($dat,"string"); 
           if($nv<500){
@@ -55,14 +55,14 @@
             if($bus1==false or $bus2==false or $bus3==false){ $con++; //Contador asigna limite a 13
               if($con<50){ 
                 echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;    echo "<br>";  
-                /*$insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
+                $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
                                VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
                 $res_insert_det1 = mysqli_query($cn,$insert_det);
                 if($res_insert_det1<1){
                   echo "<br>";echo "--Error [bet_det]";
                 }else{
                   echo "<br>";echo "--Exito [bet_det] ";
-                }*/
+                }
                 if($valida>22 ){
                   $array[0] = $nv+9;
                 }else {
@@ -90,5 +90,6 @@
    }*/
   
   //echo $filereducido;
+  //header("Location: scrapper_pi.php");
 ?>
 </div> </center>
