@@ -46,8 +46,7 @@
             echo "<br>";echo "--Error [bet_cab]";
           }else{
           echo "<br>";echo "--Exito [bet_cab]";
-          }
-            
+          }     
           $nv=$array[0];  $valida++; settype($dat,"string"); 
           if($nv<500){
             $cl=$content_c[$nv]->innertext;  $ce=$content_c[$nv+1]->innertext;  $cv=$content_c[$nv+2]->innertext;
@@ -80,15 +79,9 @@
   <button><a href="operaciones.php">Volver</a> </button> <br> <br>
   <title>Scraping Web</title>
 <?php 
-  //fx_todo($file,100);
   echo "<p>Informacion de $casa</p>";
   fx_insertBet($cn,154,6);
-  
-  /* foreach($myhtml->find("span") as $content){
-      echo " ".$content->innertext;
-      echo "<br>";  
-   }*/
-  
+
   //echo $filereducido;
   //header("Location: scrapper_pi.php");
 ?>

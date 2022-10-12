@@ -1,6 +1,6 @@
 <?php
   include ("simple_html_dom.php");
-  $file ="Downloads_Web/Chaskibet.html";
+  $file ="Downloads_Web/Chaskibet.html"; $casa="Chaskibet"
   $filereducido = file_get_contents($file,FALSE,NULL,1145000,350800);
   $myhtml = file_get_html($file);
   $content = $myhtml->find("div") ; 
@@ -19,15 +19,12 @@
 ?>   
 <center>  <div>
 <?php //}  
-        echo "<br>";echo "<p>Informacion de ChaskiBet</p>";
-        //fx_todo($file,200);
-        //echo $filereducido;
+        echo "<br>";echo "<p>Informacion de $casa</p>";
        
         foreach($myhtml->find("tbody") as $content){
               echo $content->innertext;
               echo "<br>";"<br>";   
         }
-       //echo $filereducido;
-       
+       //echo $filereducido; 
     ?>
 </div></center>

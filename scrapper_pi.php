@@ -84,7 +84,6 @@
     echo "<br>";echo "<p>Informacion de $casa</p>";
     //fx_todo($file,153);
     //echo $filereducido;
-    //header("Location: scrapper_ob.php");
   ?>
 </div></center>
 </body>
