@@ -15,7 +15,7 @@ if(!Empty($benf) and ($benf>=1)){
    $sql     = $sql.$sqlbenf;
 }
 if(!Empty($casa) and ($casa != "Todas")){
-    $sqlcasa = " AND CasaApuesta = '$casa' ";
+    $sqlcasa = " AND Casa1 = '$casa' ";
     $sql     = $sql.$sqlcasa;
 }
 if(!Empty($comp)and ($comp != "Todas")){

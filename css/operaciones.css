@@ -89,3 +89,4 @@
 }
 #Niveles .Niv-Avanzado:hover{ transform:scale(1.05); transition: 500ms; }
 #Niveles a{ color: white; text-decoration: none; position: relative; font-size: 20px;}
+.Niv-Basico h6{ color: black; font-size: 15px;}

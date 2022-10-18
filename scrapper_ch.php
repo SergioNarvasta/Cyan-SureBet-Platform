@@ -1,6 +1,6 @@
 <?php
   include ("simple_html_dom.php");
-  $file ="Downloads_Web/Chaskibet.html"; $casa="Chaskibet"
+  $file ="Downloads_Web/Chaskibet.html"; $casa="Chaskibet";
   $filereducido = file_get_contents($file,FALSE,NULL,1145000,350800);
   $myhtml = file_get_html($file);
   $content = $myhtml->find("div") ; 

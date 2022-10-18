@@ -38,14 +38,14 @@
           $fe = substr($dat,0,14);          $bcar = strpos($dat,"-",1);
           $lo = substr($dat,15,$bcar-15);   $vi   = substr($dat,$bcar+2,20);
           $idcab = "Ob".substr(substr($lo,0,7).substr($vi,0,7),0,14);
-          echo $lo;      echo "-".$vi." ";      echo "-".$fe;   echo "<br>";
+          echo $lo;      echo "-".$vi." ";      echo "-".$fe;  
           $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
                          VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
           $res_insert_cab = mysqli_query($cn,$insert_cab);
           if($res_insert_cab<1){
-            echo "<br>";echo "--Error [bet_cab]";
+            echo "--Error [bet_cab]";echo "<br>";
           }else{
-          echo "<br>";echo "--Exito [bet_cab]";
+          echo "--Exito [bet_cab]";echo "<br>";
           }     
           $nv=$array[0];  $valida++; settype($dat,"string"); 
           if($nv<500){
@@ -53,14 +53,14 @@
             $bus1=strpos($cl,"refresh",0);   $bus2=strpos($ce,"LIVE",0); $bus3=strpos($cv,"Registrarse",0);
             if($bus1==false or $bus2==false or $bus3==false){ $con++; //Contador asigna limite a 13
               if($con<50){ 
-                echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;    echo "<br>";  
+                echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;  
                 $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
                                VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
                 $res_insert_det1 = mysqli_query($cn,$insert_det);
                 if($res_insert_det1<1){
-                  echo "<br>";echo "--Error [bet_det]";
+                  echo "--Error [bet_det]";echo "<br>";
                 }else{
-                  echo "<br>";echo "--Exito [bet_det] ";
+                  echo "--Exito [bet_det] ";echo "<br>";
                 }
                 if($valida>22 ){
                   $array[0] = $nv+9;

@@ -1,9 +1,14 @@
+<?php
+include ("conexion.php") ;
+$cantpi= $_GET["cpi"]; settype($cantpi,"integer");
+$cantob= $_GET["cob"]; settype($cantob,"integer");
+?>
 <head>
 	<title>Operaciones - SureBet Platform </title>
 	<link href="css/operaciones.css" rel="stylesheet" type="text/css">
 	<link href="css/footer.css" rel="stylesheet" type="text/css">
   <script src="js/live.js"></script>
-</head>
+</head> 
 <body>
   <div id="main">
     <div id="header">
@@ -23,8 +28,18 @@
     </div>
     <div id="Niveles">
        <div class="Niv-Basico"> 
-        <a href="scrapper_pi.php"><p>Extraer</p> <p>Informacion</p>
-        <img src="" ></a> 
+        <a href="scrapper_pi.php"><p>Extraer</p> <p>Informacion</p><img src="" ></a> 
+        <h6><?php    
+        if($cantpi>0){
+          $cantch=$cantob+4;  settype($cantch,"string");
+          $cantb3=$cantpi-8;  settype($cantb3,"string"); 
+          settype($cantpi,"string"); settype($cantob,"string");
+            echo "Se obtuvieron : ";                echo "<br>";
+            echo "Pinnacle $cantpi registros.";     echo "<br>";
+            echo "OnceBet ".$cantob." registros.";  echo "<br>";
+            echo "Chaskibet ".$cantch." registros.";echo "<br>";
+            echo "Bet365 ".$cantb3." registros.";}
+        ?></h6>
       </div>
      <div class="Niv-Intermedio"> 
         <a href="scrapper_ch.php"><p>Validar y</p><p>Procesar</p>
