@@ -1,6 +1,6 @@
 <?php 
 include("conexion.php") ;
-$sql ="SELECT * FROM `bet` WHERE Idbet > 1";
+$sql ="SELECT * FROM `bet` WHERE Idbet>0 ";
 
 header("Location: surebets.php?status=false&sql=$sql");
 

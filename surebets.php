@@ -116,7 +116,7 @@ $data=mysqli_query($cn,$sql);
        </div>
        
        <div class="Beneficio"> 
-          <p><?php echo $r["Beneficio"] ?>% GARANTIZADO BENEFICIO</p>
+          <p><?php echo $r["Beneficio"] ?> GARANTIZADO BENEFICIO</p>
         </div>
     </div>
     <?php }  ?>

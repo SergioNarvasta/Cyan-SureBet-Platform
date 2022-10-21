@@ -47,7 +47,7 @@ $cantob= $_GET["cob"]; settype($cantob,"integer");
         </a>
       </div>
      <div class="Niv-Avanzado"> 
-       <a href="scrapper_ob.php"> <p>Actualizar</p> <p>Informacion</p>
+       <a href="scrapper_add.php"> <p>Actualizar</p> <p>Informacion</p>
        <img src=""></a>
      </div>
      </div>

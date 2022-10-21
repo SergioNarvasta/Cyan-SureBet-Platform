@@ -5,7 +5,7 @@ $eve=$_POST["Evento"];
 $benf=$_POST["Beneficio"];
 $casa=$_POST["Casa"];
 $comp=$_POST["Competicion"];
-$sql ="SELECT * FROM `bet` WHERE Idbet > 1";
+$sql ="SELECT * FROM `bet` WHERE Idbet>0 ";
 if(!Empty($eve)){
     $sqlev = " AND Evento LIKE '%$eve%' " ;
     $sql   = $sql.$sqlev;
