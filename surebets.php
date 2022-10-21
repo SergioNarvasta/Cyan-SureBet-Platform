@@ -112,7 +112,7 @@ $data=mysqli_query($cn,$sql);
        <div class="Det">           
           <div><?php echo $r["Casa3"] ?></div>
           <div class="Res"> <?php echo $r["Mercado3"] ?></div>
-          <div><?php echo $r["Cuota3"] ?> </div>
+          <div><?php $cuo= $r["Cuota3"]; if($cuo>1){echo $cuo;}else echo "<br>"; ?> </div>
        </div>
        
        <div class="Beneficio"> 
