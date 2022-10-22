@@ -1,6 +1,6 @@
-SELECT a.local,a.visita,b.casa,b.cuota_local,b.cuota_empate,b.cuota_visita FROM bet_cab A 
-   left join bet_det B ON A.idcab = B.idcab
-   WHERE B.idcab IS NOT NULL
+SELECT a.local,a.visita,a.feceve ,b.casa,b.cuota_local,b.cuota_empate,b.cuota_visita,b.fecreg FROM bet_cab A 
+LEFT JOIN bet_det B ON A.idcab = B.idcab
+WHERE B.idcab IS NOT NULL
 
 SELECT * FROM bet_cab A 
    left join bet_det B ON A.idcab = B.idcab

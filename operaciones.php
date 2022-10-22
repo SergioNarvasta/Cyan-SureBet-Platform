@@ -1,5 +1,6 @@
 <?php
 include ("conexion.php") ;
+
 $cantpi= $_GET["cpi"]; settype($cantpi,"integer");
 $cantob= $_GET["cob"]; settype($cantob,"integer");
 ?>
@@ -28,7 +29,11 @@ $cantob= $_GET["cob"]; settype($cantob,"integer");
     </div>
     <div id="Niveles">
        <div class="Niv-Basico"> 
-        <a href="scrapper_pi.php"><p>Extraer</p> <p>Informacion</p><img src="" ></a> 
+        <a href="run_process.php"><p>Extraer</p> <p>Informacion</p><img src="" ></a> 
+      </div>
+     <div class="Niv-Intermedio"> 
+        <a href="scrapper_pi.php"><p>Validar y</p><p>Procesar</p>
+        </a>
         <h6><?php    
         if($cantpi>0){
           $cantch=$cantob+4;  settype($cantch,"string");
@@ -40,11 +45,6 @@ $cantob= $_GET["cob"]; settype($cantob,"integer");
             echo "Chaskibet ".$cantch." registros.";echo "<br>";
             echo "Bet365 ".$cantb3." registros.";}
         ?></h6>
-      </div>
-     <div class="Niv-Intermedio"> 
-        <a href="scrapper_ch.php"><p>Validar y</p><p>Procesar</p>
-        <img src="" >
-        </a>
       </div>
      <div class="Niv-Avanzado"> 
        <a href="scrapper_add.php"> <p>Actualizar</p> <p>Informacion</p>

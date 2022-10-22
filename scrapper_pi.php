@@ -18,10 +18,20 @@
      WHERE B.idcab IS NOT NULL AND B.casa='Pinnacle' AND DAY(A.fecreg) = DAY(CURRENT_TIME)"; 
     $sqlob = "SELECT * FROM bet_cab A LEFT JOIN bet_det B ON A.idcab = B.idcab 
      WHERE B.idcab IS NOT NULL AND B.casa='OnceBet' AND DAY(A.fecreg) = DAY(CURRENT_TIME)"; 
+    $sqldata="SELECT a.local,a.visita,a.feceve ,b.casa,b.cuota_local,b.cuota_empate,b.cuota_visita,b.fecreg FROM bet_cab A 
+               LEFT JOIN bet_det B ON A.idcab = B.idcab WHERE B.idcab IS NOT NULL";
+    $data =mysqli_query($cn,$sqldata);
     $datapi=mysqli_query($cn,$sqlpi); $dataob=mysqli_query($cn,$sqlob);
     $cantpi=mysqli_num_rows($datapi); 
     $cantob=mysqli_num_rows($dataob); 
-  header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
+  //header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
+  echo "<center><div>";
+    while($r = mysqli_fetch_array($data)) {
+    echo $r["local"]; echo $r["visita"]; echo $r["feceve"]; echo $r["casa"]; echo "<br>";
+    echo $r["cuota_local"]; echo $r["cuota_empate"];  echo $r["cuota_visita"]; echo $r["fecreg"];
+    echo "<br>";echo "<br>";
+  }   
+  echo "</div></center>";
   }
   function fx_insertPinnacle($cn,$fin){
     $file ="Downloads_Web/Pinnacle.html";  
@@ -80,7 +90,7 @@
     $deporte = "Futbol";                  $casa = "OnceBet";             
     $array = [];                          array_push($array,$cuo);       $valida=0;
     for($n=$ini;$n<=$fin,$n++;){                             
-      if($n<$fin){fx_redirect_operaciones($cn);}else{         //Redirige a operaciones.php
+      if($n<$fin){  fx_redirect_operaciones($cn);}else{         //Redirige a operaciones.php
       $dat = $content[$n]->innertext; settype($dat,"string");  
       $bus22=strpos($dat,"22",0);  $busma=strpos($dat,"+",0);  $busg=strpos($dat,"-",0);  $busot=strpos($dat,"Tinco",0); 
       $enti=htmlentities($dat, ENT_QUOTES); $busdiv= strpos($enti,"div",0);
@@ -104,7 +114,7 @@
             $bus1=strpos($cl,"refresh",0);   $bus2=strpos($ce,"LIVE",0); $bus3=strpos($cv,"Registrarse",0);
             if($bus1==false or $bus2==false or $bus3==false){ $con++; //Contador asigna limite a 13
               if($con<50){ 
-                echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;  
+                //echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;  
                 $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
                                VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
                 $res_insert_det1 = mysqli_query($cn,$insert_det);
