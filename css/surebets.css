@@ -65,6 +65,15 @@
     border: 1px solid rgb(0, 83, 190);
     width:100%;
 }
+#Box-Main-Bet{
+    display: flex;  
+    flex-direction: row; 
+}
+#Pagination{
+    display: flex;  
+    flex-direction: row; 
+}    
+
 .BetList {
     display: flex;  
     flex-direction: column;

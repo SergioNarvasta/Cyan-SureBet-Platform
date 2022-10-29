@@ -28,14 +28,11 @@ $paginas = ceil($conteo / $productosPorPagina);
 $sentencia = $base_de_datos->prepare("$sql LIMIT ? OFFSET ?");
 $sentencia->execute([$limit, $offset]);
 $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
-//<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  //<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 ?>
 <head>
 	<title>SureBet Platform </title>
 	<link href="css/surebets.css" rel="stylesheet" type="text/css">
   <link href="css/footer.css" rel="stylesheet" type="text/css">
-  
 </head>
 <body>
 <div id="main">
@@ -111,7 +108,7 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
   </div>
   </form>
 </div>
-<div>
+<div id="Box-Main-Bet">
    <?php foreach ($data as $r){   ?>   
     <div class="BetList">
         <div class="Cab"> 
@@ -141,7 +138,8 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
         </div>
     </div>
     <?php }  ?>
-    <nav>
+    <div id="Pagination"> 
+        <nav>
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <p>Mostrando <?php echo $productosPorPagina ?> de <?php echo $conteo ?> productos disponibles</p>
@@ -176,6 +174,7 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
                 <?php } ?>
             </ul>
         </nav>
+    </div>    
 </div> <br>   
 </body>
 <?php 

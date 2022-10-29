@@ -89,8 +89,7 @@
             <div class="carrusel-items">
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/WC.jpg" />
-              </div>
-               <!--
+              </div>      
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/wcf.jpg" />
               </div>
@@ -108,8 +107,7 @@
               </div>
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/nations.jpg" />
-              </div> 
-                -->
+              </div>     
             </div>
           </div>
         </div>
