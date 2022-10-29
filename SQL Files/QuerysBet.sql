@@ -108,3 +108,46 @@ END;
 
 DELIMITER ;
 CALL PA_Procesa();
+
+
+--Backup While mysqli_fetch_array 
+-- 25/10/2022
+<?php   while($r = mysqli_fetch_array($data)) {   ?>   
+    <div class="BetList">
+        <div class="Cab"> 
+          <div><img src="img/soccer.png" alt="Football" height="30" width="30"> </div>    
+          <div><?php echo $r["Competicion"] ?></div>
+          <div><?php echo $r["Evento"] ?></div>
+          <div><?php echo $r["FechaEv"] ?> </div>
+        </div>
+        <div class="Det">           
+          <div><?php echo $r["Casa1"] ?></div>
+          <div class="Res"> <?php echo $r["Mercado1"] ?></div>
+          <div><?php echo $r["Cuota1"] ?> </div>
+       </div>
+       <div class="Det">           
+          <div><?php echo $r["Casa2"] ?></div>
+          <div class="Res"> <?php echo $r["Mercado2"] ?></div>
+          <div><?php echo $r["Cuota2"] ?> </div>
+       </div>
+       <div class="Det">           
+          <div><?php echo $r["Casa3"] ?></div>
+          <div class="Res"> <?php echo $r["Mercado3"] ?></div>
+          <div><?php $cuo= $r["Cuota3"]; if($cuo>1){echo $cuo;}else echo "<br>"; ?> </div>
+       </div>
+       
+       <div class="Beneficio"> 
+          <p><?php echo $r["Beneficio"] ?> GARANTIZADO BENEFICIO</p>
+        </div>
+    </div>
+    <?php }  ?>
+
+
+--BK CheckBoxs
+
+<div class="Info"> 
+          <input class="chk" type="checkbox" checked>Pinnacle</input>
+          <input class="chk" type="checkbox" checked>OnceBet</input>
+          <input class="chk" type="checkbox">Bet365</input>
+          <input class="chk" type="checkbox">Chaskibet</input> 
+        </div>

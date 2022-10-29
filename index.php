@@ -18,9 +18,9 @@
         </div>
       <div id="menu">
         <div class="Inicio"><a href="control.php">Control</a></div>
-        <div class="Nosotros"><a href="services_operaciones.php">Operaciones</a></div>
-        <div class="Noticias"><a href="services_surebets.php">SureBets</a></div>
-        <div class="Contacto"><a href="scrapper.php">Scrapper Web</a></div>
+        <div class="Nosotros"><a href="operaciones.php">Operaciones</a></div>
+        <div class="Noticias"><a href="surebets.php">SureBets</a></div>
+        <div class="Contacto"><a href="scrapper.php">Scrapper</a></div>
       </div>
       <div class="login"> 
        <div class="icon"><img src="img/icon-user-header.png" width="30" height="30"></div>

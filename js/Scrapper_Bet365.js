@@ -5,7 +5,7 @@ var puppeteer = require('puppeteer'),
 
 puppeteer.launch()
     .then(function (browser) {
-        return browser.newPage()
+        return browser.newPage() 
             .then(function (page) {
                 return page.goto(HomeBet)
                     .then(function () {

@@ -6,7 +6,7 @@
   $content = $myhtml->find("div"); 
 
   function fx_todo($file,$fin){
-    $myhtml = file_get_html($file); $data = $myhtml->find("td");
+    $myhtml = file_get_html($file); $data = $myhtml->find("a");
     $con = 0;
      echo "<p>Mostrando toda la Informacion de td  </p>";
     foreach($myhtml->find("tr") as $content){
@@ -37,7 +37,7 @@
                 $casa3=$data[$nv+6]->innertext; $cu3=$data[$nv+8]->innertext; 
                 $array[0]=$nv+11;  $arraytd[0]=$td+21;
               }else{
-                $casa3=null;$mer3=null; $cu3=0;  $array[0]=$nv+7;  $arraytd[0]=$td+15;
+                $casa3=null;  $mer3=null; $cu3=0;  $array[0]=$nv+8;  $arraytd[0]=$td+15;
               }echo"--------------";echo "<br>";
               
               $insert ="INSERT INTO `bet`(`IdBet`, `Deporte`, `Competicion`, `Evento`, `FechaEv`, `Mercado1`, `Mercado2`, `Mercado3`, `Cuota1`, `Cuota2`, `Cuota3`, `Casa1`, `Casa2`, `Casa3`, `Beneficio`, `Resultado`, `Limite`, `FechaReg`)
