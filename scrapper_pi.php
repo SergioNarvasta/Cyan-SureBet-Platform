@@ -24,14 +24,15 @@
     $datapi=mysqli_query($cn,$sqlpi); $dataob=mysqli_query($cn,$sqlob);
     $cantpi=mysqli_num_rows($datapi); 
     $cantob=mysqli_num_rows($dataob); 
-  //header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
-  echo "<center><div>";
+  header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
+  /*echo "<center><div>";
     while($r = mysqli_fetch_array($data)) {
     echo $r["local"]; echo $r["visita"]; echo $r["feceve"]; echo $r["casa"]; echo "<br>";
     echo $r["cuota_local"]; echo $r["cuota_empate"];  echo $r["cuota_visita"]; echo $r["fecreg"];
     echo "<br>";echo "<br>";
   }   
   echo "</div></center>";
+  */
   }
   function fx_insertPinnacle($cn,$fin){
     $file ="Downloads_Web/Pinnacle.html";  

@@ -14,6 +14,14 @@ SELECT * FROM bet_cab A
     $cantpi=mysqli_num_rows($datapi); 
     $cantob=mysqli_num_rows($dataob); 
     header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
+    
+--ACTUALIZA LAS CASAS DE APUESTAS 
+UPDATE bet SET 
+Casa1='Pinnacle';
+UPDATE bet SET 
+Casa2='Chaskibet';
+UPDATE bet SET 
+Casa3='Bet365'
 
 SELECT  RIGHT(B.idcab,2), A.idcab,
         A.local,
