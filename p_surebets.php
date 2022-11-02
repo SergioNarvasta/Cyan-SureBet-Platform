@@ -5,7 +5,7 @@ $eve=$_POST["Evento"];
 $benf=$_POST["Beneficio"];
 $casa=$_POST["Casa"];
 $comp=$_POST["Competicion"];
-$sql ="SELECT * FROM `bet` WHERE Idbet > 1";
+$sql =" ";
 if(!Empty($eve)){
     $sqlev = " AND Evento LIKE '%$eve%' " ;
     $sql   = $sql.$sqlev;
@@ -15,7 +15,7 @@ if(!Empty($benf) and ($benf>=1)){
    $sql     = $sql.$sqlbenf;
 }
 if(!Empty($casa) and ($casa != "Todas")){
-    $sqlcasa = " AND CasaApuesta = '$casa' ";
+    $sqlcasa = " AND Casa1 = '$casa' ";
     $sql     = $sql.$sqlcasa;
 }
 if(!Empty($comp)and ($comp != "Todas")){
@@ -26,6 +26,6 @@ if(!Empty($comp)and ($comp != "Todas")){
 //$data=mysqli_query($cn,$sql);
 
 //if (!Empty($data)){
-    header("Location: surebets.php?status=true&sql=$sql");
+    header("Location: surebets.php?sql=$sql");
 //}
 ?>

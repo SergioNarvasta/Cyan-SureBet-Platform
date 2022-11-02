@@ -5,3 +5,7 @@
 simple_html_dom.php
 package-lock.json
 package.json
+/vendor
+composer.json
+composer.lock
+

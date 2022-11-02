@@ -34,7 +34,7 @@
 }
 .bot-img {
     margin-top: 10px;
-    margin-left: 19%;
+    margin-left: 20%;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
 
@@ -44,7 +44,8 @@
         transition: 500ms;
     }
 #Niveles{	
-	width: 80%; height: 430px;
+	width: 80%; 
+	height: 100px;
 	text-align: center;
 	font-family: 'segoe UI';
     font-size: 30px;
@@ -89,3 +90,9 @@
 }
 #Niveles .Niv-Avanzado:hover{ transform:scale(1.05); transition: 500ms; }
 #Niveles a{ color: white; text-decoration: none; position: relative; font-size: 20px;}
+.Niv-Basico h6{ color: black; font-size: 15px;}
+
+input {
+	font-size: 9px;
+	color: black;
+}

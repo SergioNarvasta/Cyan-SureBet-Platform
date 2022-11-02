@@ -29,7 +29,7 @@
     $deporte = "Futbol";                  $casa = "OnceBet";             
     $array = [];                          array_push($array,$cuo);       $valida=0;
     for($n=$ini;$n<=160,$n++;){                             
-      //if($n<$fin){
+      if($n<300){
       $dat = $content[$n]->innertext; settype($dat,"string");  
       $bus22=strpos($dat,"22",0);  $busma=strpos($dat,"+",0);  $busg=strpos($dat,"-",0);  $busot=strpos($dat,"Tinco",0); 
       $enti=htmlentities($dat, ENT_QUOTES); $busdiv= strpos($enti,"div",0);
@@ -38,30 +38,29 @@
           $fe = substr($dat,0,14);          $bcar = strpos($dat,"-",1);
           $lo = substr($dat,15,$bcar-15);   $vi   = substr($dat,$bcar+2,20);
           $idcab = "Ob".substr(substr($lo,0,7).substr($vi,0,7),0,14);
-          echo $lo;      echo "-".$vi." ";      echo "-".$fe;   echo "<br>";
+          echo $lo;      echo "-".$vi." ";      echo "-".$fe;  
           $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
                          VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
           $res_insert_cab = mysqli_query($cn,$insert_cab);
           if($res_insert_cab<1){
-            echo "<br>";echo "--Error [bet_cab]";
+            echo "--Error [bet_cab]";echo "<br>";
           }else{
-          echo "<br>";echo "--Exito [bet_cab]";
-          }
-            
+          echo "--Exito [bet_cab]";echo "<br>";
+          }     
           $nv=$array[0];  $valida++; settype($dat,"string"); 
-          if($nv<500){
+          if($nv<300){
             $cl=$content_c[$nv]->innertext;  $ce=$content_c[$nv+1]->innertext;  $cv=$content_c[$nv+2]->innertext;
             $bus1=strpos($cl,"refresh",0);   $bus2=strpos($ce,"LIVE",0); $bus3=strpos($cv,"Registrarse",0);
             if($bus1==false or $bus2==false or $bus3==false){ $con++; //Contador asigna limite a 13
               if($con<50){ 
-                echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;    echo "<br>";  
+                echo $valida."-"."Cl ".$cl;      echo "Ce ".$ce;      echo "Cv ".$cv;  
                 $insert_det = "INSERT INTO bet_det(`idcab`,`iddet`,`casa`,`cuota_local`,`cuota_empate`,`cuota_visita`,`fecreg`)
                                VALUES('$idcab',NULL,'$casa',$cl,$ce,$cv,CURRENT_TIME)";
                 $res_insert_det1 = mysqli_query($cn,$insert_det);
                 if($res_insert_det1<1){
-                  echo "<br>";echo "--Error [bet_det]";
+                  echo "--Error [bet_det]";echo "<br>";
                 }else{
-                  echo "<br>";echo "--Exito [bet_det] ";
+                  echo "--Exito [bet_det] ";echo "<br>";
                 }
                 if($valida>22 ){
                   $array[0] = $nv+9;
@@ -72,7 +71,7 @@
             } 
           }else echo" ";
         }
-    }
+    }}
   }
   //try{} catch(Exception $e){echo 'Excepción capturada: ',  $e->getMessage(), "\n";}finally {echo "Finally.\n";}
 ?>   
@@ -80,15 +79,9 @@
   <button><a href="operaciones.php">Volver</a> </button> <br> <br>
   <title>Scraping Web</title>
 <?php 
-  //fx_todo($file,100);
   echo "<p>Informacion de $casa</p>";
   fx_insertBet($cn,154,6);
-  
-  /* foreach($myhtml->find("span") as $content){
-      echo " ".$content->innertext;
-      echo "<br>";  
-   }*/
-  
+
   //echo $filereducido;
   //header("Location: scrapper_pi.php");
 ?>

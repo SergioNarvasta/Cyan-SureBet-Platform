@@ -17,10 +17,10 @@
           <img class="Logo" src="img/logo.jpg" width="100" height="100" alt="Logo Innovation Services">
         </div>
       <div id="menu">
-        <div class="Inicio"><a href="control.php">Control</a></div>
+        <div class="Inicio"><a href="control.php">Gestionar</a></div>
         <div class="Nosotros"><a href="operaciones.php">Operaciones</a></div>
-        <div class="Noticias"><a href="p_redirect.php">SureBets</a></div>
-        <div class="Contacto"><a href="scrapper.php">Scrapper Web</a></div>
+        <div class="Contacto"><a href="scrapper.php">Cuotas</a></div>
+        <div class="Noticias"><a href="surebets.php">SureBets</a></div>
       </div>
       <div class="login"> 
        <div class="icon"><img src="img/icon-user-header.png" width="30" height="30"></div>
@@ -89,8 +89,7 @@
             <div class="carrusel-items">
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/WC.jpg" />
-              </div>
-               <!--
+              </div>      
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/wcf.jpg" />
               </div>
@@ -108,8 +107,7 @@
               </div>
               <div class="carrusel-item">
                 <img width="340px" height="250px" src="img/nations.jpg" />
-              </div> 
-                -->
+              </div>     
             </div>
           </div>
         </div>
