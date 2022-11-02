@@ -8,7 +8,7 @@ if(isset($_GET["sql"])){
   $sql = $sql1.$sqlwhere;
  }
 # Cuántos productos mostrar por página
-$productosPorPagina = 2;
+$productosPorPagina = 3;
 // Por defecto es la página 1; pero si está presente en la URL, tomamos esa
 $pagina = 1;
 if (isset($_GET["pagina"])) {
@@ -23,7 +23,6 @@ $sentencia = $base_de_datos->query("SELECT count(*) AS conteo FROM bet");
 $conteo = $sentencia->fetchObject()->conteo;
 # Para obtener las páginas dividimos el conteo entre los productos por página, y redondeamos hacia arriba
 $paginas = ceil($conteo / $productosPorPagina);
-
 # Ahora obtenemos los productos usando ya el OFFSET y el LIMIT
 $sentencia = $base_de_datos->prepare("$sql LIMIT ? OFFSET ?");
 $sentencia->execute([$limit, $offset]);
@@ -131,24 +130,23 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
           <div><?php echo $r->Casa3 ?></div>
           <div class="Res"> <?php echo $r->Mercado3 ?></div>
           <div><?php $cuo= $r->Cuota3; if($cuo>1){echo $cuo;}else echo " "; ?> </div>
-       </div>
-       
+       </div> 
        <div class="Beneficio"> 
           <p><?php echo $r->Beneficio ?> GARANTIZADO BENEFICIO</p>
         </div>
-    </div>
-    <?php }  ?>
-    <div id="Pagination"> 
+    </div> 
+    <?php }  ?> <br>
+    <div id="Pagination-main"> 
         <nav>
-            <div class="row">
+            <div class="column">
                 <div class="col-xs-12 col-sm-6">
-                    <p>Mostrando <?php echo $productosPorPagina ?> de <?php echo $conteo ?> productos disponibles</p>
+                    <p>Mostrando <?php echo $productosPorPagina ?> de <?php echo $conteo ?> surebets</p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <p>Página <?php echo $pagina ?> de <?php echo $paginas ?> </p>
                 </div>
             </div>
-            <ul class="pagination">
+            <ul class="Pagination">
                 <!-- Si la página actual es mayor a uno, mostramos el botón para ir una página atrás -->
                 <?php if ($pagina > 1) { ?>
                     <li>
