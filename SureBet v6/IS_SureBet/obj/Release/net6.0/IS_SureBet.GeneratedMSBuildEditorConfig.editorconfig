@@ -19,10 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/BetList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxCZXRMaXN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +37,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Betlist/BetList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0bGlzdFxCZXRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Home/Index.cshtml]

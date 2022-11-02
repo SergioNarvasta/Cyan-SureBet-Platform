@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dM3/cn/fPSvxI+dVdzAkBwtcdfhMdmv+Wa0Em0lnI8m69uVelspnKZZk2vm1ojfIEnHdVPqHnEAEp+UrOSzLDQ==",
+  "dgSpecHash": "ah+EXOdlVf3K9RiIGCIPy/BtUurw9JpYvR+2Pyx63cyrI94EtUjkqWXnbtJaYD1eGfcq1mpFy1GCB/94DC/Oyw==",
   "success": true,
-  "projectFilePath": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
+  "projectFilePath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\IS_SureBet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\snarvasta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\snarvasta\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

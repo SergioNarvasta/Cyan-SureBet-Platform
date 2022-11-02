@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {}
+    "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\IS_SureBet.csproj": {}
   },
   "projects": {
-    "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj": {
+    "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\IS_SureBet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
+        "projectUniqueName": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\IS_SureBet.csproj",
         "projectName": "IS_SureBet",
-        "projectPath": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\IS_SureBet.csproj",
+        "projectPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\IS_SureBet.csproj",
         "packagesPath": "C:\\Users\\snarvasta\\.nuget\\packages\\",
-        "outputPath": "D:\\1- Docs Sergio\\Files\\PROYECTOS\\SureBet\\IS_SureBet\\obj\\",
+        "outputPath": "D:\\Docs_Sergio\\Personal\\PROYECTOS\\SureBetv2\\IS_SureBet\\SureBet v6\\IS_SureBet\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\snarvasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -71,7 +74,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

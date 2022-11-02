@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IS_SureBet.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220808192459_[Bet-Migration]")]
-    partial class BetMigration
+    [Migration("20221102153038_MIgration20221102")]
+    partial class MIgration20221102
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
