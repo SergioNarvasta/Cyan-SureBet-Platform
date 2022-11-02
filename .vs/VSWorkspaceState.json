@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SureBet v6"
+    "\\SureBet v6",
+    "\\SureBet v6\\IS_SureBet\\Data"
   ],
-  "SelectedNode": "\\SureBet v6\\IS_SureBet.sln",
+  "SelectedNode": "\\SureBet v6\\IS_SureBet_MVC",
   "PreviewInSolutionExplorer": false
 }
