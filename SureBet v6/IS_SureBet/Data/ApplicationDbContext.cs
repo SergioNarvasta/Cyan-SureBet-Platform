@@ -12,7 +12,7 @@ namespace IS_SureBet.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-          optionsBuilder.UseSqlServer("Server=HDVMSQLDES;Database=Z_SureBet;Trusted_Connection=true; MultipleActiveResultSets=true;");
+          optionsBuilder.UseSqlServer("Server=HDVMSQLDES; Database=Z_SureBet; User ID=sa; Password=S0p0rt3; MultipleActiveResultSets=true;");
         }
         public DbSet<IS_SureBet.Models.BetData>? BetData { get; set; }
     }
