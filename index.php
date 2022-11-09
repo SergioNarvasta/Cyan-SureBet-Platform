@@ -15,7 +15,7 @@
       <div id="menu">
         <div class="Inicio"><a href="control.php">Gestionar</a></div>
         <div class="Nosotros"><a href="operaciones.php">Operaciones</a></div>
-        <div class="Contacto"><a href="scrapper.php">Cuotas</a></div>
+        <div class="Contacto"><a href="lista_cuotas.php">Cuotas</a></div>
         <div class="Noticias"><a href="surebets.php">SureBets</a></div>
       </div>
       <div class="login"> 
