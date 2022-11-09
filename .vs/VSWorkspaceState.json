@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\SureBet v6",
+    "\\SureBet v6\\IS_SureBet",
     "\\SureBet v6\\IS_SureBet\\Data"
   ],
-  "SelectedNode": "\\SureBet v6\\IS_SureBet_MVC",
+  "SelectedNode": "\\SureBet v6\\IS_SureBet\\Data\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
