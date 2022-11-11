@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SureBet v6",
     "\\SureBet v6\\IS_SureBet",
     "\\SureBet v6\\IS_SureBet\\Data"
   ],
-  "SelectedNode": "\\SureBet v6\\IS_SureBet\\Data\\ApplicationDbContext.cs",
+  "SelectedNode": "\\index.php",
   "PreviewInSolutionExplorer": false
 }

@@ -5,72 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IS_SureBet
 build_property.RootNamespace = IS_SureBet
-build_property.ProjectDir = D:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet\
+build_property.ProjectDir = d:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet
+build_property.MSBuildProjectDirectory = d:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Areas/Identity/Pages/_ViewStart.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Create.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Delete.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Details.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Detalles.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Detalles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxEZXRhbGxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Index.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/BetData/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0RGF0YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Betlist/BetList.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Betlist/BetList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmV0bGlzdFxCZXRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Home/Index.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Home/Privacy.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/Error.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_LoginPartial.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/_ViewImports.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/_ViewStart.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_Layout.cshtml]
+[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rpcfix5pem
