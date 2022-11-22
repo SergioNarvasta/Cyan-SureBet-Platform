@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IS_SureBet_MVC
 build_property.RootNamespace = IS_SureBet_MVC
-build_property.ProjectDir = d:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet_MVC\
+build_property.ProjectDir = D:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet_MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet_MVC
+build_property.MSBuildProjectDirectory = D:\Docs_Sergio\Personal\PROYECTOS\SureBetv2\IS_SureBet\SureBet v6\IS_SureBet_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Home/Index.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Home/Privacy.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/Error.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_LoginPartial.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/_ViewImports.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/_ViewStart.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_Layout.cshtml]
+[D:/Docs_Sergio/Personal/PROYECTOS/SureBetv2/IS_SureBet/SureBet v6/IS_SureBet_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wyvegp32y1
