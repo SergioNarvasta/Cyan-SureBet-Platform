@@ -1,6 +1,6 @@
+<<<<<<< HEAD
 
-<?php 
-include("conexion.php") ;  include("conecctionPDO.php") ;
+<?php include("conexion.php") ;  include("conecctionPDO.php") ;
 
 $sql= "SELECT *FROM bet WHERE idbet >0 ";
 if(isset($_GET["sql"])){
@@ -117,3 +117,5 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
 <?php 
    include("footer.php");
 ?>
+=======
+>>>>>>> a6de037f4cc8535e2e1424c4fc78d97a67521d9a

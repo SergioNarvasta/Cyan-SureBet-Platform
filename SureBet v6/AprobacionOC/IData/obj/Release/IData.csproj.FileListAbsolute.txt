@@ -1,0 +1,21 @@
+E:\DevApp\NET\AprobacionOC\IData\bin\Release\IData.dll
+E:\DevApp\NET\AprobacionOC\IData\bin\Release\IData.pdb
+E:\DevApp\NET\AprobacionOC\IData\obj\Release\IData.dll
+E:\DevApp\NET\AprobacionOC\IData\obj\Release\IData.pdb
+G:\DevApp\NET\AprobacionOC\IData\bin\Release\IData.dll
+G:\DevApp\NET\AprobacionOC\IData\bin\Release\IData.pdb
+G:\DevApp\NET\AprobacionOC\IData\obj\Release\IData.csprojResolveAssemblyReference.cache
+G:\DevApp\NET\AprobacionOC\IData\obj\Release\IData.dll
+G:\DevApp\NET\AprobacionOC\IData\obj\Release\IData.pdb
+D:\AppGCA\NET\AprobacionOC\IData\bin\Release\IData.dll
+D:\AppGCA\NET\AprobacionOC\IData\bin\Release\IData.pdb
+D:\AppGCA\NET\AprobacionOC\IData\obj\Release\IData.csproj.AssemblyReference.cache
+D:\AppGCA\NET\AprobacionOC\IData\obj\Release\IData.csproj.CoreCompileInputs.cache
+D:\AppGCA\NET\AprobacionOC\IData\obj\Release\IData.dll
+D:\AppGCA\NET\AprobacionOC\IData\obj\Release\IData.pdb
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\bin\Release\IData.dll
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\bin\Release\IData.pdb
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\obj\Release\IData.csproj.AssemblyReference.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\obj\Release\IData.csproj.CoreCompileInputs.cache
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\obj\Release\IData.dll
+D:\Docs_Sergio\Z_PROYECTOS WEB\AprobacionOC\IData\obj\Release\IData.pdb

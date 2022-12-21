@@ -44,7 +44,6 @@ namespace IS_SureBet.Controllers
             if (id == null || _context.BetData == null){
                 return NotFound();
             }
-
             var betData = await _context.BetData
                 .FirstOrDefaultAsync(m => m.IdBet == id);
             if (betData == null)

@@ -6,7 +6,13 @@ if(isset($_GET["sql"])){
   $sqlwhere = $_GET["sql"];
   $sql = $sql1.$sqlwhere;
  }
+<<<<<<< HEAD
 $productosPorPagina = 2;
+=======
+# Cuántos productos mostrar por página
+$productosPorPagina = 3;
+// Por defecto es la página 1; pero si está presente en la URL, tomamos esa
+>>>>>>> a6de037f4cc8535e2e1424c4fc78d97a67521d9a
 $pagina = 1;
 if (isset($_GET["pagina"])) {
     $pagina = $_GET["pagina"];
@@ -16,6 +22,10 @@ $offset = ($pagina - 1) * $productosPorPagina;
 $sentencia = $base_de_datos->query("SELECT count(*) AS conteo FROM bet");
 $conteo = $sentencia->fetchObject()->conteo;
 $paginas = ceil($conteo / $productosPorPagina);
+<<<<<<< HEAD
+=======
+# Ahora obtenemos los productos usando ya el OFFSET y el LIMIT
+>>>>>>> a6de037f4cc8535e2e1424c4fc78d97a67521d9a
 $sentencia = $base_de_datos->prepare("$sql LIMIT ? OFFSET ?");
 $sentencia->execute([$limit, $offset]);
 $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
@@ -122,24 +132,23 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
           <div><?php echo $r->Casa3 ?></div>
           <div class="Res"> <?php echo $r->Mercado3 ?></div>
           <div><?php $cuo= $r->Cuota3; if($cuo>1){echo $cuo;}else echo " "; ?> </div>
-       </div>
-       
+       </div> 
        <div class="Beneficio"> 
           <p><?php echo $r->Beneficio ?> GARANTIZADO BENEFICIO</p>
         </div>
-    </div>
-    <?php }  ?>
-    <div id="Pagination"> 
+    </div> 
+    <?php }  ?> <br>
+    <div id="Pagination-main"> 
         <nav>
-            <div class="row">
+            <div class="column">
                 <div class="col-xs-12 col-sm-6">
-                    <p>Mostrando <?php echo $productosPorPagina ?> de <?php echo $conteo ?> productos disponibles</p>
+                    <p>Mostrando <?php echo $productosPorPagina ?> de <?php echo $conteo ?> surebets</p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <p>Página <?php echo $pagina ?> de <?php echo $paginas ?> </p>
                 </div>
             </div>
-            <ul class="pagination">
+            <ul class="Pagination">
                 <!-- Si la página actual es mayor a uno, mostramos el botón para ir una página atrás -->
                 <?php if ($pagina > 1) { ?>
                     <li>
