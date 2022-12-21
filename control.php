@@ -46,10 +46,7 @@ $data = $sentencia->fetchAll(PDO::FETCH_OBJ);
 </div>
 <br >
 <div id="Box-Main-Bet">
-   <?php foreach ($data as $r){   ?>  
-    
-
-
+   <?php foreach ($data as $r){   ?> 
     <div class="BetList">
         <div class="Cab"> 
           <div><img src="img/soccer.png" alt="Football" height="30" width="30"> </div>    

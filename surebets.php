@@ -1,5 +1,4 @@
-<?php 
-include("conexion.php") ;  include("conecctionPDO.php") ;
+<?php   include("conexion.php") ;  include("conecctionPDO.php") ;
 
 $sql= "SELECT *FROM bet WHERE idbet >0 ";
 if(isset($_GET["sql"])){
@@ -7,24 +6,16 @@ if(isset($_GET["sql"])){
   $sqlwhere = $_GET["sql"];
   $sql = $sql1.$sqlwhere;
  }
-# Cuántos productos mostrar por página
 $productosPorPagina = 2;
-// Por defecto es la página 1; pero si está presente en la URL, tomamos esa
 $pagina = 1;
 if (isset($_GET["pagina"])) {
     $pagina = $_GET["pagina"];
 }
-# El límite es el número de productos por página
 $limit = $productosPorPagina;
-# El offset es saltar X productos que viene dado por multiplicar la página - 1 * los productos por página
 $offset = ($pagina - 1) * $productosPorPagina;
-# Necesitamos el conteo para saber cuántas páginas vamos a mostrar
 $sentencia = $base_de_datos->query("SELECT count(*) AS conteo FROM bet");
 $conteo = $sentencia->fetchObject()->conteo;
-# Para obtener las páginas dividimos el conteo entre los productos por página, y redondeamos hacia arriba
 $paginas = ceil($conteo / $productosPorPagina);
-
-# Ahora obtenemos los productos usando ya el OFFSET y el LIMIT
 $sentencia = $base_de_datos->prepare("$sql LIMIT ? OFFSET ?");
 $sentencia->execute([$limit, $offset]);
 $data = $sentencia->fetchAll(PDO::FETCH_OBJ);

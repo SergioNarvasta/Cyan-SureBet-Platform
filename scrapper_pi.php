@@ -24,15 +24,14 @@
     $datapi=mysqli_query($cn,$sqlpi); $dataob=mysqli_query($cn,$sqlob);
     $cantpi=mysqli_num_rows($datapi); 
     $cantob=mysqli_num_rows($dataob); 
-  header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
-  /*echo "<center><div>";
-    while($r = mysqli_fetch_array($data)) {
-    echo $r["local"]; echo $r["visita"]; echo $r["feceve"]; echo $r["casa"]; echo "<br>";
-    echo $r["cuota_local"]; echo $r["cuota_empate"];  echo $r["cuota_visita"]; echo $r["fecreg"];
-    echo "<br>";echo "<br>";
-  }   
-  echo "</div></center>";
-  */
+    header("Location: operaciones.php?cpi=$cantpi&cob=$cantob");
+      /*echo "<center><div>";
+        while($r = mysqli_fetch_array($data)) {
+        echo $r["local"]; echo $r["visita"]; echo $r["feceve"]; echo $r["casa"]; echo "<br>";
+        echo $r["cuota_local"]; echo $r["cuota_empate"];  echo $r["cuota_visita"]; echo $r["fecreg"];
+        echo "<br>";echo "<br>";
+      }   
+      echo "</div></center>"; */
   }
   function fx_insertPinnacle($cn,$fin){
     $file ="Downloads_Web/Pinnacle.html";  
@@ -51,7 +50,7 @@
           $aux++; $nv=$array[0];
           if($nv<$fin){  
             $test = $data[$nv]->innertext;  $busguion = strpos($test,"-",0); $busApuestas = strpos($test,"puesta",0);$bussocios = strpos($test,"ocios",0);
-            $span=htmlentities($test, ENT_QUOTES); $busspan= strpos($span,"span",0); $img =htmlentities($test, ENT_QUOTES); $busimg = strpos($img,"img",0);
+            $span=htmlentities($test,ENT_QUOTES); $busspan= strpos($span,"span",0); $img =htmlentities($test, ENT_QUOTES); $busimg = strpos($img,"img",0);
               if($busguion>1 ){
                 $array[0] = $nv+2;   $nv=$array[0];
               }
@@ -60,7 +59,7 @@
               $idcab = "Pi".substr(substr($lo,0,7).substr($vi,0,7),0,14);
               $array[0] = $nv+6;
               //Filtra si encuentra en su estructura: Apuestas, span ,div 
-                if($busApuestas==false and $busspan==false and $busimg==false and $bussocios==false){
+                if($busApuestas==false AND $busspan==false AND $busimg==false AND $bussocios==false){
                   $insert_cab = "INSERT INTO bet_cab(`idcab`,`deporte`,`local`,`visita`,`feceve`,`fecreg`)
                                   VALUES('$idcab','$deporte','$lo','$vi','$fe',CURRENT_TIME)";
                   $res_insert_cab = mysqli_query($cn,$insert_cab);
