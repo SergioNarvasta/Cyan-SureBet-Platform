@@ -1,8 +1,0 @@
-F:\Gerardo\proyecto_web\Comunes\bin\Debug\Comunes.dll
-F:\Gerardo\proyecto_web\Comunes\bin\Debug\Comunes.pdb
-F:\Gerardo\proyecto_web\Comunes\obj\Debug\Comunes.dll
-F:\Gerardo\proyecto_web\Comunes\obj\Debug\Comunes.pdb
-E:\DevApp\NET\AprobacionOC\Comunes\bin\Debug\Comunes.dll
-E:\DevApp\NET\AprobacionOC\Comunes\bin\Debug\Comunes.pdb
-E:\DevApp\NET\AprobacionOC\Comunes\obj\Debug\Comunes.dll
-E:\DevApp\NET\AprobacionOC\Comunes\obj\Debug\Comunes.pdb

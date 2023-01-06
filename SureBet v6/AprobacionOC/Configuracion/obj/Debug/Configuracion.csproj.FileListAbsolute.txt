@@ -1,8 +1,0 @@
-F:\Gerardo\proyecto_web\Configuracion\bin\Debug\Configuracion.dll
-F:\Gerardo\proyecto_web\Configuracion\bin\Debug\Configuracion.pdb
-F:\Gerardo\proyecto_web\Configuracion\obj\Debug\Configuracion.dll
-F:\Gerardo\proyecto_web\Configuracion\obj\Debug\Configuracion.pdb
-E:\DevApp\NET\AprobacionOC\Configuracion\bin\Debug\Configuracion.dll
-E:\DevApp\NET\AprobacionOC\Configuracion\bin\Debug\Configuracion.pdb
-E:\DevApp\NET\AprobacionOC\Configuracion\obj\Debug\Configuracion.dll
-E:\DevApp\NET\AprobacionOC\Configuracion\obj\Debug\Configuracion.pdb

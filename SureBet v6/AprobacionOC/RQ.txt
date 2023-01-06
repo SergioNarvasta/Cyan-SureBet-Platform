@@ -1,2 +1,0 @@
-Requerimiento/RequerimientoCompra.aspx?codigoCIA=01&CodigoSUC=01&NumeroRQ=RQ00621601
-
