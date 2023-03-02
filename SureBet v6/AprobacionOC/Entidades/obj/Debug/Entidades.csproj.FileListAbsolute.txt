@@ -1,8 +1,0 @@
-F:\Gerardo\proyecto_web\Entidades\bin\Debug\Entidades.dll
-F:\Gerardo\proyecto_web\Entidades\bin\Debug\Entidades.pdb
-F:\Gerardo\proyecto_web\Entidades\obj\Debug\Entidades.dll
-F:\Gerardo\proyecto_web\Entidades\obj\Debug\Entidades.pdb
-E:\DevApp\NET\AprobacionOC\Entidades\bin\Debug\Entidades.dll
-E:\DevApp\NET\AprobacionOC\Entidades\bin\Debug\Entidades.pdb
-E:\DevApp\NET\AprobacionOC\Entidades\obj\Debug\Entidades.dll
-E:\DevApp\NET\AprobacionOC\Entidades\obj\Debug\Entidades.pdb

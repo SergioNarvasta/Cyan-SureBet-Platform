@@ -1,8 +1,0 @@
-F:\Gerardo\proyecto_web\IData\bin\Debug\IData.dll
-F:\Gerardo\proyecto_web\IData\bin\Debug\IData.pdb
-F:\Gerardo\proyecto_web\IData\obj\Debug\IData.dll
-F:\Gerardo\proyecto_web\IData\obj\Debug\IData.pdb
-E:\DevApp\NET\AprobacionOC\IData\bin\Debug\IData.dll
-E:\DevApp\NET\AprobacionOC\IData\bin\Debug\IData.pdb
-E:\DevApp\NET\AprobacionOC\IData\obj\Debug\IData.dll
-E:\DevApp\NET\AprobacionOC\IData\obj\Debug\IData.pdb
