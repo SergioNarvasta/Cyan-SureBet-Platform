@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <?php include("conexion.php") ;  include("conecctionPDO.php") ;
 

@@ -8,7 +8,6 @@ if(isset($_GET["cpi"])){
 if(isset($_GET["cob"])){
   $cantob= $_GET["cob"]; settype($cantob,"integer");
 }
-
 ?>
 <head>
 	<title>Operaciones - SureBet Platform </title>
