@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-IS_SureBet_MVC-6476533D-CE6C-4C2A-B32A-429A29405F84")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("IS_SureBet_MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
