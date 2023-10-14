@@ -1,4 +1,0 @@
-
-SELECT RIGHT(A.idcab,14),A.*,B.* FROM `bet_cab` A
-LEFT JOIN bet_det B ON A.idcab = B.idcab
-WHERE B.idcab IS NOT NULL
