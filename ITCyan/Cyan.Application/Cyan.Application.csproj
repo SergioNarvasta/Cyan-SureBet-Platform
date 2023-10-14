@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cyan.Domain\Cyan.Domain.csproj" />
+    <ProjectReference Include="..\Cyan.Infraestructure\Cyan.Infraestructure.csproj" />
+  </ItemGroup>
+
 </Project>

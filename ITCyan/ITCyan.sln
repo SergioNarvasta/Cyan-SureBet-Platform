@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyanSureBetPlatform", "CyanSureBetPlatform\CyanSureBetPlatform.csproj", "{A42AA643-5BD5-4CDE-9882-1972D307E99B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyan.SureBetPlatform", "CyanSureBetPlatform\Cyan.SureBetPlatform.csproj", "{A42AA643-5BD5-4CDE-9882-1972D307E99B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyan.Application", "Cyan.Application\Cyan.Application.csproj", "{3BEEFE5E-112E-408B-8AE2-5CEE87C38550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyan.Application", "Cyan.Application\Cyan.Application.csproj", "{3BEEFE5E-112E-408B-8AE2-5CEE87C38550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyan.Domain", "Cyan.Domain\Cyan.Domain.csproj", "{F959FB35-90F7-4B2B-951B-C361646961C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyan.Domain", "Cyan.Domain\Cyan.Domain.csproj", "{F959FB35-90F7-4B2B-951B-C361646961C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyan.Infraestructure", "Cyan.Infraestructure\Cyan.Infraestructure.csproj", "{26CED63B-5266-4BFA-B13C-BF77800A5AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyan.Infraestructure", "Cyan.Infraestructure\Cyan.Infraestructure.csproj", "{26CED63B-5266-4BFA-B13C-BF77800A5AE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cyan.Utils", "Cyan.Utils\Cyan.Utils.csproj", "{F8D3AAEB-F50C-486A-A98B-32ABF264C579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cyan.Utils", "Cyan.Utils\Cyan.Utils.csproj", "{F8D3AAEB-F50C-486A-A98B-32ABF264C579}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
