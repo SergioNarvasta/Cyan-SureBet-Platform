@@ -9,3 +9,5 @@
 /ITCyan/Cyan.Application/obj
 /ITCyan/Cyan.Domain/obj
 /ITCyan/.vs/ITCyan/FileContentIndex
+*.v2
+*.bin
