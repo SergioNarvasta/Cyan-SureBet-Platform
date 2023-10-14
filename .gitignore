@@ -1,11 +1,11 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
 
-#prueba de ignore
-/node_modules
-/Downloads_Web 
-simple_html_dom.php
-package-lock.json
-package.json
-/vendor
-composer.json
-composer.lock
-
+/ITCyan/Cyan.Utils/obj
+/ITCyan/Cyan.Infraestructure/obj
+/ITCyan/CyanSureBetPlatform/obj
+*.suo
+/ITCyan/Cyan.Application/obj
+/ITCyan/Cyan.Domain/obj
+/ITCyan/.vs/ITCyan/FileContentIndex
