@@ -7,7 +7,7 @@ namespace ITCyan.Cyan.Domain
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdBet { get; set; }
+        public int SureBetId { get; set; }
        public string ?Deporte { get; set; }
 
        public string ?Evento { get; set; }
@@ -16,9 +16,9 @@ namespace ITCyan.Cyan.Domain
 
        public string ?Competicion { get; set; }
 
-       public double ?Cuota { get; set; }
+       public double Cuota { get; set; }
 
-       public double ?Beneficio { get; set; }
+       public double Beneficio { get; set; }
 
        public string ?CasaApuesta   { get; set; }
 

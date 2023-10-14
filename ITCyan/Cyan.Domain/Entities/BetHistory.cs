@@ -12,7 +12,7 @@ namespace Cyan.Domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        public int BetHistoryId { get; set; }
         public string? Event { get; set; }
         public string? Market { get; set; } //Mercado
         public double Odds { get; set; } //Cuota

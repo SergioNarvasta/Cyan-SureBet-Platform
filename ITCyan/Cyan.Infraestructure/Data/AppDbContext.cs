@@ -7,7 +7,7 @@ namespace Infraestructure.Data
     public class AppDbContext : DbContext
     {
         /*
-         Add-Migration -Context Infraestructure.Data.AppDbContext -name init_02
+         Add-Migration -Context Infraestructure.Data.AppDbContext -name init_01
          Update-Database -Verbose -Context AppDbContext
          
          Remove-Migration -Context AppDbContext
@@ -16,9 +16,8 @@ namespace Infraestructure.Data
             : base(options)
         {
         }
-
         
-        public DbSet<BetData> Roles { get; set; }
+        public DbSet<BetHistory> BetHistory { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
