@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace IS_SureBet.Models
+namespace ITCyan.Cyan.Domain
 {
-    public class BetData
+    public class SureBet
     {
         [Key]
-       public int IdBet { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdBet { get; set; }
        public string ?Deporte { get; set; }
 
        public string ?Evento { get; set; }
