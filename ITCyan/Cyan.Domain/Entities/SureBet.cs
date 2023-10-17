@@ -7,24 +7,23 @@ namespace ITCyan.Cyan.Domain
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int SureBetId { get; set; }
-       public string ?Deporte { get; set; }
+        public int Id { get; set; }
+        public string Code { get; set; }
+       public string ?Sport { get; set; }
 
-       public string ?Evento { get; set; }
+       public string ?Event { get; set; }
        
-       public string ?Mercado { get; set; }
+       public string Market { get; set; }
 
-       public string ?Competicion { get; set; }
-
-       public double Cuota { get; set; }
+       public string  Competition { get; set; }
 
        public double Beneficio { get; set; }
 
-       public string ?CasaApuesta   { get; set; }
+       public string ? HouseBet   { get; set; }
 
-       public DateTime Fecha { get; set; }
+       public DateTime EventaDate { get; set; }
 
-       public double Limite { get; set; }
+       public double LimitAmount { get; set; }
 
         
     }
