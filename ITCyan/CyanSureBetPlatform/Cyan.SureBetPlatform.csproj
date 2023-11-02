@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cyan.Application\Cyan.Application.csproj" />
+    <ProjectReference Include="..\Cyan.Infraestructure\Cyan.Infraestructure.csproj" />
     <ProjectReference Include="..\Cyan.Utils\Cyan.Utils.csproj" />
   </ItemGroup>
 

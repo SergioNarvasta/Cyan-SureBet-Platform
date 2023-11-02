@@ -7,6 +7,11 @@ namespace CyanSureBetPlatform.Controllers
     [ApiController]
     public class BetHistoryController : ControllerBase
     {
-
+        [HttpGet]
+        [Route("GetAllHistory")]
+        public async Task<IActionResult> GetAllHistory()
+        {
+            return Ok("Test");
+        }
     }
 }
