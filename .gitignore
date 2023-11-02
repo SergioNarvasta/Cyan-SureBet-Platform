@@ -11,3 +11,11 @@
 /ITCyan/.vs/ITCyan/FileContentIndex
 *.v2
 *.bin
+/ITCyan/.vs/ITCyan/config
+/ITCyan/Cyan.Application/bin/Debug/net6.0
+/ITCyan/Cyan.Domain/bin/Debug/net6.0
+/ITCyan/Cyan.Domain/bin/Debug/net6.0/Cyan.Domain.deps.json
+/ITCyan/Cyan.Infraestructure/bin/Debug/net6.0
+/ITCyan/Cyan.Infraestructure/bin/Debug/net6.0/Cyan.Domain.dll
+/ITCyan/Cyan.Utils/bin/Debug/net6.0
+/ITCyan/CyanSureBetPlatform/bin/Debug/net6.0
