@@ -1,15 +1,20 @@
+using Cyan.Infraestructure.Interfaces;
+using Cyan.Infraestructure.Services;
 using Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddTransient<IBetHistoryService, BetHistoryService>();
+builder.Services.AddTransient<IScrapperService, ScrapperService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
