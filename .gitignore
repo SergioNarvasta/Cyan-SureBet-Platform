@@ -19,3 +19,5 @@
 /ITCyan/Cyan.Infraestructure/bin/Debug/net6.0/Cyan.Domain.dll
 /ITCyan/Cyan.Utils/bin/Debug/net6.0
 /ITCyan/CyanSureBetPlatform/bin/Debug/net6.0
+/.vs
+/ITCyan/Cyan.WebSPA/.vscode
