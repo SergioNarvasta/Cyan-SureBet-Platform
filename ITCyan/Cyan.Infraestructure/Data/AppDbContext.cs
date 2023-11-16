@@ -1,5 +1,4 @@
 ﻿using Cyan.Domain.Entities;
-using IS_SureBet.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infraestructure.Data

@@ -5,10 +5,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cyan.Domain.Common;
 
 namespace Cyan.Domain.Entities
 {
-    public class BetHistory
+    public class BetHistory : Audit
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -21,6 +22,9 @@ namespace Cyan.Domain.Entities
         public double Discount { get; set; }
         
         public bool IsWon { get; set; } //Ganado o Perdido
+
+        public string? HouseBetName { get; set; } //Casa de Apuestas  FK
+        public int? UserId { get; set; }   //FK 
 
         [NotMapped]
         public double PayoutFinal {  //Pago
