@@ -1,19 +1,21 @@
+using Cyan.Application.Interfaces;
+using Cyan.Application.Services;
 using Cyan.Infraestructure.Interfaces;
 using Cyan.Infraestructure.Services;
-using Infraestructure.Data;
+using Cyan.Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AzureSQLDatabaseConnection"));
 });
 
 builder.Services.AddTransient<IBetHistoryService, BetHistoryService>();
+builder.Services.AddTransient<IBetHistoryAppService, BetHistoryAppService>();
 builder.Services.AddTransient<IScrapperService, ScrapperService>();
 
 builder.Services.AddEndpointsApiExplorer();

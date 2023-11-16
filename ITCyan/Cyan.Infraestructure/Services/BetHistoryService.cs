@@ -1,6 +1,6 @@
 ﻿using Cyan.Domain.Entities;
 using Cyan.Infraestructure.Interfaces;
-using Infraestructure.Data;
+using Cyan.Infraestructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cyan.Infraestructure.Services
