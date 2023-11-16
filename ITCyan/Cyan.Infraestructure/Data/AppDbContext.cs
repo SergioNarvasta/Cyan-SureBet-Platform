@@ -1,13 +1,12 @@
 ﻿using Cyan.Domain.Entities;
-using IS_SureBet.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infraestructure.Data
+namespace Cyan.Infraestructure.Data
 {
     public class AppDbContext : DbContext
     {
         /*
-         Add-Migration -Context Infraestructure.Data.AppDbContext -name init_01
+         Add-Migration -Context Infraestructure.Data.AppDbContext -name init_01 -verbose
          Update-Database -Verbose -Context AppDbContext
          
          Remove-Migration -Context AppDbContext

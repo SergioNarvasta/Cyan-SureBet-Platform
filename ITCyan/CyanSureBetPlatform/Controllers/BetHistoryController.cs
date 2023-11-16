@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Cyan.Application.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CyanSureBetPlatform.Controllers
@@ -7,11 +8,20 @@ namespace CyanSureBetPlatform.Controllers
     [ApiController]
     public class BetHistoryController : ControllerBase
     {
+        private readonly IBetHistoryAppService _betHistoryAppService;
+        public BetHistoryController(IBetHistoryAppService betHistoryAppService) {
+        _betHistoryAppService = betHistoryAppService;
+        }
+
         [HttpGet]
         [Route("GetAllHistory")]
         public async Task<IActionResult> GetAllHistory()
         {
-            return Ok("Test");
+            var list = await _betHistoryAppService.GetList();
+
+            return Ok(list);
         }
+
+
     }
 }
