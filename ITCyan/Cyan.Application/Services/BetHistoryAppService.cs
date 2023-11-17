@@ -24,6 +24,7 @@ namespace Cyan.Application.Services
 
         public async Task<bool> Create(BetHistory model)
         {
+            model.CreateDate = DateTime.Now;
             return await _betHistoryService.Create(model);
         }
 
