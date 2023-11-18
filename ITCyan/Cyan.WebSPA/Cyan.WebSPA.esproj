@@ -9,4 +9,12 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\Cyan.WebSPA</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\core\models\" />
+    <Folder Include="src\app\core\services\" />
+    <Folder Include="src\app\modules\bethistory\components\" />
+    <Folder Include="src\app\shared\constants\" />
+    <Folder Include="src\app\shared\helpers\" />
+    <Folder Include="src\app\shared\utils\" />
+  </ItemGroup>
 </Project>
