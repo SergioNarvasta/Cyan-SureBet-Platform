@@ -12,7 +12,7 @@ namespace Cyan.Application.Interfaces
         Task<bool> Create(BetHistory model);
         Task<bool> Delete(int Id);
         Task<BetHistory> GetById(int Id);
-        Task<List<BetHistory>> GetList();
+        Task<IEnumerable<BetHistory>> GetList(int pageSize, int pageIndex, string filter);
         Task<bool> Update(BetHistory model);
     }
 }

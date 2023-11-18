@@ -1,8 +1,10 @@
 ﻿using Cyan.Application.Interfaces;
 using Cyan.Domain.Entities;
 using Cyan.Utils.Common;
+using Cyan.WebAPI.Constants;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Http.Description;
 
 namespace CyanSureBetPlatform.Controllers
 {
@@ -16,10 +18,11 @@ namespace CyanSureBetPlatform.Controllers
         }
 
         [HttpGet]
-        [Route("GetAllHistory")]
-        public async Task<IActionResult> GetAllHistory()
+        [Route("GetAllHistory",Name = BetHistoryResourcesNames.Routes.GetQuery)]
+        //[ResponseType(typeof(RepresentationCollectionPaged<PaymentMethodListRp>))]
+        public async Task<IActionResult> GetList(int pageSize=20,int pageIndex=1,string filter="")
         {
-            var list = await _betHistoryAppService.GetList();
+            var list = await _betHistoryAppService.GetList(pageSize,pageIndex,filter);
 
             return Ok(list);
         }
@@ -38,6 +41,16 @@ namespace CyanSureBetPlatform.Controllers
             return Ok(response);
         }
 
+        [HttpPost]
+        [Route("GetBetHistoryById")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            if (id == 0)
+                BadRequest();
+
+            var model = await _betHistoryAppService.GetById(id);
+            return Ok(model);
+        }
 
     }
 }

@@ -13,11 +13,26 @@ namespace Cyan.Infraestructure.Services
             _dbContext = dbContext;
         }
 
-        public async Task<List<BetHistory>> GetList()
+        public async Task<IEnumerable<BetHistory>> GetList(int pageSize, int pageIndex, string filter)
         {
-            return await _dbContext.BetHistory
+            var query = _dbContext.BetHistory
+                .AsQueryable();
+
+            if (filter.Trim().Length > 1)
+            {
+               query = query.Where(s=>
+               s.Event.Contains(filter) || 
+               s.Market.Contains(filter)
+               );
+            }
+            var list = await query
+                 .Where(s => !s.IsDeleted)
                  .AsNoTracking()
                  .ToListAsync();
+
+            return list
+                .Skip(pageIndex)
+                .Take(pageSize);
         }
 
         public async Task<BetHistory> GetById(int Id)
