@@ -12,9 +12,9 @@ namespace Cyan.Application.Services
             _betHistoryService = betHistoryService;
         }
 
-        public async Task<List<BetHistory>> GetList()
+        public async Task<IEnumerable<BetHistory>> GetList(int pageSize, int pageIndex, string filter)
         {
-            return await _betHistoryService.GetList();
+            return await _betHistoryService.GetList(pageSize, pageIndex, filter);
         }
 
         public async Task<BetHistory> GetById(int Id)
@@ -24,6 +24,10 @@ namespace Cyan.Application.Services
 
         public async Task<bool> Create(BetHistory model)
         {
+            model.CreateDate = DateTime.Now;
+            model.IsDeleted = false;
+           
+            //Add the current User
             return await _betHistoryService.Create(model);
         }
 
